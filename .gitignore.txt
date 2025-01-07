@@ -1,0 +1,20 @@
+# Ignore all image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.ico
+*.svg
+*.bmp
+*.tiff
+*.tif
+
+# If you have specific image directories, you can also ignore entire folders:
+College Men’s/
+#img/
+#logos/
+
+.DS_Store
+.DS_Store?
+._*
