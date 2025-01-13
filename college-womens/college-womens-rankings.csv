@@ -1,0 +1,570 @@
+Team,Year,Rank,T_Rank
+Kansas,1987,1,1
+UC Davis,1987,2,2
+Humboldt State,1987,3,3
+Massachusetts,1987,4,4
+Cornell,1987,5,5
+Earlham,1987,6,6
+Vermont,1987,7,7
+UC Santa Barbara,1988,1,1
+UC Davis,1988,2,2
+Humboldt State,1988,3,T3
+Oregon,1988,4,T3
+Carleton,1988,5,T5
+Massachusetts,1988,6,T5
+Cornell,1988,7,T7
+Wisconsin,1988,8,T7
+Florida,1988,9,T9
+Kansas,1988,10,T9
+UC Davis,1989,1,1
+Michigan,1989,2,2
+UC Santa Barbara,1989,3,T3
+Carleton,1989,4,T3
+Cornell,1989,5,?
+North Carolina-Wilmington,1989,6,?
+Oregon,1989,7,?
+Pennsylvania,1989,8,?
+SUNY-Binghamton,1989,9,?
+Towson,1989,10,?
+UC Santa Barbara,1990,1,1
+Michigan,1990,2,2
+Cornell,1990,3,3
+Carleton,1990,4,4
+UC Davis,1990,5,5
+Carnegie Mellon,1990,6,6
+Columbia,1990,7,T7
+Kansas,1990,8,T7
+Pennsylvania,1990,9,T9
+Wesleyan,1990,10,T9
+UC Santa Barbara,1991,1,1
+California,1991,2,2
+Carleton,1991,3,T3
+Cornell,1991,4,T3
+North Carolina-Wilmington,1991,5,T5
+Virginia,1991,6,T5
+Columbia,1991,7,T7
+Kansas,1991,8,T7
+Carnegie Mellon,1991,9,T9
+Tufts,1991,10,T9
+North Carolina-Wilmington,1992,1,1
+Oregon,1992,2,2
+California,1992,3,T3
+Columbia,1992,4,T3
+Carleton,1992,5,T5
+Cornell,1992,6,T5
+Pennsylvania,1992,7,T5
+Kansas,1992,8,T5
+Brown,1992,9,T9
+Georgia Tech,1992,10,T9
+California,1993,1,1
+North Carolina-Wilmington,1993,2,2
+Carleton,1993,3,T3
+Humboldt State,1993,4,T3
+Columbia,1993,5,T5
+Cornell,1993,6,T5
+Indiana,1993,7,T5
+Pennsylvania,1993,8,T5
+Kansas,1993,9,T9
+Williams,1993,10,T9
+UC Santa Cruz,1994,1,1
+UC Santa Barbara,1994,2,2
+Indiana,1994,3,T3
+North Carolina-Wilmington,1994,4,T3
+Carleton,1994,5,T5
+Columbia,1994,6,T5
+Cornell,1994,7,T5
+Kansas,1994,8,T5
+East Carolina,1994,9,T9
+Tufts,1994,10,T9
+UC Santa Cruz,1995,1,1
+Stanford,1995,2,2
+Colorado,1995,3,T3
+North Carolina-Wilmington,1995,4,T3
+Columbia,1995,5,T5
+Pennsylvania,1995,6,T5
+Indiana,1995,7,T7
+Yale,1995,8,T7
+Carleton,1995,9,T9
+Williams,1995,10,T9
+North Carolina-Wilmington,1996,1,1
+Stanford,1996,2,2
+California,1996,3,T3
+Carleton,1996,4,T3
+Colorado,1996,5,T5
+Cornell,1996,6,T5
+Indiana,1996,7,T5
+Yale,1996,8,T5
+Florida State,1996,9,T9
+Pennsylvania,1996,10,T9
+Stanford,1997,1,1
+British Columbia,1997,2,2
+Carleton,1997,3,T3
+Rutgers,1997,4,T3
+Brown,1997,5,T5
+North Carolina-Wilmington,1997,6,T5
+Oberlin,1997,7,T5
+Yale,1997,8,T5
+Georgia,1997,9,T9
+Rice,1997,10,T9
+Stanford,1998,1,1
+Carleton,1998,2,2
+Oregon,1998,3,T3
+Yale,1998,4,T3
+Cornell,1998,5,T5
+North Carolina-Wilmington,1998,6,T5
+Indiana,1998,7,T7
+Rutgers,1998,8,T7
+Georgia,1998,9,T9
+MIT,1998,10,T9
+Rice,1998,11,T11
+Wisconsin,1998,12,T11
+Stanford,1999,1,1
+Carleton,1999,2,2
+Brown,1999,3,T3
+Georgia,1999,4,T3
+British Columbia,1999,5,T5
+UC San Diego,1999,6,T5
+Swarthmore,1999,7,T7
+Yale,1999,8,T7
+Illinois,1999,9,T9
+Princeton,1999,10,T9
+Kansas,1999,11,T11
+Minnesota,1999,12,T11
+Carleton,2000,1,1
+North Carolina-Wilmington,2000,2,2
+UC Davis,2000,3,T3
+Georgia,2000,4,T3
+Brown,2000,5,T5
+UC San Diego,2000,6,T5
+Colorado,2000,7,T5
+Tufts,2000,8,T5
+Swarthmore,2000,9,9
+Smith,2000,10,10
+Minnesota,2000,11,11
+Rice,2000,12,12
+Oregon,2000,13,13
+Illinois,2000,14,14
+Bucknell,2000,15,T15
+Notre Dame,2000,16,T15
+Georgia,2001,1,1
+Stanford,2001,2,2
+UC San Diego,2001,3,T3
+North Carolina- Wilmington,2001,4,T3
+British Columbia,2001,5,T5
+Brown,2001,6,T5
+Carleton,2001,7,T5
+Tufts,2001,8,T5
+Colorado,2001,9,9
+Northwestern,2001,10,10
+Bucknell,2001,11,11
+Swarthmore,2001,12,12
+Illinois,2001,13,13
+MIT,2001,14,14
+Wisconsin,2001,15,15
+Washington,2001,16,16
+UC San Diego,2002,1,1
+Stanford,2002,2,2
+Colorado,2002,3,T3
+MIT,2002,4,T3
+Bucknell,2002,5,T5
+Carleton,2002,6,T5
+North Carolina,2002,7,T5
+Oregon,2002,8,T5
+Brown,2002,9,T9
+Northwestern,2002,10,T9
+Penn State,2002,11,T11
+Virginia,2002,12,T11
+Georgia,2002,13,T13
+Indiana,2002,14,T13
+Texas,2002,15,T15
+Yale,2002,16,T15
+Stanford,2003,1,1
+MIT,2003,2,2
+Brown,2003,3,T3
+Colorado,2003,4,T3
+California,2003,5,T5
+UC San Diego,2003,6,T5
+Penn State,2003,7,T5
+Texas,2003,8,T5
+Iowa,2003,9,T9
+Wisconsin,2003,10,T9
+Delaware,2003,11,T11
+Duke,2003,12,T11
+Michigan,2003,13,13
+Arizona,2003,14,T14
+Georgia,2003,15,T14
+Notre Dame,2003,16,T14
+UC Davis,2004,1,1
+Carleton,2004,2,2
+UC San Diego,2004,3,T3
+Stanford,2004,4,T3
+Brown,2004,5,T5
+California,2004,6,T5
+Texas,2004,7,T5
+MIT,2004,8,T5
+Dartmouth,2004,9,T9
+Iowa,2004,10,T9
+Claremont,2004,11,T11
+Illinois,2004,12,T11
+Penn State,2004,13,T13
+North Carolina State,2004,14,T15
+Rutgers,2004,15,T15
+Stanford,2005,1,1
+Washington,2005,2,2
+Colorado,2005,3,T3
+Texas,2005,4,T3
+Brown,2005,5,T5
+California,2005,6,T5
+Iowa,2005,7,T5
+North Carolina State,2005,8,T5
+Cornell,2005,9,T9
+MIT,2005,10,T9
+Dartmouth,2005,11,T11
+Northwestern,2005,12,T11
+Texas A&M,2005,13,13
+Carleton,2005,14,T14
+Purdue,2005,15,T14
+Rutgers,2005,16,T14
+Stanford,2006,1,1
+UCLA,2006,2,2
+Colorado,2006,3,T3
+Wisconsin,2006,4,T3
+British Columbia,2006,5,T5
+UC Davis,2006,6,T5
+Dartmouth,2006,7,T5
+Florida,2006,8,T5
+Georgia,2006,9,T9
+Michigan,2006,10,T9
+Emory,2006,11,T11
+Tufts,2006,12,T11
+Swarthmore,2006,13,T13
+Texas,2006,14,T13
+Carleton,2006,15,T15
+Delaware,2006,16,T15
+Stanford,2007,1,1
+UC Santa Barbara,2007,2,2
+British Columbia,2007,3,T3
+UCLA,2007,4,T3
+California,2007,5,T5
+Carleton,2007,6,T5
+Northwestern,2007,7,T5
+Wisconsin,2007,8,T5
+UC San Diego,2007,9,T9
+NYU,2007,10,T9
+Delaware,2007,11,T11
+Tufts,2007,12,T11
+Florida,2007,13,T13
+Truman State,2007,14,T13
+Dartmouth,2007,15,T15
+Emory,2007,16,T15
+British Columbia,2008,1,1
+UC Santa Barbara,2008,2,2
+UCLA,2008,3,T3
+Washington,2008,4,T3
+Carleton,2008,5,T5
+Michigan,2008,6,T5
+Ottawa,2008,7,T5
+Wisconsin,2008,8,T5
+Northeastern,2008,9,T9
+Texas,2008,10,T9
+Maryland,2008,11,T11
+Michigan State,2008,12,T11
+Wake Forest,2008,13,T13
+Oregon,2008,14,T13
+MIT,2008,15,T15
+North Carolina,2008,16,T15
+UC Santa Barbara,2009,1,1
+Washington,2009,2,2
+Oregon,2009,3,T3
+Stanford,2009,4,T3
+Ottawa,2009,5,T5
+Pennsylvania,2009,6,T5
+UCLA,2009,7,T5
+Wisconsin,2009,8,T5
+Carleton,2009,9,T9
+Michigan,2009,10,T9
+North Carolina,2009,11,T11
+North Carolina-Wilmington,2009,12,T11
+Dartmouth,2009,13,T13
+Saint Louis,2009,14,T13
+Colorado,2009,15,T15
+Iowa State,2009,16,T15
+Northeastern,2009,17,T17
+Washington University,2009,18,T17
+Illinois,2009,19,T19
+Southern California,2009,20,T19
+Oregon,2010,1,1
+UC Santa Barbara,2010,2,2
+Colorado,2010,3,T3
+Wisconsin,2010,4,T3
+California,2010,5,T5
+North Carolina- Wilmington,2010,6,T5
+Southern California,2010,7,T5
+UCLA,2010,8,T5
+Pittsburgh,2010,9,T9
+Washington,2010,10,T9
+Carleton,2010,11,T11
+Michigan,2010,12,T11
+Stanford,2010,13,T13
+North Carolina,2010,14,T13
+Maryland,2010,15,T15
+Washington University,2010,16,T15
+Northwestern,2010,17,T17
+Texas,2010,18,T17
+Harvard,2010,19,T19
+Middlebury,2010,20,T19
+UC Santa Barbara,2011,1,1
+Michigan,2011,2,2
+Oregon,2011,3,T3
+Stanford,2011,4,T3
+Colorado College,2011,5,T5
+Iowa,2011,6,T5
+North Carolina,2011,7,T5
+North Carolina- Wilmington,2011,8,T5
+Washington,2011,9,9
+Iowa State,2011,10,10
+California,2011,11,11
+Carleton,2011,12,12
+Northwestern,2011,13,T13
+Ottawa,2011,14,T13
+Florida,2011,15,T15
+Tufts,2011,16,T15
+Ohio State,2011,17,T17
+Washington University,2011,18,T17
+British Columbia,2011,19,T19
+Virginia,2011,20,T19
+Washington,2012,1,1
+Oregon,2012,2,2
+Michigan,2012,3,T3
+Tufts,2012,4,T3
+Iowa,2012,5,T5
+North Carolina,2012,6,T5
+Ohio State,2012,7,T5
+Texas,2012,8,T5
+California,2012,9,9
+Iowa State,2012,10,10
+British Columbia,2012,11,11
+UCLA,2012,12,12
+Florida,2012,13,T13
+Stanford,2012,14,T13
+Sonoma State,2012,15,T15
+Wisconsin,2012,16,T15
+Humboldt State,2012,17,T17
+Virginia,2012,18,T17
+Delaware,2012,19,T19
+Ottawa,2012,20,T19
+Oregon,2013,1,1
+Carleton,2013,2,2
+Iowa,2013,3,T3
+Ohio State,2013,4,T3
+British Columbia,2013,5,T5
+Tufts,2013,6,T5
+Virginia,2013,7,T5
+Washington,2013,8,T5
+Iowa State,2013,9,T9
+Minnesota,2013,10,T9
+Northwestern,2013,11,T9
+Wisconsin,2013,12,T9
+UC Santa Barbara,2013,13,T13
+Ottawa,2013,14,T13
+Stanford,2013,15,T13
+Whitman,2013,16,T13
+Central Florida,2013,17,T17
+Georgia,2013,18,T17
+Northeastern,2013,19,T17
+Texas,2013,20,T17
+Ohio State,2014,1,1
+Oregon,2014,2,2
+Central Florida,2014,3,T3
+Washington,2014,4,T3
+British Columbia,2014,5,T5
+Carleton,2014,6,T5
+Michigan,2014,7,T5
+Virginia,2014,8,T5
+UC Santa Barbara,2014,9,T9
+Colorado College,2014,10,T9
+Tufts,2014,11,T9
+UCLA,2014,12,T9
+Colorado,2014,13,T13
+Kansas,2014,14,T13
+Stanford,2014,15,T13
+Victoria,2014,16,T13
+Cornell,2014,17,T17
+Northeastern,2014,18,T17
+Western Washington,2014,19,T17
+Whitman,2014,20,T17
+Oregon,2015,1,1
+Stanford,2015,2,2.
+British Columbia,2015,3,T3
+Carleton,2015,4,T3
+Colorado,2015,5,T5
+Dartmouth,2015,6,T5
+Virginia,2015,7,T5
+Whitman,2015,8,T5
+Florida State,2015,9,T9
+Ohio State,2015,10,T9
+Texas,2015,11,T9
+Victoria,2015,12,T9
+Central Florida,2015,13,T13
+Princeton,2015,14,T13
+UCLA,2015,15,T13
+Washington,2015,16,T13
+Kansas,2015,17,T17
+Middlebury,2015,18,T17
+Notre Dame,2015,19,T17
+Pittsburgh,2015,20,T17
+Stanford,2016,1,1
+Whitman,2016,2,2
+Oregon,2016,3,T3
+Virginia,2016,4,T3
+British Columbia,2016,5,T5
+Colorado,2016,6,T5
+Dartmouth,2016,7,T5
+UCLA,2016,8,T5
+Michigan,2016,9,T9
+Texas,2016,10,T9
+Washington,2016,11,T9
+Wisconsin,2016,12,T9
+California,2016,13,T13
+Western Washington,2016,14,T13
+Colorado College,2016,15,T13
+Pittsburgh,2016,16,T13
+Central Florida,2016,17,T17
+Ohio State,2016,18,T17
+Ottawa,2016,19,T17
+Southern California,2016,20,T17
+Dartmouth,2017,1,1
+Texas,2017,2,2
+British Columbia,2017,3,T3
+Colorado,2017,4,T3
+Oregon,2017,5,T5
+Stanford,2017,6,T5
+California,2017,7,T9
+Carleton,2017,8,T9
+Michigan,2017,9,T9
+Notre Dame,2017,10,T9
+UC San Diego,2017,11,T13
+Delaware,2017,12,T13
+North Carolina,2017,13,T13
+Ohio State,2017,14,T13
+Connecticut,2017,15,T17
+Florida,2017,16,T17
+Pittsburgh,2017,17,T17
+Tufts,2017,18,T17
+Dartmouth,2018,1,1
+Colorado,2018,2,2
+Pittsburgh,2018,3,T3
+Stanford,2018,4,T3
+British Columbia,2018,5,T5
+North Carolina,2018,6,T5
+Oregon,2018,7,T5
+Texas,2018,8,T5
+UC San Diego,2018,9,T9
+Michigan,2018,10,T9
+North Carolina State,2018,11,T9
+Tufts,2018,12,T9
+Carleton,2018,13,T13
+Ohio State,2018,14,T13
+West Chester,2018,15,T13
+Western Washington,2018,16,T13
+UC Santa Barbara,2018,17,T17
+Cornell,2018,18,T17
+Florida,2018,19,T17
+Whitman,2018,20,T17
+UC San Diego,2019,1,1
+Dartmouth,2019,2,2
+North Carolina,2019,3,T3
+Ohio State,2019,4,T3
+Carleton,2019,5,T5
+Western Washington,2019,6,T5
+UC Santa Barbara,2019,7,T5
+Wisconsin,2019,8,T5
+Georgia,2019,9,T9
+Colorado,2019,10,T9
+Minnesota,2019,11,T9
+Oregon,2019,12,T9
+Texas,2019,13,T13
+UCLA,2019,14,T13
+Washington,2019,15,T13
+Northwestern,2019,16,T13
+Pittsburgh,2019,17,T17
+Northeastern,2019,18,T17
+Tufts,2019,19,T17
+Cornell,2019,20,T17
+North Carolina,2021,1,1
+Washington,2021,2,2
+Carleton,2021,3,T3
+UC Santa Barbara,2021,4,T3
+Virginia,2021,5,T5
+UC San Diego,2021,6,T5
+Pittsburgh,2021,7,T5
+UC Davis,2021,8,T5
+Western Washington,2021,9,T9
+Colorado,2021,10,T9
+Texas,2021,11,T11
+Chicago,2021,12,T11
+Vermont,2021,13,T13
+Georgia,2021,14,T13
+Florida State,2021,15,T15
+Ohio,2021,16,T15
+Pennsylvania,2021,17,T17
+SUNY-Binghamton,2021,18,T17
+Michigan,2021,19,T19
+Boston University,2021,20,T19
+North Carolina,2022,1,1
+Colorado,2022,2,2
+Carleton,2022,3,T3
+UC Santa Barbara,2022,4,T3
+British Columbia,2022,5,T5
+Tufts,2022,6,T5
+Washington,2022,7,T5
+UC Davis,2022,9,T9
+UC San Diego,2022,10,T9
+Florida State,2022,11,T9
+Georgia,2022,13,T13
+Pittsburgh,2022,14,T13
+Virginia,2022,16,T15
+Purdue,2022,17,T17
+Northeastern,2022,18,T17
+SUNY-Binghamton,2022,19,T19
+Colorado State,2022,20,T19
+North Carolina,2023,1,1
+Colorado,2023,2,2
+British Columbia,2023,3,T3
+Vermont,2023,4,T3
+Carleton,2023,5,T5
+Stanford,2023,6,T5
+Tufts,2023,7,T5
+Washington,2023,8,T5
+UC Santa Barbara,2023,9,T9
+Colorado State,2023,10,T9
+Northeastern,2023,11,T9
+Oregon,2023,12,T9
+UCLA,2023,13,T13
+Virginia,2023,14,T13
+Chicago,2023,15,T15
+Victoria,2023,16,T15
+Georgia,2023,17,T17
+SUNY-Binghamton,2023,18,T17
+Carnegie Mellon,2023,19,T19
+Texas-Dallas,2023,20,T19
+Brown,2024,1,1
+Cal Poly SLO,2024,2,2
+Colorado,2024,3,T3
+North Carolina,2024,4,T3
+Georgia,2024,5,T5
+Minnesota,2024,6,T5
+NC State,2024,7,T5
+Oregon,2024,8,T5
+Massachusetts,2024,9,T9
+Pittsburgh,2024,10,T9
+Texas,2024,11,T9
+Michigan,2024,12,T9
+Oregon State,2024,13,T13
+California,2024,14,T13
+Vermont,2024,15,T15
+WashU,2024,16,T15
+Penn State,2024,17,T17
+Carleton,2024,18,T17
+Alabama-Huntsville,2024,19,T19
+Ottawa,2024,20,T19
