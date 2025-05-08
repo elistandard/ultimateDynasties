@@ -1,3 +1,43 @@
+// Add this at the top of the file to inject global CSS for selectors and buttons
+function _css(md){return md`<style>
+input[type="radio"] {
+  accent-color: #1f51f3;
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+}
+select {
+  font-size: 16px;
+  padding: 7px 12px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  margin-right: 10px;
+  background: #fff;
+  color: #222;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+label {
+  font-weight: bold;
+  color: #444;
+}
+button, input[type="button"] {
+  background: linear-gradient(90deg, #1f51f3 0%, #3a8dde 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(31,81,243,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+button:hover, input[type="button"]:hover {
+  background: linear-gradient(90deg, #3a8dde 0%, #1f51f3 100%);
+  box-shadow: 0 4px 12px rgba(31,81,243,0.13);
+}
+</style>`}
+
 function _1(md){return(
 md`# Ultimate Dynasties`
 )}
