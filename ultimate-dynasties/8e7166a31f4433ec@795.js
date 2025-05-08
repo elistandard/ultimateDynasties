@@ -1,7 +1,7 @@
 // Add this at the top of the file to inject global CSS for selectors and buttons
 function _css(md){return md`<style>
 input[type="radio"] {
-  accent-color: #1f51f3;
+  accent-color: red;
   margin-right: 8px;
   width: 18px;
   height: 18px;
@@ -10,15 +10,18 @@ select {
   font-size: 16px;
   padding: 7px 12px;
   border-radius: 6px;
-  border: 1px solid #bbb;
+  border: 2px solid red;
   margin-right: 10px;
   background: #fff;
-  color: #222;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  color: red;
+  box-shadow: 0 1px 2px rgba(255,0,0,0.08);
 }
 label {
   font-weight: bold;
-  color: #444;
+  color: red;
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: block;
 }
 button, input[type="button"] {
   background: linear-gradient(90deg, #1f51f3 0%, #3a8dde 100%);
@@ -67,16 +70,13 @@ md`Let's start by looking at winners. Who has the most rings?`
 )}
 
 function _divisionToggle2(Inputs){return(
-  html`<div style="background: #f7f7fa; border-radius: 10px; border: 1px solid #e0e0e0; box-shadow: 0 1px 4px rgba(0,0,0,0.03); max-width: 350px; padding: 16px 20px; margin-bottom: 20px;">
-    <div style="font-weight: 700; color: #333; font-size: 16px; margin-bottom: 10px;">Select Division</div>
-    ${Inputs.radio(
-      ["College Men's", "College Women's"],
-      {
-        label: undefined,
-        value: "College Men's"
-      }
-    )}
-  </div>`
+  Inputs.radio(
+    ["College Men's", "College Women's"],
+    {
+      label: "Select Division",
+      value: "College Men's"
+    }
+  )
 )}
 
 function _championshipChart(d3,raw_data,divisionToggle2,activeFont)
@@ -190,17 +190,14 @@ function _divisionToggle(Inputs){return(
   )
 )}
 
-function _teamSelector(Inputs, data){return(
-  html`<div style="background: #f7f7fa; border-radius: 10px; border: 1px solid #e0e0e0; box-shadow: 0 1px 4px rgba(0,0,0,0.03); max-width: 400px; padding: 16px 20px; margin-bottom: 20px;">
-    <div style="font-weight: 700; color: #333; font-size: 16px; margin-bottom: 10px;">Select team to highlight, or click on a circle below</div>
-    ${Inputs.select(
-      [...new Set(data.map(d => d.Team))].sort(),
-      {
-        label: undefined,
-        value: "Vermont"
-      }
-    )}
-  </div>`
+function _teamSelector(Inputs,data){return(
+  Inputs.select(
+    [...new Set(data.map(d => d.Team))].sort(),
+    {
+      label: "Select team to highlight, or click on a circle below",
+      value: "Vermont"
+    }
+  )
 )}
 
 function _13(html,activeFont,data,teamSelector,logoMapping){return(
