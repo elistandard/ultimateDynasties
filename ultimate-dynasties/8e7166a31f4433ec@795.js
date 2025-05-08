@@ -3,7 +3,10 @@ md`# Ultimate Dynasties`
 )}
 
 function _2(md){return(
-md`North Carolina, Cartleton, UCSB, Wisconsin. We've all heard about these dynasties in the college ultimate world. But which teams have been good forever? Who's made nationals the most but never won a championship? Where should my kid apply to college if they want to go to nationals next year??`
+md`<div style="font-size: 18px; color: #333; margin-bottom: 20px; line-height: 1.6;">
+North Carolina, Cartleton, UCSB, Wisconsin. We've all heard about these dynasties in the college ultimate world.<br><br>
+But which teams have been good forever? Who's made nationals the most but never won a championship? Where should my kid apply to college if they want to go to nationals next year??
+</div>`
 )}
 
 function _3(md){return(
@@ -24,13 +27,16 @@ md`Let's start by looking at winners. Who has the most rings?`
 )}
 
 function _divisionToggle2(Inputs){return(
-Inputs.radio(
-  ["College Men's", "College Women's"],
-  {
-    label: "Select Division",
-    value: "College Men's"
-  }
-)
+html`<div style="margin-bottom: 24px; padding: 14px 18px; background: #f7f7fa; border-radius: 10px; border: 1px solid #e0e0e0; box-shadow: 0 1px 4px rgba(0,0,0,0.03); max-width: 350px;">
+  <label style="font-weight: 700; color: #333; font-size: 16px; margin-bottom: 8px; display: block;">Select Division</label>
+  ${Inputs.radio(
+    ["College Men's", "College Women's"],
+    {
+      label: undefined,
+      value: "College Men's"
+    }
+  )}
+</div>`
 )}
 
 function _championshipChart(d3,raw_data,divisionToggle2,activeFont)
@@ -135,24 +141,29 @@ md`Let's scrape the rankings data from these websites and visualize it.`
 )}
 
 function _divisionToggle(Inputs){return(
-Inputs.radio(
-  ["College Men's", "College Women's"],
-  {
-    label: "Select Division",
-    value: "College Men's"
-  }
-)
+html`<div style="margin-bottom: 24px; padding: 14px 18px; background: #f7f7fa; border-radius: 10px; border: 1px solid #e0e0e0; box-shadow: 0 1px 4px rgba(0,0,0,0.03); max-width: 350px;">
+  <label style="font-weight: 700; color: #333; font-size: 16px; margin-bottom: 8px; display: block;">Select Division</label>
+  ${Inputs.radio(
+    ["College Men's", "College Women's"],
+    {
+      label: undefined,
+      value: "College Men's"
+    }
+  )}
+</div>`
 )}
 
 function _teamSelector(Inputs,data){return(
-Inputs.select(
-  [...new Set(data
-    .map(d => d.Team))].sort(),
-  {
-    label: "Select team to highlight, or click on a circle below",
-    value: "Vermont"
-  }
-)
+html`<div style="margin-bottom: 24px; padding: 14px 18px; background: #f7f7fa; border-radius: 10px; border: 1px solid #e0e0e0; box-shadow: 0 1px 4px rgba(0,0,0,0.03); max-width: 400px;">
+  <label style="font-weight: 700; color: #333; font-size: 16px; margin-bottom: 8px; display: block;">Select team to highlight, or click on a circle below</label>
+  ${Inputs.select(
+    [...new Set(data.map(d => d.Team))].sort(),
+    {
+      label: undefined,
+      value: "Vermont"
+    }
+  )}
+</div>`
 )}
 
 function _13(html,activeFont,data,teamSelector,logoMapping){return(
@@ -1014,6 +1025,31 @@ function formatTRank(tRank) {
   }
 )}
 
+function _customCSS(html){return(
+html`<style>
+input[type="radio"] {
+  accent-color: #1f51f3;
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+}
+select {
+  font-size: 16px;
+  padding: 7px 12px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  margin-right: 10px;
+  background: #fff;
+  color: #222;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+label {
+  font-weight: bold;
+  color: #444;
+}
+</style>`
+)}
+
 export default function define(runtime, observer) {
   const main = runtime.module();
   function toString() { return this.url; }
@@ -1052,5 +1088,6 @@ export default function define(runtime, observer) {
   main.variable(observer("lato")).define("lato", ["html"], _lato);
   main.variable(observer("getOrdinalSuffix")).define("getOrdinalSuffix", _getOrdinalSuffix);
   main.variable(observer("formatTRank")).define("formatTRank", ["getOrdinalSuffix"], _formatTRank);
+  main.variable(observer("customCSS")).define("customCSS", _customCSS);
   return main;
 }
