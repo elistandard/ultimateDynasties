@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Ultimate Dynasties</title>
-<link rel="stylesheet" type="text/css" href="./inspector.css">
-<body>
-<script type="module">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Dynasties</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="./inspector.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold text-gray-900">Ultimate Dynasties</h1>
+        </div>
+    </header>
 
-import define from "./index.js";
-import {Runtime, Library, Inspector} from "./runtime.js";
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-lg shadow p-6">
+            <!-- Observable Notebook will be inserted here -->
+            <div id="notebook-container"></div>
+        </div>
+    </main>
 
-const runtime = new Runtime();
-const main = runtime.module(define, Inspector.into(document.body));
+    <script type="module">
+        import define from "./index.js";
+        import {Runtime, Library, Inspector} from "./runtime.js";
 
-</script>
+        const runtime = new Runtime();
+        const main = runtime.module(define, Inspector.into(document.querySelector('#notebook-container')));
+    </script>
+</body>
+</html>

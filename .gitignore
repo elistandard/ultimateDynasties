@@ -1,0 +1,61 @@
+# ✅ macOS system files
+.DS_Store
+.DS_Store?
+
+# ✅ Node modules & dependencies
+**/node_modules/
+.pnp
+.pnp.js
+*.lock
+*.tmp
+
+# ✅ Build output
+dist/
+
+# ✅ Observable junk
+*.ipynb
+*.rtf
+
+# ✅ Local environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ✅ Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ✅ Editor settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ✅ Image files (optional—only if you don't want to track them)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.ico
+*.svg
+*.bmp
+*.tiff
+*.tif
+
+# Optional: ignore specific folders
+College Men’s/
+logos/
+logos copy (116)/
+
+# ✅ Only track essential files
+!index.html
+!vercel.json
+!README.md
+!public/
+!src/
