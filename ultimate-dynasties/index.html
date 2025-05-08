@@ -37,9 +37,14 @@
   <main class="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
     <div class="bg-white rounded-2xl shadow-md p-8 border border-gray-200">
       <!-- Observable Notebook will be inserted here -->
-      <div id="notebook-container">
-        <div class="text-gray-400 text-center py-12 animate-pulse">
-          Loading data visualization...
+      <div id="notebook-container"></div>
+      <!-- Collapsible Appendix Section -->
+      <div class="mt-8">
+        <button type="button" class="text-xs text-gray-400 hover:text-gray-600 focus:outline-none" onclick="const a=document.getElementById('appendix-content');a.classList.toggle('hidden');">
+          Appendix <span class="ml-1">▼</span>
+        </button>
+        <div id="appendix-content" class="hidden text-xs text-gray-400 mt-2 border-t border-gray-200 pt-4">
+          <!-- Appendix content will be rendered by Observable notebook -->
         </div>
       </div>
     </div>
