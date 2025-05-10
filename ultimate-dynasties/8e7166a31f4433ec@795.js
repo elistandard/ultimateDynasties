@@ -62,13 +62,16 @@ FileAttachment("college-rankings-combined.csv").csv({typed: true})
 )}
 
 function _divisionToggle2(Inputs){return(
-Inputs.radio(
-  ["College Men's", "College Women's"],
-  {
-    label: "Select Division",
-    value: "College Men's"
-  }
-)
+  Object.assign(
+    Inputs.radio(
+      ["College Men's", "College Women's"],
+      {
+        label: "Select Division",
+        value: "College Men's"
+      }
+    ),
+    {className: "cell-visible"}
+  )
 )}
 
 function _data(raw_data,divisionToggle2){return(
@@ -436,17 +439,20 @@ function _championshipChart(d3,raw_data,divisionToggle2,activeFont)
       .style("font-size", "14px")
       .text("National Championships");
 
-  return svg.node();
+  return Object.assign(svg.node(), {className: "cell-visible"});
 }
 
 function _teamSelector(Inputs,data){return(
-Inputs.select(
-  [...new Set(data.map(d => d.Team))].sort(),
-  {
-    label: "Select team to highlight",
-    value: "Vermont"
-  }
-)
+  Object.assign(
+    Inputs.select(
+      [...new Set(data.map(d => d.Team))].sort(),
+      {
+        label: "Select team to highlight",
+        value: "Vermont"
+      }
+    ),
+    {className: "cell-visible"}
+  )
 )}
 
 function _chart($0,teamSelector,colorData,d3,data,activeFont,formatTRank,Event)
@@ -822,7 +828,7 @@ function _chart($0,teamSelector,colorData,d3,data,activeFont,formatTRank,Event)
       .style("font-size", "12px"));
 
   // Return the SVG node to display in this cell
-  return svg.node();
+  return Object.assign(svg.node(), {className: "cell-visible"});
 }
 
 export default function define(runtime, observer) {
