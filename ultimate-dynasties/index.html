@@ -107,13 +107,30 @@
     <p>© 2025 Ultimate Dynasties — Powered by Observable + Vercel</p>
   </footer>
 
+  <!-- Add a container at the bottom for internal Observable cells -->
+  <div id="notebook-internals" style="margin-top: 4rem;"></div>
+
   <!-- Observable Runtime Script -->
   <script type="module">
     import define from "./8e7166a31f4433ec@795.js";
     import {Runtime, Library, Inspector} from "./runtime.js";
 
     const runtime = new Runtime();
-    runtime.module(define, Inspector.into(document.querySelector('#notebook-container')));
+    // Render only the interactive cells in the main container
+    runtime.module(define, name => {
+      // List of interactive cell names to show at the top
+      const mainCells = [
+        "viewof divisionToggle2",
+        "viewof teamSelector",
+        "viewof championshipChart",
+        "viewof chart"
+      ];
+      if (mainCells.includes(name)) {
+        return Inspector.into(document.querySelector('#notebook-container'))(name);
+      }
+      // Render all other cells at the bottom
+      return Inspector.into(document.querySelector('#notebook-internals'))(name);
+    });
   </script>
 
   <!-- Add custom styles for Observable cells -->
