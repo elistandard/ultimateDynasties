@@ -446,13 +446,30 @@ function _championshipChart(d3,raw_data,divisionToggle2,activeFont)
 
 function _teamSelector(Inputs,data){return(
   Object.assign(
-    Inputs.select(
-      [...new Set(data.map(d => d.Team))].sort(),
-      {
-        label: "Select team to highlight",
-        value: "Vermont"
-      }
-    ),
+    (() => {
+      const container = document.createElement('div');
+      container.style.width = '200px';
+      container.style.maxWidth = '100%';
+      container.style.margin = '0 auto';
+      const label = document.createElement('label');
+      label.textContent = 'Select team to highlight';
+      label.style.fontWeight = 'bold';
+      label.style.color = '#111';
+      label.style.marginBottom = '6px';
+      container.appendChild(label);
+      const select = Inputs.select(
+        [...new Set(data.map(d => d.Team))].sort(),
+        {
+          label: undefined,
+          value: "Vermont"
+        }
+      );
+      select.style.width = '200px';
+      select.style.border = '2px solid #111';
+      select.style.color = '#111';
+      container.appendChild(select);
+      return container;
+    })(),
     {className: "cell-visible"}
   )
 )}
