@@ -845,7 +845,7 @@ export default function define(runtime, observer) {
   main.variable(observer()).define("logoMapping", ["baseUrl"], _logoMapping);
   main.variable(observer()).define("colorData", _colorData);
   
-  // Visible interactive elements
+  // Visible controls
   main.variable(observer("viewof divisionToggle2")).define("viewof divisionToggle2", ["Inputs"], _divisionToggle2);
   main.variable(observer("divisionToggle2")).define("divisionToggle2", ["Generators", "viewof divisionToggle2"], (G, _) => G.input(_));
   main.variable(observer("viewof teamSelector")).define("viewof teamSelector", ["Inputs","data"], _teamSelector);

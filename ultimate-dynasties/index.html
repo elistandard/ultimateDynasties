@@ -66,8 +66,11 @@
         <h2 class="text-2xl font-bold text-gray-800 mt-12 mb-6">Let's start by looking at winners. Who has the most rings?</h2>
       </div>
 
-      <!-- Observable Notebook will be inserted here -->
-      <div id="notebook-container"></div>
+      <!-- Observable Controls -->
+      <div id="notebook-controls"></div>
+
+      <!-- Observable Charts -->
+      <div id="notebook-charts"></div>
 
       <!-- Analysis Section -->
       <div class="prose prose-lg max-w-none mt-12">
@@ -117,7 +120,8 @@
           Appendix <span class="ml-1">▼</span>
         </button>
         <div id="appendix-content" class="hidden text-sm text-gray-400 mt-4 border-t border-gray-200 pt-4">
-          <!-- Appendix content will be rendered by Observable notebook -->
+          <!-- Observable Implementation Details -->
+          <div id="notebook-details"></div>
         </div>
       </div>
     </div>
@@ -134,7 +138,24 @@
     import {Runtime, Library, Inspector} from "./runtime.js";
 
     const runtime = new Runtime();
-    runtime.module(define, Inspector.into(document.querySelector('#notebook-container')));
+    
+    // Create separate inspectors for controls, charts, and implementation details
+    const controlsInspector = Inspector.into(document.querySelector('#notebook-controls'));
+    const chartsInspector = Inspector.into(document.querySelector('#notebook-charts'));
+    const detailsInspector = Inspector.into(document.querySelector('#notebook-details'));
+    
+    // Custom inspector that routes different cells to different containers
+    const inspector = (cell) => {
+      if (cell.name && (cell.name.startsWith("viewof divisionToggle") || cell.name.startsWith("viewof teamSelector"))) {
+        return controlsInspector(cell);
+      } else if (cell.name && (cell.name.startsWith("viewof chart") || cell.name.startsWith("viewof championshipChart"))) {
+        return chartsInspector(cell);
+      } else {
+        return detailsInspector(cell);
+      }
+    };
+
+    runtime.module(define, inspector);
   </script>
 </body>
 </html>
