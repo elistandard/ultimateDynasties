@@ -439,7 +439,9 @@ function _championshipChart(d3,raw_data,divisionToggle2,activeFont)
       .style("font-size", "14px")
       .text("National Championships");
 
-  return Object.assign(svg.node(), {className: "cell-visible"});
+  const node = svg.node();
+  node.setAttribute("class", "cell-visible");
+  return node;
 }
 
 function _teamSelector(Inputs,data){return(
@@ -828,7 +830,9 @@ function _chart($0,teamSelector,colorData,d3,data,activeFont,formatTRank,Event)
       .style("font-size", "12px"));
 
   // Return the SVG node to display in this cell
-  return Object.assign(svg.node(), {className: "cell-visible"});
+  const node = svg.node();
+  node.setAttribute("class", "cell-visible");
+  return node;
 }
 
 export default function define(runtime, observer) {
