@@ -1,7 +1,7 @@
 // Add this at the top of the file to inject global CSS for selectors and buttons
 function _css(md){return md`<style>
 input[type="radio"] {
-  accent-color: red;
+  accent-color: #111;
   margin-right: 8px;
   width: 18px;
   height: 18px;
@@ -10,15 +10,15 @@ select {
   font-size: 16px;
   padding: 7px 12px;
   border-radius: 6px;
-  border: 2px solid red;
+  border: 2px solid #111;
   margin-right: 10px;
   background: #fff;
-  color: red;
-  box-shadow: 0 1px 2px rgba(255,0,0,0.08);
+  color: #111;
+  box-shadow: 0 1px 2px rgba(31,31,31,0.08);
 }
 label {
   font-weight: bold;
-  color: red;
+  color: #111;
   font-size: 16px;
   margin-bottom: 8px;
   display: block;

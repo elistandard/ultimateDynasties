@@ -124,11 +124,11 @@
     const runtime = new Runtime();
     // Render only the interactive cells in the main container
     runtime.module(define, name => {
-      // List of interactive cell names to show at the top
+      // List of interactive cell names to show at the top, in desired order
       const mainCells = [
         "viewof divisionToggle2",
-        "viewof teamSelector",
         "viewof championshipChart",
+        "viewof teamSelector",
         "viewof chart"
       ];
       if (mainCells.includes(name)) {
