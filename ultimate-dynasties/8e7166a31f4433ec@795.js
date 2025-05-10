@@ -833,22 +833,25 @@ export default function define(runtime, observer) {
   ]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   
-  // Define observers in dependency order
-  main.variable(observer("activeFont")).define("activeFont", _activeFont);
-  main.variable(observer("lato")).define("lato", ["html"], _lato);
-  main.variable(observer("raw_data")).define("raw_data", ["FileAttachment"], _raw_data);
+  // Hidden implementation details
+  main.variable(observer()).define("css", ["md"], _css);
+  main.variable(observer()).define("activeFont", _activeFont);
+  main.variable(observer()).define("lato", ["html"], _lato);
+  main.variable(observer()).define("raw_data", ["FileAttachment"], _raw_data);
+  main.variable(observer()).define("data", ["raw_data","divisionToggle2"], _data);
+  main.variable(observer()).define("getOrdinalSuffix", _getOrdinalSuffix);
+  main.variable(observer()).define("formatTRank", ["getOrdinalSuffix"], _formatTRank);
+  main.variable(observer()).define("baseUrl", _baseUrl);
+  main.variable(observer()).define("logoMapping", ["baseUrl"], _logoMapping);
+  main.variable(observer()).define("colorData", _colorData);
+  
+  // Visible interactive elements
   main.variable(observer("viewof divisionToggle2")).define("viewof divisionToggle2", ["Inputs"], _divisionToggle2);
   main.variable(observer("divisionToggle2")).define("divisionToggle2", ["Generators", "viewof divisionToggle2"], (G, _) => G.input(_));
-  main.variable(observer("data")).define("data", ["raw_data","divisionToggle2"], _data);
-  main.variable(observer("getOrdinalSuffix")).define("getOrdinalSuffix", _getOrdinalSuffix);
-  main.variable(observer("formatTRank")).define("formatTRank", ["getOrdinalSuffix"], _formatTRank);
-  main.variable(observer("baseUrl")).define("baseUrl", _baseUrl);
-  main.variable(observer("logoMapping")).define("logoMapping", ["baseUrl"], _logoMapping);
-  main.variable(observer("colorData")).define("colorData", _colorData);
-  main.variable(observer("viewof championshipChart")).define("viewof championshipChart", ["d3","raw_data","divisionToggle2","activeFont"], _championshipChart);
-  main.variable(observer("championshipChart")).define("championshipChart", ["Generators", "viewof championshipChart"], (G, _) => G.input(_));
   main.variable(observer("viewof teamSelector")).define("viewof teamSelector", ["Inputs","data"], _teamSelector);
   main.variable(observer("teamSelector")).define("teamSelector", ["Generators", "viewof teamSelector"], (G, _) => G.input(_));
+  main.variable(observer("viewof championshipChart")).define("viewof championshipChart", ["d3","raw_data","divisionToggle2","activeFont"], _championshipChart);
+  main.variable(observer("championshipChart")).define("championshipChart", ["Generators", "viewof championshipChart"], (G, _) => G.input(_));
   main.variable(observer("viewof chart")).define("viewof chart", ["viewof teamSelector","teamSelector","colorData","d3","data","activeFont","formatTRank","Event"], _chart);
   main.variable(observer("chart")).define("chart", ["Generators", "viewof chart"], (G, _) => G.input(_));
   
