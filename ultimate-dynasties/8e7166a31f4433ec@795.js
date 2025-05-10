@@ -41,42 +41,12 @@ button:hover, input[type="button"]:hover {
 }
 </style>`}
 
-function _1(md){return(
-md`# Ultimate Dynasties
-### A Visual History of College Ultimate Championships`
-)}
-
-function _2(md){return(
-md`## Introduction
-**North Carolina, Cartleton, UCSB, Wisconsin.** We've all heard about these dynasties in the college ultimate world.
-
-But which teams have been good forever? Who's made nationals the most but never won a championship? Where should my kid apply to college if they want to go to nationals next year??`
-)}
-
-function _3(md){return(
-md`1984-2023 results: https://collegechampionships.usaultimate.org/d1-men/history/
-<br />2024 results: https://play.usaultimate.org/events/2024-USA-Ultimate-D-1-College-Championships/`
-)}
-
-function _4(md){return(
-md`The above websites have comprehensive and easy to read college championship results. We can click on any year one at a time to see where men's and women's college teams placed.`
-)}
-
-function _5(md){return(
-md`But this website doesn't allow you to see the success of teams over time. Sure we can memorize how a team placed in a certain year and open up 10 tabs to see how they did before and after, but what if we want to see the rise and fall of teams since 1984 up until the present?`
-)}
-
-function _6(md){return(
-md`Let's start by looking at winners. Who has the most rings?`
-)}
-
 function _divisionToggle2(Inputs){return(
 Inputs.radio(
   ["College Men's", "College Women's"],
   {
-    label: "## Select Division",
-    value: "College Men's",
-    disabled: false
+    label: "Select Division",
+    value: "College Men's"
   }
 )
 )}
@@ -173,162 +143,24 @@ function _championshipChart(d3,raw_data,divisionToggle2,activeFont)
   return svg.node();
 }
 
-
-function _9(md){return(
-md`Okay, so for Men's we have UCSB, North Carolina, Brown, Carleton, and Wisconsin. For Women's we have Stanford, UCSB, UNC, Oregon, and Dartmouth. Great, but everyone knows these names already. We want to know who made nationals in the 80s? Who has won back to back? Who has won a championship after getting second the year before?`
-)}
-
-function _10(md){return(
-md`Let's scrape the rankings data from these websites and visualize it.`
-)}
-
 function _divisionToggle(Inputs){return(
-  Inputs.radio(
-    ["College Men's", "College Women's"],
-    {
-      label: "Select Division",
-      value: "College Men's"
-    }
-  )
+Inputs.radio(
+  ["College Men's", "College Women's"],
+  {
+    label: "Select Division",
+    value: "College Men's"
+  }
+)
 )}
 
 function _teamSelector(Inputs,data){return(
 Inputs.select(
   [...new Set(data.map(d => d.Team))].sort(),
   {
-    label: "## Select team to highlight",
-    description: "Click on a circle below to select a team",
-    value: "Vermont",
-    width: 400
+    label: "Select team to highlight",
+    value: "Vermont"
   }
 )
-)}
-
-function _13(html,activeFont,data,teamSelector,logoMapping){return(
-html`<div style="font-family: ${activeFont}; padding: 10px; background: #ffffff; border-radius: 5px; font-size: 14px;">
-  ${(() => {
-    // -----------------------------------------------------
-    // 1) Get this team's data
-    // -----------------------------------------------------
-    const teamData = data
-      .filter(d => d.Team === teamSelector)
-      .sort((a, b) => a.Year - b.Year);
-    
-    if (teamData.length === 0) {
-      return "No data available for selected team";
-    }
-    
-    // -----------------------------------------------------
-    // 2) Most Recent Finish
-    const mostRecent = teamData[teamData.length - 1];
-    const suffix = (rank) => {
-      // returns "st", "nd", "rd", or "th"
-      if (rank === 1) return "st";
-      if (rank === 2) return "nd";
-      if (rank === 3) return "rd";
-      return "th";
-    };
-    const tiedText = String(mostRecent.T_Rank).startsWith('T') ? 'Tied for ' : '';
-    const rankNumber = parseInt(String(mostRecent.T_Rank).replace('T', ''));
-    const mostRecentText = `${tiedText}${rankNumber}${suffix(rankNumber)} (${mostRecent.Year})`;
-    
-    // 3) Best (Highest) Finish
-    const getBestRank = (rank) => {
-      if (rank === "?" || rank === undefined || rank === null) return Infinity;
-      const rankStr = String(rank);
-      return rankStr.startsWith('T') ? parseInt(rankStr.slice(1)) : parseInt(rankStr);
-    };
-    
-    const validRanks = teamData
-      .map(d => getBestRank(d.T_Rank))
-      .filter(rank => rank !== Infinity);
-    
-    const bestRank = Math.min(...validRanks);
-    const bestFinishYears = teamData
-      .filter(d => getBestRank(d.T_Rank) === bestRank)
-      .map(d => d.Year)
-      .join(", ");
-    const tiedBestText = teamData.some(d => 
-      getBestRank(d.T_Rank) === bestRank && 
-      String(d.T_Rank).startsWith('T')
-    ) ? 'Tied for ' : '';
-    const bestFinishText = `${tiedBestText}${bestRank}${suffix(bestRank)} (${bestFinishYears})`;
-    
-    // -----------------------------------------------------
-    // 4) Count of National Championships
-    // -----------------------------------------------------
-    const championshipRecords = teamData.filter(d => d.Rank === 1);
-    const championships = championshipRecords.length;
-    const championshipYears = championshipRecords.map(d => d.Year).join(", ");
-    const championshipText =
-      `${championships}${championships > 0 ? ` (${championshipYears})` : ""}`;
-    
-    // -----------------------------------------------------
-    // 5) Longest Streak Calculation (Skipping 2020)
-    // -----------------------------------------------------
-    let longestStreak = 1;
-    let currentStreak = 1;
-    let longestStreakStart = teamData[0].Year;
-    let longestStreakEnd = teamData[0].Year;
-    let tempStreakStart = teamData[0].Year;
-
-    for (let i = 1; i < teamData.length; i++) {
-      const prevYear = teamData[i - 1].Year;
-      const currYear = teamData[i].Year;
-
-      // Treat 2019 -> 2021 as consecutive
-      const isConsecutive =
-        (currYear === prevYear + 1) ||
-        (prevYear === 2019 && currYear === 2021);
-
-      if (isConsecutive) {
-        currentStreak++;
-      } else {
-        currentStreak = 1;
-        tempStreakStart = currYear;
-      }
-
-      if (currentStreak > longestStreak) {
-        longestStreak = currentStreak;
-        longestStreakStart = tempStreakStart;
-        longestStreakEnd = currYear;
-      }
-    }
-
-    let streakDisplay;
-    if (longestStreak > 1) {
-      streakDisplay = `${longestStreak} years (${longestStreakStart}-${longestStreakEnd})`;
-    } else {
-      streakDisplay = "No multi-year nationals streaks";
-    }
-    
-    // -----------------------------------------------------
-    // 6) Return the final HTML
-    // -----------------------------------------------------
-    return html`
-      <!-- Team header with logo and name -->
-      <div style="display: flex; align-items: center; margin-bottom: 12px;">
-        <img 
-          src="${logoMapping.find(d => d.team === teamSelector)?.url}" 
-          style="height: 50px; width: 50px; object-fit: contain; margin-right: 10px;"
-        />
-        <div style="font-weight: bold; font-size: 20px;">${teamSelector}</div>
-      </div>
-
-      <!-- Stats in one line, each data point in bold -->
-      <div style="font-size: 13px;">
-        Most recent nationals finish: 
-        <span style="font-weight:bold;">${mostRecentText}</span> &nbsp;|&nbsp; 
-        Highest nationals finish: 
-        <span style="font-weight:bold;">${bestFinishText}</span> &nbsp;|&nbsp; 
-        Longest nationals streak: 
-        <span style="font-weight:bold;">${streakDisplay}</span> &nbsp;|&nbsp;
-        National championships won: 
-        <span style="font-weight:bold;">${championshipText}</span>
-      </div>
-    `;
-  })()}
-</div>`
 )}
 
 function _chart($0,teamSelector,colorData,d3,data,activeFont,formatTRank,Event)
@@ -719,53 +551,6 @@ function _chart($0,teamSelector,colorData,d3,data,activeFont,formatTRank,Event)
   return svg.node();
 }
 
-
-function _15(md){return(
-md`# Men's
-Starting with Men's. 
-- UCSB won back-to-back-to-back twice, and you can see their slow climb from third in 1986 to second in 1987 to winning for the first time in 1988. But why didn't they make nationals in 1992? Only to lose in finals in 1993?
-<br /><br />
-- Brown has a clear legacy in the early 2000s, with wins in 2000 and 2005, but a huge break from 2008 to 2017 before gaining dominance again in 2019 and 2024. 
- <br /><br />
-- North Carolina obviously another major legacy, making nationals every year since 2012. But they were late to the game, not making it for the first time until 1998, and missing nationals 7 years in the mid 2000s. 
-<br /><br />
-Other notable teams include
-- Texas with a history of mediocrity,
-- Oregon only winning once in 1992,
-- UMass getting second after missing nationals three years in a row,
-- Michigan never placing above third,
-- Florida dropping from first to dead last in 2010-2011,
-- Wisconsin getting 5th four years in a row,
-- East Carolina never making nationals after 1998,
-- Notre Dame making it once in 2000,
-- Cal Poly's recent success post 2016.`
-)}
-
-function _16(md){return(
-md`# Women's
-Now for Women's. 
-- Stanford is far and away the best women's team ever with eight championships. They even went back-to-back-to-back twice. They made nationals for the first time in 1995, lost in finals twice, won nationals three years in a row, and then didn't make nationals in 2000, only to go on another crazy seven year streak until they don't make it again in 2008. 
-<br /><br />
-- UCSB has also been strong, but with more concentrated spurts of success in 1988-1991 and 2007-2011. They also haven't missed a nationals since 2017. 
-<br /><br />
-- Carleton has only missed four nationals total in the history of the sport, but only have one national championship in 2000.
-<br /><br />
-- UNC's four year win streak is unprecendented, as they're the only Men or Women's team to win four years in a row.
-<br /><br />
-Other notable women's teams include:
-- UC Davis winning nationals in 2004 after not making it the three years prior and not making it again until two years after,
-- UBC's slow climb to the top since 2006 and inability to make it past semis since their win in 2008,
-- Oregon's dominance in the 2010s,
-- Dartmouth's back to back victory's in 2017 and 2018 followed by a loss to UCSD in 2019,
-- Vermont making nationals for the first time since 1984 in 2021,
-- Whitman's three year ride from last to 5th to 2nd in 2016, and
-- UCLA making nationals for the first time ever in 2006, only to lose in finals and then never make it past semis.`
-)}
-
-function _17(md){return(
-md`### Appendix`
-)}
-
 function _raw_data(FileAttachment){return(
 FileAttachment("college-rankings-combined.csv").csv({typed: true})
 )}
@@ -1023,8 +808,7 @@ html`<style>
 text {
   font: 14px/1.4 "Lato", sans-serif;
 }
-</style>
-`
+</style>`
 )}
 
 function _getOrdinalSuffix(){return(
@@ -1070,18 +854,10 @@ export default function define(runtime, observer) {
     ["college-rankings-combined.csv", {url: new URL("./files/9500801df26a43bf47b50f89e1432a8e8ed7763f3b4d71c8844ecb9a7ef7d753daedc5c13245b5828702290eee489122168faa87dd28fc8d76267817959b2a23.csv", import.meta.url), mimeType: "text/csv", toString}]
   ]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
-  main.variable(observer()).define(["md"], _1);
-  main.variable(observer()).define(["md"], _2);
-  main.variable(observer()).define(["md"], _3);
-  main.variable(observer()).define(["md"], _4);
-  main.variable(observer()).define(["md"], _5);
-  main.variable(observer()).define(["md"], _6);
   main.variable(observer("viewof divisionToggle2")).define("viewof divisionToggle2", ["Inputs"], _divisionToggle2);
   main.variable(observer("divisionToggle2")).define("divisionToggle2", ["Generators", "viewof divisionToggle2"], (G, _) => G.input(_));
   main.variable(observer("viewof championshipChart")).define("viewof championshipChart", ["d3","raw_data","divisionToggle2","activeFont"], _championshipChart);
   main.variable(observer("championshipChart")).define("championshipChart", ["Generators", "viewof championshipChart"], (G, _) => G.input(_));
-  main.variable(observer()).define(["md"], _9);
-  main.variable(observer()).define(["md"], _10);
   main.variable(observer("viewof divisionToggle")).define("viewof divisionToggle", ["Inputs"], _divisionToggle);
   main.variable(observer("divisionToggle")).define("divisionToggle", ["Generators", "viewof divisionToggle"], (G, _) => G.input(_));
   main.variable(observer("viewof teamSelector")).define("viewof teamSelector", ["Inputs","data"], _teamSelector);
@@ -1089,9 +865,6 @@ export default function define(runtime, observer) {
   main.variable(observer()).define(["html","activeFont","data","teamSelector","logoMapping"], _13);
   main.variable(observer("viewof chart")).define("viewof chart", ["viewof teamSelector","teamSelector","colorData","d3","data","activeFont","formatTRank","Event"], _chart);
   main.variable(observer("chart")).define("chart", ["Generators", "viewof chart"], (G, _) => G.input(_));
-  main.variable(observer()).define(["md"], _15);
-  main.variable(observer()).define(["md"], _16);
-  main.variable(observer()).define(["md"], _17);
   main.variable(observer("raw_data")).define("raw_data", ["FileAttachment"], _raw_data);
   main.variable(observer("data")).define("data", ["raw_data","divisionToggle"], _data);
   main.variable(observer("baseUrl")).define("baseUrl", _baseUrl);
