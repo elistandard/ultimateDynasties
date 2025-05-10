@@ -118,21 +118,26 @@
 
   <!-- Add custom styles for Observable cells -->
   <style>
-    /* Hide all Observable cells by default */
+    /* Show all Observable cells by default */
     .observablehq {
-      display: none;
-    }
-    
-    /* Show only the interactive elements */
-    .observablehq--inspect:has(input[type="radio"]),
-    .observablehq--inspect:has(select),
-    .observablehq--inspect:has(svg) {
       display: block;
     }
     
-    /* Show all cells in the appendix */
-    #appendix-content .observablehq {
-      display: block;
+    /* Ensure proper spacing and layout */
+    .observablehq--inspect {
+      margin: 1rem 0;
+    }
+    
+    /* Style the controls */
+    .observablehq--inspect input[type="radio"],
+    .observablehq--inspect select {
+      margin: 0.5rem 0;
+    }
+    
+    /* Ensure SVG charts are visible and properly sized */
+    .observablehq--inspect svg {
+      max-width: 100%;
+      height: auto;
     }
   </style>
 </body>
