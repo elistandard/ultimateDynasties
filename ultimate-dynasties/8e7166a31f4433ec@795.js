@@ -41,6 +41,26 @@ button:hover, input[type="button"]:hover {
 }
 </style>`}
 
+// First, define the font and styling
+function _activeFont(){return(
+"lato"
+)}
+
+function _lato(html){return(
+html`<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+
+text {
+  font: 14px/1.4 "Lato", sans-serif;
+}
+</style>`
+)}
+
+// Then define the data and its dependencies
+function _raw_data(FileAttachment){return(
+FileAttachment("college-rankings-combined.csv").csv({typed: true})
+)}
+
 function _divisionToggle2(Inputs){return(
 Inputs.radio(
   ["College Men's", "College Women's"],
@@ -51,6 +71,282 @@ Inputs.radio(
 )
 )}
 
+function _data(raw_data,divisionToggle2){return(
+raw_data.filter(d => d.Division === divisionToggle2)
+)}
+
+// Supporting functions for formatting
+function _getOrdinalSuffix(){return(
+function getOrdinalSuffix(num) {
+  const n = parseInt(num);
+  if (n > 3 && n < 21) return 'th';
+  switch (n % 10) {
+    case 1:  return "st";
+    case 2:  return "nd";
+    case 3:  return "rd";
+    default: return "th";
+  }
+}
+)}
+
+function _formatTRank(getOrdinalSuffix){return(
+function formatTRank(tRank) {
+  const rankStr = (tRank == null) ? "" : String(tRank).trim();
+  if (!rankStr) {
+    return "No rank data";
+  } else if (rankStr === "?") {
+    return "Rank unknown";
+  } else if (rankStr.startsWith("T")) {
+    const numPart = rankStr.slice(1); 
+    return `Tied for ${numPart}${getOrdinalSuffix(numPart)}`;
+  } else if (/^\d+$/.test(rankStr)) {
+    return `${rankStr}${getOrdinalSuffix(rankStr)}`;
+  } else {
+    return rankStr;
+  }
+}
+)}
+
+// Logo and color data
+function _baseUrl(){return(
+"https://github.com/elistandard/ultimateDynasties/blob/main/college-mens/college-mens-logos/"
+)}
+
+function _logoMapping(baseUrl){return(
+[
+  {team: 'Alabama-Huntsville', url: baseUrl + 'Alabama-Huntsville.jpeg?raw=true'},
+  {team: 'Arizona', url: baseUrl + 'Arizona.png?raw=true'},
+  {team: 'Auburn', url: baseUrl + 'Auburn.jpg?raw=true'},
+  {team: 'BYU', url: baseUrl + 'BYU.png?raw=true'},
+  {team: 'Boston College', url: baseUrl + 'Boston College.gif?raw=true'},
+  {team: 'British Columbia', url: baseUrl + 'British Columbia.jpg?raw=true'},
+  {team: 'Brown', url: baseUrl + 'Brown.jpeg?raw=true'},
+  {team: 'Cal Poly SLO', url: baseUrl + 'Cal Poly SLO.jpg?raw=true'},
+  {team: 'UC San Diego', url: baseUrl + 'UC San Diego.jpg?raw=true'},
+  {team: 'UC Santa Barbara', url: baseUrl + 'UC Santa Barbara.jpg?raw=true'},
+  {team: 'UC Santa Cruz', url: baseUrl + 'UC Santa Cruz.jpg?raw=true'},
+  {team: 'California', url: baseUrl + 'California.jpg?raw=true'},
+  {team: 'Carleton', url: baseUrl + 'Carleton.png?raw=true'},
+  {team: 'Carnegie Mellon', url: baseUrl + 'Carnegie Mellon.png?raw=true'},
+  {team: 'Case Western Reserve', url: baseUrl + 'Case Western Reserve.png?raw=true'},
+  {team: 'Central Florida', url: baseUrl + 'Central Florida.png?raw=true'},
+  {team: 'Chabot Community College', url: baseUrl + 'Chabot Community College.jpeg?raw=true'},
+  {team: 'Cincinnati', url: baseUrl + 'Cincinnati.png?raw=true'},
+  {team: 'Colorado College', url: baseUrl + 'Colorado College.jpg?raw=true'},
+  {team: 'Colorado State', url: baseUrl + 'Colorado State.png?raw=true'},
+  {team: 'Colorado', url: baseUrl + 'Colorado.png?raw=true'},
+  {team: 'Connecticut', url: baseUrl + 'Connecticut.jpg?raw=true'},
+  {team: 'Cornell', url: baseUrl + 'Cornell.jpg?raw=true'},
+  {team: 'Columbia', url: baseUrl + 'Columbia.png?raw=true'},
+  {team: 'Dartmouth', url: baseUrl + 'Dartmouth.png?raw=true'},
+  {team: 'Delaware', url: baseUrl + 'Delaware.jpeg?raw=true'},
+  {team: 'Duke', url: baseUrl + 'Duke.jpg?raw=true'},
+  {team: 'East Carolina', url: baseUrl + 'East Carolina.jpeg?raw=true'},
+  {team: 'Eastern Michigan', url: baseUrl + 'Eastern Michigan.jpg?raw=true'},
+  {team: 'Florida State', url: baseUrl + 'Florida State.gif?raw=true'},
+  {team: 'Florida', url: baseUrl + 'Florida.png?raw=true'},
+  {team: 'George Washington', url: baseUrl + 'George Washington.jpeg?raw=true'},
+  {team: 'Georgetown', url: baseUrl + 'Georgetown.png?raw=true'},
+  {team: 'Georgia Tech', url: baseUrl + 'Georgia Tech.jpeg?raw=true'},
+  {team: 'Georgia', url: baseUrl + 'Georgia.jpeg?raw=true'},
+  {team: 'Glassboro', url: baseUrl + 'Glassboro State.jpg?raw=true'},
+  {team: 'Harvard', url: baseUrl + 'Harvard.jpg?raw=true'},
+  {team: 'Illinois', url: baseUrl + 'Illinois.jpg?raw=true'},
+  {team: 'Indiana', url: baseUrl + 'Indiana.png?raw=true'},
+  {team: 'Iowa State', url: baseUrl + 'Iowa State.png?raw=true'},
+  {team: 'Iowa', url: baseUrl + 'Iowa.jpeg?raw=true'},
+  {team: 'James Madison', url: baseUrl + 'James Madison.jpeg?raw=true'},
+  {team: 'Kansas', url: baseUrl + 'Kansas.jpeg?raw=true'},
+  {team: 'LSU', url: baseUrl + 'LSU.jpg?raw=true'},
+  {team: 'Las Positas College', url: baseUrl + 'Las Positas.png?raw=true'},
+  {team: 'Luther', url: baseUrl + 'Luther.png?raw=true'},
+  {team: 'Maryland', url: baseUrl + 'Maryland.png?raw=true'},
+  {team: 'Massachusetts', url: baseUrl + 'Massachusetts.jpeg?raw=true'},
+  {team: 'McGill', url: baseUrl + 'McGill.jpg?raw=true'},
+  {team: 'Michigan State', url: baseUrl + 'Michigan State.jpg?raw=true'},
+  {team: 'Michigan', url: baseUrl + 'Michigan.png?raw=true'},
+  {team: 'Middlebury', url: baseUrl + 'Middlebury.webp?raw=true'},
+  {team: 'Minnesota-Duluth', url: baseUrl + 'Minnesota-Duluth.jpeg?raw=true'},
+  {team: 'Minnesota', url: baseUrl + 'Minnesota.png?raw=true'},
+  {team: 'Missouri', url: baseUrl + 'Missouri.png?raw=true'},
+  {team: 'MIT', url: baseUrl + 'MIT.jpg?raw=true'},
+  {team: 'NC State', url: baseUrl + 'NC State.jpg?raw=true'},
+  {team: 'UNC Wilmington', url: baseUrl + 'UNC Wilmington.jpg?raw=true'},
+  {team: 'North Carolina', url: baseUrl + 'North Carolina.png?raw=true'},
+  {team: 'North Texas', url: baseUrl + 'North Texas.jpg?raw=true'},
+  {team: 'Northeastern', url: baseUrl + 'Northeastern.jpg?raw=true'},
+  {team: 'Northwestern', url: baseUrl + 'Northwestern.png?raw=true'},
+  {team: 'Notre Dame', url: baseUrl + 'Notre Dame.jpg?raw=true'},
+  {team: 'Oberlin', url: baseUrl + 'Oberlin.png?raw=true'},
+  {team: 'Ohio State', url: baseUrl + 'Ohio State.jpg?raw=true'},
+  {team: 'Ohio', url: baseUrl + 'Ohio.jpeg?raw=true'},
+  {team: 'Oregon State', url: baseUrl + 'Oregon State.png?raw=true'},
+  {team: 'Oregon', url: baseUrl + 'Oregon.png?raw=true'},
+  {team: 'Ottawa', url: baseUrl + 'Ottawa.png?raw=true'},
+  {team: 'Penn State', url: baseUrl + 'Penn State.jpg?raw=true'},
+  {team: 'Penn', url: baseUrl + 'Penn.png?raw=true'},
+  {team: 'Pittsburgh', url: baseUrl + 'Pittsburgh.png?raw=true'},
+  {team: 'Princeton', url: baseUrl + 'Princeton.jpeg?raw=true'},
+  {team: 'Purdue', url: baseUrl + 'Purdue.jpeg?raw=true'},
+  {team: "Queen's", url: baseUrl + "Queen's.png?raw=true"},
+  {team: 'Rice', url: baseUrl + 'Rice.webp?raw=true'},
+  {team: 'Rutgers', url: baseUrl + 'Rutgers.jpeg?raw=true'},
+  {team: 'SUNY Albany', url: baseUrl + 'SUNY Albany.jpeg?raw=true'},
+  {team: 'SUNY Binghamton', url: baseUrl + 'SUNY Binghamton.jpeg?raw=true'},
+  {team: 'SUNY Purchase', url: baseUrl + 'SUNY Purchase.png?raw=true'},
+  {team: 'SW Missouri State', url: baseUrl + 'SW Missouri State.png?raw=true'},
+  {team: 'Saint Louis', url: baseUrl + 'Saint Louis.jpeg?raw=true'},
+  {team: 'Salisbury', url: baseUrl + 'Salisbury.jpeg?raw=true'},
+  {team: 'Southern California', url: baseUrl + 'Southern California.jpg?raw=true'},
+  {team: 'Stanford', url: baseUrl + 'Stanford.png?raw=true'},
+  {team: 'Swarthmore', url: baseUrl + 'Swarthmore.png?raw=true'},
+  {team: 'Syracuse', url: baseUrl + 'Syracuse.png?raw=true'},
+  {team: 'Texas A&M', url: baseUrl + 'Texas A&M.jpg?raw=true'},
+  {team: 'Texas State', url: baseUrl + 'Texas State.jpg?raw=true'},
+  {team: 'Texas', url: baseUrl + 'Texas.jpg?raw=true'},
+  {team: 'Tufts', url: baseUrl + 'Tufts.png?raw=true'},
+  {team: 'Tulane', url: baseUrl + 'Tulane.jpeg?raw=true'},
+  {team: 'UC Davis', url: baseUrl + 'UC Davis.jpeg?raw=true'},
+  {team: 'UCLA', url: baseUrl + 'UCLA.jpg?raw=true'},
+  {team: 'UT Dallas', url: baseUrl + 'UT Dallas.png?raw=true'},
+  {team: 'Utah State', url: baseUrl + 'Utah State.jpeg?raw=true'},
+  {team: 'Utah', url: baseUrl + 'Utah.jpg?raw=true'},
+  {team: 'Vermont', url: baseUrl + 'Vermont.jpg?raw=true'},
+  {team: 'Victoria', url: baseUrl + 'Victoria.jpg?raw=true'},
+  {team: 'Virginia', url: baseUrl + 'Virginia.jpg?raw=true'},
+  {team: 'Virginia Tech', url: baseUrl + 'Virginia Tech.jpeg?raw=true'},
+  {team: 'WashU', url: baseUrl + 'WashU.jpg?raw=true'},
+  {team: 'Washington', url: baseUrl + 'Washington.jpg?raw=true'},
+  {team: 'Wesleyan', url: baseUrl + 'Wesleyan.png?raw=true'},
+  {team: 'Western Washington', url: baseUrl + 'Western Washington.jpg?raw=true'},
+  {team: 'Whitman', url: baseUrl + 'Whitman.jpg?raw=true'},
+  {team: 'Williams', url: baseUrl + 'Williams.jpg?raw=true'},
+  {team: 'William & Mary', url: baseUrl + 'William & Mary.jpg?raw=true'},
+  {team: 'Wisconsin', url: baseUrl + 'Wisconsin.jpg?raw=true'},
+  {team: 'Wisconsin-Milwaukee', url: baseUrl + 'Wisconsin-Milwaukee.jpg?raw=true'},
+  {team: 'Winona State', url: baseUrl + 'Winona State.jpg?raw=true'},
+  {team: 'Yale', url: baseUrl + 'Yale.png?raw=true'}
+]
+)}
+
+function _colorData(){return(
+[
+  { team: "Alabama-Huntsville", color: "#1f51f3" },
+  { team: "Arizona", color: "#D94B3E" },
+  { team: "Auburn", color: "#f0812a" },
+  { team: "BYU", color: "#FFD700" },
+  { team: "Boston College", color: "#bc0032" },
+  { team: "British Columbia", color: "#CDA900" },
+  { team: "Brown", color: "#964B00" },
+  { team: "Cal Poly SLO", color: "#68b0a7" },
+  { team: "California", color: "#1D315E" },
+  { team: "Carleton", color: "#c1172a" },
+  { team: "Carnegie Mellon", color: "#64AE46" },
+  { team: "Case Western Reserve", color: "#2AC1DF" },
+  { team: "Central Florida", color: "#FEB934" },
+  { team: "Chabot Community College", color: "#d6b002" },
+  { team: "Cincinnati", color: "#FF0000" },
+  { team: "Colorado", color: "#fbd42d" },
+  { team: "Colorado State", color: "#008000" },
+  { team: "Columbia", color: "#00588c" },
+  { team: "Connecticut", color: "#9D2235" },
+  { team: "Cornell", color: "#b31b1b" },
+  { team: "Dartmouth", color: "#003E10" },
+  { team: "Delaware", color: "#2A4395" },
+  { team: "Duke", color: "#0E1D55" },
+  { team: "East Carolina", color: "#6f4c7a" },
+  { team: "Eastern Michigan", color: "#BE5628" },
+  { team: "Florida", color: "#fa4616" },
+  { team: "Florida State", color: "#972634" },
+  { team: "Georgetown", color: "#052e65" },
+  { team: "George Washington", color: "#f2c744" },
+  { team: "Glassboro", color: "#3C1400" },
+  { team: "Georgia", color: "#9f0000" },
+  { team: "Georgia Tech", color: "#1f59a3" },
+  { team: "Harvard", color: "#FF0000" },
+  { team: "Illinois", color: "#EA462A" },
+  { team: "Indiana", color: "#ba141a" },
+  { team: "Iowa", color: "#e8c03c" },
+  { team: "Iowa State", color: "#E01009" },
+  { team: "James Madison", color: "#FF6600" },
+  { team: "Kansas", color: "#EC2222" },
+  { team: "Las Positas College", color: "#C90803" },
+  { team: "LSU", color: "#FFA500" },
+  { team: "Luther", color: "#1356a3" },
+  { team: "Maryland", color: "#700b20" },
+  { team: "Massachusetts", color: "#990033" },
+  { team: "McGill", color: "#0000FF" },
+  { team: "Michigan", color: "#1D3088" },
+  { team: "Michigan State", color: "#18453b" },
+  { team: "Middlebury", color: "#FF007F" },
+  { team: "Minnesota", color: "#7D0326" },
+  { team: "Minnesota-Duluth", color: "#222d45" },
+  { team: "Missouri", color: "#F04451" },
+  { team: "MIT", color: "#000000" },
+  { team: "NC State", color: "#5b0909" },
+  { team: "North Carolina", color: "#000000" },
+  { team: "Northeastern", color: "#D50232" },
+  { team: "North Texas", color: "#228b22" },
+  { team: "Northwestern", color: "#4B0082" },
+  { team: "Notre Dame", color: "#0c2340" },
+  { team: "Oberlin", color: "#ff1be1" },
+  { team: "Ohio", color: "#305f20" },
+  { team: "Ohio State", color: "#FF0000" },
+  { team: "Oregon", color: "#154733" },
+  { team: "Oregon State", color: "#FF7F00" },
+  { team: "Ottawa", color: "#5e0025" },
+  { team: "Penn", color: "#706383" },
+  { team: "Penn State", color: "#0F2E50" },
+  { team: "Pittsburgh", color: "#FFC800" },
+  { team: "Princeton", color: "#ff8000" },
+  { team: "Purdue", color: "#FFA500" },
+  { team: "Queen's", color: "#eac633" },
+  { team: "Rice", color: "#002e6c" },
+  { team: "Rutgers", color: "#c10436" },
+  { team: "Saint Louis", color: "#5171fe" },
+  { team: "Salisbury", color: "#feb719" },
+  { team: "Southern California", color: "#990033" },
+  { team: "Stanford", color: "#800000" },
+  { team: "SUNY Albany", color: "#442473" },
+  { team: "SUNY Binghamton", color: "#006670" },
+  { team: "SUNY Purchase", color: "#FC7C2C" },
+  { team: "Swarthmore", color: "#7198cd" },
+  { team: "SW Missouri State", color: "#b0083b" },
+  { team: "Syracuse", color: "#f46e27" },
+  { team: "Texas", color: "#FF7F00" },
+  { team: "Texas A&M", color: "#500000" },
+  { team: "Texas Dallas", color: "#0060FF" },
+  { team: "Texas Dallas", color: "#F25A00" },
+  { team: "Texas State", color: "#ab1f2e" },
+  { team: "Tufts", color: "#93c6f6" },
+  { team: "Tulane", color: "#205746" },
+  { team: "UC Davis", color: "#e5c539" },
+  { team: "UC San Diego", color: "#0077AA" },
+  { team: "UC Santa Barbara", color: "#000000" },
+  { team: "UC Santa Cruz", color: "#FFD700" },
+  { team: "UCLA", color: "#0000FF" },
+  { team: "UNC Wilmington", color: "#127748" },
+  { team: "Utah", color: "#ff0000" },
+  { team: "Utah State", color: "#2B3775" },
+  { team: "Vermont", color: "#005834" },
+  { team: "Victoria", color: "#155EAE" },
+  { team: "Virginia", color: "#EC6736" },
+  { team: "Virginia Tech", color: "#1aa44B" },
+  { team: "WashU", color: "#FF0000" },
+  { team: "Washington", color: "#4B0082" },
+  { team: "Wesleyan", color: "#f2002c" },
+  { team: "Western Washington", color: "#A8915B" },
+  { team: "Whitman", color: "#3d4da2" },
+  { team: "William & Mary", color: "#0C5C32" },
+  { team: "Williams", color: "#6415C1" },
+  { team: "Winona State", color: "#622F8C" },
+  { team: "Wisconsin", color: "#89CFF0" },
+  { team: "Wisconsin-Milwaukee", color: "#000000" },
+  { team: "Yale", color: "#003061" }
+]
+)}
+
+// Charts and visualizations
 function _championshipChart(d3,raw_data,divisionToggle2,activeFont)
 {
   // Count national championships and collect years
@@ -143,16 +439,6 @@ function _championshipChart(d3,raw_data,divisionToggle2,activeFont)
   return svg.node();
 }
 
-function _divisionToggle(Inputs){return(
-Inputs.radio(
-  ["College Men's", "College Women's"],
-  {
-    label: "Select Division",
-    value: "College Men's"
-  }
-)
-)}
-
 function _teamSelector(Inputs,data){return(
 Inputs.select(
   [...new Set(data.map(d => d.Team))].sort(),
@@ -180,18 +466,6 @@ function _chart($0,teamSelector,colorData,d3,data,activeFont,formatTRank,Event)
   function getTeamColor(teamName) {
     const teamData = colorData.find(d => d.team === teamName);
     return teamData ? teamData.color : "#000000";
-  }
-
-  // Function to get ordinal suffix
-  function getOrdinalSuffix(num) {
-    const n = parseInt(num);
-    if (n > 3 && n < 21) return 'th';
-    switch (n % 10) {
-      case 1:  return "st";
-      case 2:  return "nd";
-      case 3:  return "rd";
-      default: return "th";
-    }
   }
 
   // -----------------------------------------------------
@@ -551,302 +825,6 @@ function _chart($0,teamSelector,colorData,d3,data,activeFont,formatTRank,Event)
   return svg.node();
 }
 
-function _raw_data(FileAttachment){return(
-FileAttachment("college-rankings-combined.csv").csv({typed: true})
-)}
-
-function _data(raw_data,divisionToggle){return(
-raw_data.filter(d => d.Division === divisionToggle)
-)}
-
-function _baseUrl(){return(
-"https://github.com/elistandard/ultimateDynasties/blob/main/college-mens/college-mens-logos/"
-)}
-
-function _logoMapping(baseUrl){return(
-[
-  {team: 'Alabama-Huntsville', url: baseUrl + 'Alabama-Huntsville.jpeg?raw=true'},
-  {team: 'Arizona', url: baseUrl + 'Arizona.png?raw=true'},
-  {team: 'Auburn', url: baseUrl + 'Auburn.jpg?raw=true'},
-  {team: 'BYU', url: baseUrl + 'BYU.png?raw=true'},
-  {team: 'Boston College', url: baseUrl + 'Boston College.gif?raw=true'},
-  {team: 'British Columbia', url: baseUrl + 'British Columbia.jpg?raw=true'},
-  {team: 'Brown', url: baseUrl + 'Brown.jpeg?raw=true'},
-  {team: 'Cal Poly SLO', url: baseUrl + 'Cal Poly SLO.jpg?raw=true'},
-  {team: 'UC San Diego', url: baseUrl + 'UC San Diego.jpg?raw=true'},
-  {team: 'UC Santa Barbara', url: baseUrl + 'UC Santa Barbara.jpg?raw=true'},
-  {team: 'UC Santa Cruz', url: baseUrl + 'UC Santa Cruz.jpg?raw=true'},
-  {team: 'California', url: baseUrl + 'California.jpg?raw=true'},
-  {team: 'Carleton', url: baseUrl + 'Carleton.png?raw=true'},
-  {team: 'Carnegie Mellon', url: baseUrl + 'Carnegie Mellon.png?raw=true'},
-  {team: 'Case Western Reserve', url: baseUrl + 'Case Western Reserve.png?raw=true'},
-  {team: 'Central Florida', url: baseUrl + 'Central Florida.png?raw=true'},
-  {team: 'Chabot Community College', url: baseUrl + 'Chabot Community College.jpeg?raw=true'},
-  {team: 'Cincinnati', url: baseUrl + 'Cincinnati.png?raw=true'},
-  {team: 'Colorado College', url: baseUrl + 'Colorado College.jpg?raw=true'},
-  {team: 'Colorado State', url: baseUrl + 'Colorado State.png?raw=true'},
-  {team: 'Colorado', url: baseUrl + 'Colorado.png?raw=true'},
-  {team: 'Connecticut', url: baseUrl + 'Connecticut.jpg?raw=true'},
-  {team: 'Cornell', url: baseUrl + 'Cornell.jpg?raw=true'},
-  {team: 'Columbia', url: baseUrl + 'Columbia.png?raw=true'},
-  {team: 'Dartmouth', url: baseUrl + 'Dartmouth.png?raw=true'},
-  {team: 'Delaware', url: baseUrl + 'Delaware.jpeg?raw=true'},
-  {team: 'Duke', url: baseUrl + 'Duke.jpg?raw=true'},
-  {team: 'East Carolina', url: baseUrl + 'East Carolina.jpeg?raw=true'},
-  {team: 'Eastern Michigan', url: baseUrl + 'Eastern Michigan.jpg?raw=true'},
-  {team: 'Florida State', url: baseUrl + 'Florida State.gif?raw=true'},
-  {team: 'Florida', url: baseUrl + 'Florida.png?raw=true'},
-  {team: 'George Washington', url: baseUrl + 'George Washington.jpeg?raw=true'},
-  {team: 'Georgetown', url: baseUrl + 'Georgetown.png?raw=true'},
-  {team: 'Georgia Tech', url: baseUrl + 'Georgia Tech.jpeg?raw=true'},
-  {team: 'Georgia', url: baseUrl + 'Georgia.jpeg?raw=true'},
-  {team: 'Glassboro', url: baseUrl + 'Glassboro State.jpg?raw=true'},
-  {team: 'Harvard', url: baseUrl + 'Harvard.jpg?raw=true'},
-  {team: 'Illinois', url: baseUrl + 'Illinois.jpg?raw=true'},
-  {team: 'Indiana', url: baseUrl + 'Indiana.png?raw=true'},
-  {team: 'Iowa State', url: baseUrl + 'Iowa State.png?raw=true'},
-  {team: 'Iowa', url: baseUrl + 'Iowa.jpeg?raw=true'},
-  {team: 'James Madison', url: baseUrl + 'James Madison.jpeg?raw=true'},
-  {team: 'Kansas', url: baseUrl + 'Kansas.jpeg?raw=true'},
-  {team: 'LSU', url: baseUrl + 'LSU.jpg?raw=true'},
-  {team: 'Las Positas College', url: baseUrl + 'Las Positas.png?raw=true'},
-  {team: 'Luther', url: baseUrl + 'Luther.png?raw=true'},
-  {team: 'Maryland', url: baseUrl + 'Maryland.png?raw=true'},
-  {team: 'Massachusetts', url: baseUrl + 'Massachusetts.jpeg?raw=true'},
-  {team: 'McGill', url: baseUrl + 'McGill.jpg?raw=true'},
-  {team: 'Michigan State', url: baseUrl + 'Michigan State.jpg?raw=true'},
-  {team: 'Michigan', url: baseUrl + 'Michigan.png?raw=true'},
-  {team: 'Middlebury', url: baseUrl + 'Middlebury.webp?raw=true'},
-  {team: 'Minnesota-Duluth', url: baseUrl + 'Minnesota-Duluth.jpeg?raw=true'},
-  {team: 'Minnesota', url: baseUrl + 'Minnesota.png?raw=true'},
-  {team: 'Missouri', url: baseUrl + 'Missouri.png?raw=true'},
-  {team: 'MIT', url: baseUrl + 'MIT.jpg?raw=true'},
-  {team: 'NC State', url: baseUrl + 'NC State.jpg?raw=true'},
-  {team: 'UNC Wilmington', url: baseUrl + 'UNC Wilmington.jpg?raw=true'},
-  {team: 'North Carolina', url: baseUrl + 'North Carolina.png?raw=true'},
-  {team: 'North Texas', url: baseUrl + 'North Texas.jpg?raw=true'},
-  {team: 'Northeastern', url: baseUrl + 'Northeastern.jpg?raw=true'},
-  {team: 'Northwestern', url: baseUrl + 'Northwestern.png?raw=true'},
-  {team: 'Notre Dame', url: baseUrl + 'Notre Dame.jpg?raw=true'},
-  {team: 'Oberlin', url: baseUrl + 'Oberlin.png?raw=true'},
-  {team: 'Ohio State', url: baseUrl + 'Ohio State.jpg?raw=true'},
-  {team: 'Ohio', url: baseUrl + 'Ohio.jpeg?raw=true'},
-  {team: 'Oregon State', url: baseUrl + 'Oregon State.png?raw=true'},
-  {team: 'Oregon', url: baseUrl + 'Oregon.png?raw=true'},
-  {team: 'Ottawa', url: baseUrl + 'Ottawa.png?raw=true'},
-  {team: 'Penn State', url: baseUrl + 'Penn State.jpg?raw=true'},
-  {team: 'Penn', url: baseUrl + 'Penn.png?raw=true'},
-  {team: 'Pittsburgh', url: baseUrl + 'Pittsburgh.png?raw=true'},
-  {team: 'Princeton', url: baseUrl + 'Princeton.jpeg?raw=true'},
-  {team: 'Purdue', url: baseUrl + 'Purdue.jpeg?raw=true'},
-  {team: "Queen's", url: baseUrl + "Queen's.png?raw=true"},
-  {team: 'Rice', url: baseUrl + 'Rice.webp?raw=true'},
-  {team: 'Rutgers', url: baseUrl + 'Rutgers.jpeg?raw=true'},
-  {team: 'SUNY Albany', url: baseUrl + 'SUNY Albany.jpeg?raw=true'},
-  {team: 'SUNY Binghamton', url: baseUrl + 'SUNY Binghamton.jpeg?raw=true'},
-  {team: 'SUNY Purchase', url: baseUrl + 'SUNY Purchase.png?raw=true'},
-  {team: 'SW Missouri State', url: baseUrl + 'SW Missouri State.png?raw=true'},
-  {team: 'Saint Louis', url: baseUrl + 'Saint Louis.jpeg?raw=true'},
-  {team: 'Salisbury', url: baseUrl + 'Salisbury.jpeg?raw=true'},
-  {team: 'Southern California', url: baseUrl + 'Southern California.jpg?raw=true'},
-  {team: 'Stanford', url: baseUrl + 'Stanford.png?raw=true'},
-  {team: 'Swarthmore', url: baseUrl + 'Swarthmore.png?raw=true'},
-  {team: 'Syracuse', url: baseUrl + 'Syracuse.png?raw=true'},
-  {team: 'Texas A&M', url: baseUrl + 'Texas A&M.jpg?raw=true'},
-  {team: 'Texas State', url: baseUrl + 'Texas State.jpg?raw=true'},
-  {team: 'Texas', url: baseUrl + 'Texas.jpg?raw=true'},
-  {team: 'Tufts', url: baseUrl + 'Tufts.png?raw=true'},
-  {team: 'Tulane', url: baseUrl + 'Tulane.jpeg?raw=true'},
-  {team: 'UC Davis', url: baseUrl + 'UC Davis.jpeg?raw=true'},
-  {team: 'UCLA', url: baseUrl + 'UCLA.jpg?raw=true'},
-  {team: 'UT Dallas', url: baseUrl + 'UT Dallas.png?raw=true'},
-  {team: 'Utah State', url: baseUrl + 'Utah State.jpeg?raw=true'},
-  {team: 'Utah', url: baseUrl + 'Utah.jpg?raw=true'},
-  {team: 'Vermont', url: baseUrl + 'Vermont.jpg?raw=true'},
-  {team: 'Victoria', url: baseUrl + 'Victoria.jpg?raw=true'},
-  {team: 'Virginia', url: baseUrl + 'Virginia.jpg?raw=true'},
-  {team: 'Virginia Tech', url: baseUrl + 'Virginia Tech.jpeg?raw=true'},
-  {team: 'WashU', url: baseUrl + 'WashU.jpg?raw=true'},
-  {team: 'Washington', url: baseUrl + 'Washington.jpg?raw=true'},
-  {team: 'Wesleyan', url: baseUrl + 'Wesleyan.png?raw=true'},
-  {team: 'Western Washington', url: baseUrl + 'Western Washington.jpg?raw=true'},
-  {team: 'Whitman', url: baseUrl + 'Whitman.jpg?raw=true'},
-  {team: 'Williams', url: baseUrl + 'Williams.jpg?raw=true'},
-  {team: 'William & Mary', url: baseUrl + 'William & Mary.jpg?raw=true'},
-  {team: 'Wisconsin', url: baseUrl + 'Wisconsin.jpg?raw=true'},
-  {team: 'Wisconsin-Milwaukee', url: baseUrl + 'Wisconsin-Milwaukee.jpg?raw=true'},
-  {team: 'Winona State', url: baseUrl + 'Winona State.jpg?raw=true'},
-  {team: 'Yale', url: baseUrl + 'Yale.png?raw=true'}
-]
-)}
-
-function _colorData(){return(
-[
-  { team: "Alabama-Huntsville", color: "#1f51f3" },
-  { team: "Arizona", color: "#D94B3E" },
-  { team: "Auburn", color: "#f0812a" },
-  { team: "BYU", color: "#FFD700" },
-  { team: "Boston College", color: "#bc0032" },
-  { team: "British Columbia", color: "#CDA900" },
-  { team: "Brown", color: "#964B00" },
-  { team: "Cal Poly SLO", color: "#68b0a7" },
-  { team: "California", color: "#1D315E" },
-  { team: "Carleton", color: "#c1172a" },
-  { team: "Carnegie Mellon", color: "#64AE46" },
-  { team: "Case Western Reserve", color: "#2AC1DF" },
-  { team: "Central Florida", color: "#FEB934" },
-  { team: "Chabot Community College", color: "#d6b002" },
-  { team: "Cincinnati", color: "#FF0000" },
-  { team: "Colorado", color: "#fbd42d" },
-  { team: "Colorado State", color: "#008000" },
-  { team: "Columbia", color: "#00588c" },
-  { team: "Connecticut", color: "#9D2235" },
-  { team: "Cornell", color: "#b31b1b" },
-  { team: "Dartmouth", color: "#003E10" },
-  { team: "Delaware", color: "#2A4395" },
-  { team: "Duke", color: "#0E1D55" },
-  { team: "East Carolina", color: "#6f4c7a" },
-  { team: "Eastern Michigan", color: "#BE5628" },
-  { team: "Florida", color: "#fa4616" },
-  { team: "Florida State", color: "#972634" },
-  { team: "Georgetown", color: "#052e65" },
-  { team: "George Washington", color: "#f2c744" },
-  { team: "Glassboro", color: "#3C1400" },
-  { team: "Georgia", color: "#9f0000" },
-  { team: "Georgia Tech", color: "#1f59a3" },
-  { team: "Harvard", color: "#FF0000" },
-  { team: "Illinois", color: "#EA462A" },
-  { team: "Indiana", color: "#ba141a" },
-  { team: "Iowa", color: "#e8c03c" },
-  { team: "Iowa State", color: "#E01009" },
-  { team: "James Madison", color: "#FF6600" },
-  { team: "Kansas", color: "#EC2222" },
-  { team: "Las Positas College", color: "#C90803" },
-  { team: "LSU", color: "#FFA500" },
-  { team: "Luther", color: "#1356a3" },
-  { team: "Maryland", color: "#700b20" },
-  { team: "Massachusetts", color: "#990033" },
-  { team: "McGill", color: "#0000FF" },
-  { team: "Michigan", color: "#1D3088" },
-  { team: "Michigan State", color: "#18453b" },
-  { team: "Middlebury", color: "#FF007F" },
-  { team: "Minnesota", color: "#7D0326" },
-  { team: "Minnesota-Duluth", color: "#222d45" },
-  { team: "Missouri", color: "#F04451" },
-  { team: "MIT", color: "#000000" },
-  { team: "NC State", color: "#5b0909" },
-  { team: "North Carolina", color: "#000000" },
-  { team: "Northeastern", color: "#D50232" },
-  { team: "North Texas", color: "#228b22" },
-  { team: "Northwestern", color: "#4B0082" },
-  { team: "Notre Dame", color: "#0c2340" },
-  { team: "Oberlin", color: "#ff1be1" },
-  { team: "Ohio", color: "#305f20" },
-  { team: "Ohio State", color: "#FF0000" },
-  { team: "Oregon", color: "#154733" },
-  { team: "Oregon State", color: "#FF7F00" },
-  { team: "Ottawa", color: "#5e0025" },
-  { team: "Penn", color: "#706383" },
-  { team: "Penn State", color: "#0F2E50" },
-  { team: "Pittsburgh", color: "#FFC800" },
-  { team: "Princeton", color: "#ff8000" },
-  { team: "Purdue", color: "#FFA500" },
-  { team: "Queen's", color: "#eac633" },
-  { team: "Rice", color: "#002e6c" },
-  { team: "Rutgers", color: "#c10436" },
-  { team: "Saint Louis", color: "#5171fe" },
-  { team: "Salisbury", color: "#feb719" },
-  { team: "Southern California", color: "#990033" },
-  { team: "Stanford", color: "#800000" },
-  { team: "SUNY Albany", color: "#442473" },
-  { team: "SUNY Binghamton", color: "#006670" },
-  { team: "SUNY Purchase", color: "#FC7C2C" },
-  { team: "Swarthmore", color: "#7198cd" },
-  { team: "SW Missouri State", color: "#b0083b" },
-  { team: "Syracuse", color: "#f46e27" },
-  { team: "Texas", color: "#FF7F00" },
-  { team: "Texas A&M", color: "#500000" },
-  { team: "Texas Dallas", color: "#0060FF" },
-  { team: "Texas Dallas", color: "#F25A00" },
-  { team: "Texas State", color: "#ab1f2e" },
-  { team: "Tufts", color: "#93c6f6" },
-  { team: "Tulane", color: "#205746" },
-  { team: "UC Davis", color: "#e5c539" },
-  { team: "UC San Diego", color: "#0077AA" },
-  { team: "UC Santa Barbara", color: "#000000" },
-  { team: "UC Santa Cruz", color: "#FFD700" },
-  { team: "UCLA", color: "#0000FF" },
-  { team: "UNC Wilmington", color: "#127748" },
-  { team: "Utah", color: "#ff0000" },
-  { team: "Utah State", color: "#2B3775" },
-  { team: "Vermont", color: "#005834" },
-  { team: "Victoria", color: "#155EAE" },
-  { team: "Virginia", color: "#EC6736" },
-  { team: "Virginia Tech", color: "#1aa44B" },
-  { team: "WashU", color: "#FF0000" },
-  { team: "Washington", color: "#4B0082" },
-  { team: "Wesleyan", color: "#f2002c" },
-  { team: "Western Washington", color: "#A8915B" },
-  { team: "Whitman", color: "#3d4da2" },
-  { team: "William & Mary", color: "#0C5C32" },
-  { team: "Williams", color: "#6415C1" },
-  { team: "Winona State", color: "#622F8C" },
-  { team: "Wisconsin", color: "#89CFF0" },
-  { team: "Wisconsin-Milwaukee", color: "#000000" },
-  { team: "Yale", color: "#003061" }
-]
-)}
-
-function _activeFont(){return(
-"lato"
-)}
-
-function _lato(html){return(
-html`<style>
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
-
-text {
-  font: 14px/1.4 "Lato", sans-serif;
-}
-</style>`
-)}
-
-function _getOrdinalSuffix(){return(
-function getOrdinalSuffix(num) {
-  const n = parseInt(num);
-  if (n > 3 && n < 21) return 'th';
-  switch (n % 10) {
-    case 1:  return "st";
-    case 2:  return "nd";
-    case 3:  return "rd";
-    default: return "th";
-  }
-}
-)}
-
-function _formatTRank(getOrdinalSuffix){return(
-function formatTRank(tRank) {
-    // convert to string and trim
-    const rankStr = (tRank == null) ? "" : String(tRank).trim();
-
-    if (!rankStr) {
-      return "No rank data";
-    } else if (rankStr === "?") {
-      return "Rank unknown";
-    } else if (rankStr.startsWith("T")) {
-      // "T3" => "Tied for 3rd"
-      const numPart = rankStr.slice(1); 
-      return `Tied for ${numPart}${getOrdinalSuffix(numPart)}`;
-    } else if (/^\d+$/.test(rankStr)) {
-      // purely numeric, e.g. "5" => "5th"
-      return `${rankStr}${getOrdinalSuffix(rankStr)}`;
-    } else {
-      // fallback (e.g. "DNS", "N/A", etc.)
-      return rankStr;
-    }
-  }
-)}
-
 export default function define(runtime, observer) {
   const main = runtime.module();
   function toString() { return this.url; }
@@ -854,25 +832,25 @@ export default function define(runtime, observer) {
     ["college-rankings-combined.csv", {url: new URL("./files/9500801df26a43bf47b50f89e1432a8e8ed7763f3b4d71c8844ecb9a7ef7d753daedc5c13245b5828702290eee489122168faa87dd28fc8d76267817959b2a23.csv", import.meta.url), mimeType: "text/csv", toString}]
   ]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
+  
+  // Define observers in dependency order
+  main.variable(observer("activeFont")).define("activeFont", _activeFont);
+  main.variable(observer("lato")).define("lato", ["html"], _lato);
+  main.variable(observer("raw_data")).define("raw_data", ["FileAttachment"], _raw_data);
   main.variable(observer("viewof divisionToggle2")).define("viewof divisionToggle2", ["Inputs"], _divisionToggle2);
   main.variable(observer("divisionToggle2")).define("divisionToggle2", ["Generators", "viewof divisionToggle2"], (G, _) => G.input(_));
-  main.variable(observer("viewof championshipChart")).define("viewof championshipChart", ["d3","raw_data","divisionToggle2","activeFont"], _championshipChart);
-  main.variable(observer("championshipChart")).define("championshipChart", ["Generators", "viewof championshipChart"], (G, _) => G.input(_));
-  main.variable(observer("viewof divisionToggle")).define("viewof divisionToggle", ["Inputs"], _divisionToggle);
-  main.variable(observer("divisionToggle")).define("divisionToggle", ["Generators", "viewof divisionToggle"], (G, _) => G.input(_));
-  main.variable(observer("viewof teamSelector")).define("viewof teamSelector", ["Inputs","data"], _teamSelector);
-  main.variable(observer("teamSelector")).define("teamSelector", ["Generators", "viewof teamSelector"], (G, _) => G.input(_));
-  main.variable(observer()).define(["html","activeFont","data","teamSelector","logoMapping"], _13);
-  main.variable(observer("viewof chart")).define("viewof chart", ["viewof teamSelector","teamSelector","colorData","d3","data","activeFont","formatTRank","Event"], _chart);
-  main.variable(observer("chart")).define("chart", ["Generators", "viewof chart"], (G, _) => G.input(_));
-  main.variable(observer("raw_data")).define("raw_data", ["FileAttachment"], _raw_data);
-  main.variable(observer("data")).define("data", ["raw_data","divisionToggle"], _data);
+  main.variable(observer("data")).define("data", ["raw_data","divisionToggle2"], _data);
+  main.variable(observer("getOrdinalSuffix")).define("getOrdinalSuffix", _getOrdinalSuffix);
+  main.variable(observer("formatTRank")).define("formatTRank", ["getOrdinalSuffix"], _formatTRank);
   main.variable(observer("baseUrl")).define("baseUrl", _baseUrl);
   main.variable(observer("logoMapping")).define("logoMapping", ["baseUrl"], _logoMapping);
   main.variable(observer("colorData")).define("colorData", _colorData);
-  main.variable(observer("activeFont")).define("activeFont", _activeFont);
-  main.variable(observer("lato")).define("lato", ["html"], _lato);
-  main.variable(observer("getOrdinalSuffix")).define("getOrdinalSuffix", _getOrdinalSuffix);
-  main.variable(observer("formatTRank")).define("formatTRank", ["getOrdinalSuffix"], _formatTRank);
+  main.variable(observer("viewof championshipChart")).define("viewof championshipChart", ["d3","raw_data","divisionToggle2","activeFont"], _championshipChart);
+  main.variable(observer("championshipChart")).define("championshipChart", ["Generators", "viewof championshipChart"], (G, _) => G.input(_));
+  main.variable(observer("viewof teamSelector")).define("viewof teamSelector", ["Inputs","data"], _teamSelector);
+  main.variable(observer("teamSelector")).define("teamSelector", ["Generators", "viewof teamSelector"], (G, _) => G.input(_));
+  main.variable(observer("viewof chart")).define("viewof chart", ["viewof teamSelector","teamSelector","colorData","d3","data","activeFont","formatTRank","Event"], _chart);
+  main.variable(observer("chart")).define("chart", ["Generators", "viewof chart"], (G, _) => G.input(_));
+  
   return main;
 }
