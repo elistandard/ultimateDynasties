@@ -3,12 +3,20 @@ const baseUrl = "https://github.com/elistandard/ultimateDynasties/blob/main/coll
 
 // Logo mapping for teams
 const logoMapping = [
-// ... existing code ...
+    { team: "Carleton", url: baseUrl + "carleton.png" },
+    { team: "Pittsburgh", url: baseUrl + "pittsburgh.png" }
 ];
 
 // Color data for teams
 const colorData = [
-// ... existing code ...
+    { team: "Carleton", color: "#000000" },
+    { team: "Pittsburgh", color: "#FFD700" }
+];
+
+// Raw data array
+const rawData = [
+    { Team: "Carleton", Division: "D-I", Year: 2023, Rank: 1, T_Rank: "1" },
+    { Team: "Pittsburgh", Division: "D-I", Year: 2023, Rank: 2, T_Rank: "2" }
 ];
 
 // Helper functions
@@ -25,17 +33,14 @@ function getOrdinalSuffix(num) {
 
 function formatTRank(tRank) {
     const rankStr = (tRank == null) ? "" : String(tRank).trim();
-
-    if (!rankStr) {
-        return "No rank data";
-    } else if (rankStr === "?") {
-        return "Rank unknown";
-    } else if (rankStr.startsWith("T")) {
+    if (!rankStr) return "No rank data";
+    if (rankStr === "?") return "Rank unknown";
+    if (rankStr.startsWith("T")) {
         const numPart = rankStr.slice(1); 
         return `Tied for ${numPart}${getOrdinalSuffix(numPart)}`;
-    } else if (/^\d+$/.test(rankStr)) {
-        return `${rankStr}${getOrdinalSuffix(rankStr)}`;
-    } else {
-        return rankStr;
     }
+    if (/^\d+$/.test(rankStr)) {
+        return `${rankStr}${getOrdinalSuffix(rankStr)}`;
+    }
+    return rankStr;
 }

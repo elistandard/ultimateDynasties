@@ -30,31 +30,53 @@ button:hover {
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize division selector
-    const divisionRadios = document.querySelectorAll('input[name="division"]');
-    divisionRadios.forEach(radio => {
-        radio.addEventListener('change', handleDivisionChange);
-    });
+    // Create a simple bar chart
+    const width = 600;
+    const height = 400;
+    const margin = { top: 20, right: 30, bottom: 30, left: 40 };
 
-    // Initialize team selector
-    const teamSelect = document.getElementById('teamSelect');
-    populateTeamSelector(teamSelect);
-    teamSelect.addEventListener('change', handleTeamChange);
+    // Create SVG
+    const svg = d3.select('#championshipChart')
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height);
 
-    // Initialize appendix toggle
-    const toggleButton = document.getElementById('toggleAppendix');
-    const appendix = document.getElementById('appendix');
-    toggleButton.addEventListener('click', () => {
-        appendix.classList.toggle('hidden');
-    });
+    // Create scales
+    const x = d3.scaleBand()
+        .domain(rawData.map(d => d.Team))
+        .range([margin.left, width - margin.right])
+        .padding(0.1);
 
-    // Initialize charts
-    initializeChampionshipChart();
-    initializeDotChart();
+    const y = d3.scaleLinear()
+        .domain([0, d3.max(rawData, d => d.Rank)])
+        .range([height - margin.bottom, margin.top]);
 
-    // Trigger initial division change
-    const initialDivision = document.querySelector('input[name="division"]:checked').value;
-    handleDivisionChange({ target: { value: initialDivision } });
+    // Create axes
+    svg.append('g')
+        .attr('transform', `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(x));
+
+    svg.append('g')
+        .attr('transform', `translate(${margin.left},0)`)
+        .call(d3.axisLeft(y));
+
+    // Add bars
+    svg.selectAll('rect')
+        .data(rawData)
+        .enter()
+        .append('rect')
+        .attr('x', d => x(d.Team))
+        .attr('y', d => y(d.Rank))
+        .attr('width', x.bandwidth())
+        .attr('height', d => height - margin.bottom - y(d.Rank))
+        .attr('fill', d => colorData.find(c => c.team === d.Team)?.color || '#999');
+
+    // Add title
+    svg.append('text')
+        .attr('x', width / 2)
+        .attr('y', margin.top)
+        .attr('text-anchor', 'middle')
+        .text('Team Rankings');
 });
 
 // Handle division change
