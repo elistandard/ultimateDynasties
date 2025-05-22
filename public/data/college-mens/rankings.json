@@ -1,0 +1,3842 @@
+[
+  {
+    "team": "Stanford",
+    "rank": 1,
+    "year": 1984,
+    "division": "college-mens"
+  },
+  {
+    "team": "Glassboro",
+    "rank": 2,
+    "year": 1984,
+    "division": "college-mens"
+  },
+  {
+    "team": "Massachusetts",
+    "rank": 3,
+    "year": 1984,
+    "division": "college-mens"
+  },
+  {
+    "team": "Penn",
+    "rank": 4,
+    "year": 1984,
+    "division": "college-mens"
+  },
+  {
+    "team": "Chabot Community College",
+    "rank": 5,
+    "year": 1984,
+    "division": "college-mens"
+  },
+  {
+    "team": "Kansas",
+    "rank": 6,
+    "year": 1984,
+    "division": "college-mens"
+  },
+  {
+    "team": "Ohio",
+    "rank": 7,
+    "year": 1984,
+    "division": "college-mens"
+  },
+  {
+    "team": "Syracuse",
+    "rank": 8,
+    "year": 1984,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 9,
+    "year": 1984,
+    "division": "college-mens"
+  },
+  {
+    "team": "Tufts",
+    "rank": 10,
+    "year": 1984,
+    "division": "college-mens"
+  },
+  {
+    "team": "Penn",
+    "rank": 1,
+    "year": 1985,
+    "division": "college-mens"
+  },
+  {
+    "team": "Massachusetts",
+    "rank": 2,
+    "year": 1985,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 3,
+    "year": 1985,
+    "division": "college-mens"
+  },
+  {
+    "team": "SW Missouri State",
+    "rank": 4,
+    "year": 1985,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 5,
+    "year": 1985,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 6,
+    "year": 1985,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cal Poly SLO",
+    "rank": 7,
+    "year": 1985,
+    "division": "college-mens"
+  },
+  {
+    "team": "Kansas",
+    "rank": 8,
+    "year": 1985,
+    "division": "college-mens"
+  },
+  {
+    "team": "MIT",
+    "rank": 9,
+    "year": 1985,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 10,
+    "year": 1985,
+    "division": "college-mens"
+  },
+  {
+    "team": "Central Florida",
+    "rank": 11,
+    "year": 1985,
+    "division": "college-mens"
+  },
+  {
+    "team": "Princeton",
+    "rank": 12,
+    "year": 1985,
+    "division": "college-mens"
+  },
+  {
+    "team": "Massachusetts",
+    "rank": 1,
+    "year": 1986,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 2,
+    "year": 1986,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 3,
+    "year": 1986,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 4,
+    "year": 1986,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 5,
+    "year": 1986,
+    "division": "college-mens"
+  },
+  {
+    "team": "SW Missouri State",
+    "rank": 6,
+    "year": 1986,
+    "division": "college-mens"
+  },
+  {
+    "team": "Kansas",
+    "rank": 7,
+    "year": 1986,
+    "division": "college-mens"
+  },
+  {
+    "team": "MIT",
+    "rank": 8,
+    "year": 1986,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carnegie Mellon",
+    "rank": 9,
+    "year": 1986,
+    "division": "college-mens"
+  },
+  {
+    "team": "Princeton",
+    "rank": 10,
+    "year": 1986,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 11,
+    "year": 1986,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 12,
+    "year": 1986,
+    "division": "college-mens"
+  },
+  {
+    "team": "Chabot Community College",
+    "rank": 1,
+    "year": 1987,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 2,
+    "year": 1987,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cal Poly SLO",
+    "rank": 3,
+    "year": 1987,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 4,
+    "year": 1987,
+    "division": "college-mens"
+  },
+  {
+    "team": "SW Missouri State",
+    "rank": 5,
+    "year": 1987,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 6,
+    "year": 1987,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia Tech",
+    "rank": 7,
+    "year": 1987,
+    "division": "college-mens"
+  },
+  {
+    "team": "SUNY Purchase",
+    "rank": 8,
+    "year": 1987,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carnegie Mellon",
+    "rank": 9,
+    "year": 1987,
+    "division": "college-mens"
+  },
+  {
+    "team": "Princeton",
+    "rank": 10,
+    "year": 1987,
+    "division": "college-mens"
+  },
+  {
+    "team": "Kansas",
+    "rank": 11,
+    "year": 1987,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 12,
+    "year": 1987,
+    "division": "college-mens"
+  },
+  {
+    "team": "East Carolina",
+    "rank": 13,
+    "year": 1987,
+    "division": "college-mens"
+  },
+  {
+    "team": "Vermont",
+    "rank": 14,
+    "year": 1987,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 1,
+    "year": 1988,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 2,
+    "year": 1988,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 3,
+    "year": 1988,
+    "division": "college-mens"
+  },
+  {
+    "team": "Columbia",
+    "rank": 4,
+    "year": 1988,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia Tech",
+    "rank": 5,
+    "year": 1988,
+    "division": "college-mens"
+  },
+  {
+    "team": "Kansas",
+    "rank": 6,
+    "year": 1988,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carnegie Mellon",
+    "rank": 7,
+    "year": 1988,
+    "division": "college-mens"
+  },
+  {
+    "team": "East Carolina",
+    "rank": 8,
+    "year": 1988,
+    "division": "college-mens"
+  },
+  {
+    "team": "Saint Louis",
+    "rank": 9,
+    "year": 1988,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wesleyan",
+    "rank": 10,
+    "year": 1988,
+    "division": "college-mens"
+  },
+  {
+    "team": "Massachusetts",
+    "rank": 11,
+    "year": 1988,
+    "division": "college-mens"
+  },
+  {
+    "team": "Winona State",
+    "rank": 12,
+    "year": 1988,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 1,
+    "year": 1989,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 2,
+    "year": 1989,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carnegie Mellon",
+    "rank": 3,
+    "year": 1989,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 4,
+    "year": 1989,
+    "division": "college-mens"
+  },
+  {
+    "team": "Columbia",
+    "rank": 5,
+    "year": 1989,
+    "division": "college-mens"
+  },
+  {
+    "team": "East Carolina",
+    "rank": 6,
+    "year": 1989,
+    "division": "college-mens"
+  },
+  {
+    "team": "Florida",
+    "rank": 7,
+    "year": 1989,
+    "division": "college-mens"
+  },
+  {
+    "team": "Indiana",
+    "rank": 8,
+    "year": 1989,
+    "division": "college-mens"
+  },
+  {
+    "team": "Kansas",
+    "rank": 9,
+    "year": 1989,
+    "division": "college-mens"
+  },
+  {
+    "team": "Penn",
+    "rank": 10,
+    "year": 1989,
+    "division": "college-mens"
+  },
+  {
+    "team": "SUNY Purchase",
+    "rank": 11,
+    "year": 1989,
+    "division": "college-mens"
+  },
+  {
+    "team": "Tufts",
+    "rank": 12,
+    "year": 1989,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 1,
+    "year": 1990,
+    "division": "college-mens"
+  },
+  {
+    "team": "UNC Wilmington",
+    "rank": 2,
+    "year": 1990,
+    "division": "college-mens"
+  },
+  {
+    "team": "SUNY Purchase",
+    "rank": 3,
+    "year": 1990,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 4,
+    "year": 1990,
+    "division": "college-mens"
+  },
+  {
+    "team": "Vermont",
+    "rank": 5,
+    "year": 1990,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Cruz",
+    "rank": 6,
+    "year": 1990,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 7,
+    "year": 1990,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 8,
+    "year": 1990,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 9,
+    "year": 1990,
+    "division": "college-mens"
+  },
+  {
+    "team": "Kansas",
+    "rank": 10,
+    "year": 1990,
+    "division": "college-mens"
+  },
+  {
+    "team": "Princeton",
+    "rank": 11,
+    "year": 1990,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 12,
+    "year": 1990,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Cruz",
+    "rank": 1,
+    "year": 1991,
+    "division": "college-mens"
+  },
+  {
+    "team": "UNC Wilmington",
+    "rank": 2,
+    "year": 1991,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 3,
+    "year": 1991,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 4,
+    "year": 1991,
+    "division": "college-mens"
+  },
+  {
+    "team": "Penn",
+    "rank": 5,
+    "year": 1991,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 6,
+    "year": 1991,
+    "division": "college-mens"
+  },
+  {
+    "team": "Boston College",
+    "rank": 7,
+    "year": 1991,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 8,
+    "year": 1991,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 9,
+    "year": 1991,
+    "division": "college-mens"
+  },
+  {
+    "team": "East Carolina",
+    "rank": 10,
+    "year": 1991,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia Tech",
+    "rank": 11,
+    "year": 1991,
+    "division": "college-mens"
+  },
+  {
+    "team": "Kansas",
+    "rank": 12,
+    "year": 1991,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 1,
+    "year": 1992,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 2,
+    "year": 1992,
+    "division": "college-mens"
+  },
+  {
+    "team": "UNC Wilmington",
+    "rank": 3,
+    "year": 1992,
+    "division": "college-mens"
+  },
+  {
+    "team": "California",
+    "rank": 4,
+    "year": 1992,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 5,
+    "year": 1992,
+    "division": "college-mens"
+  },
+  {
+    "team": "East Carolina",
+    "rank": 6,
+    "year": 1992,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia Tech",
+    "rank": 7,
+    "year": 1992,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oberlin",
+    "rank": 8,
+    "year": 1992,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 9,
+    "year": 1992,
+    "division": "college-mens"
+  },
+  {
+    "team": "Vermont",
+    "rank": 10,
+    "year": 1992,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wesleyan",
+    "rank": 11,
+    "year": 1992,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 12,
+    "year": 1992,
+    "division": "college-mens"
+  },
+  {
+    "team": "UNC Wilmington",
+    "rank": 1,
+    "year": 1993,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 2,
+    "year": 1993,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Cruz",
+    "rank": 3,
+    "year": 1993,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 4,
+    "year": 1993,
+    "division": "college-mens"
+  },
+  {
+    "team": "East Carolina",
+    "rank": 5,
+    "year": 1993,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 6,
+    "year": 1993,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 7,
+    "year": 1993,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 8,
+    "year": 1993,
+    "division": "college-mens"
+  },
+  {
+    "team": "Boston College",
+    "rank": 9,
+    "year": 1993,
+    "division": "college-mens"
+  },
+  {
+    "team": "Kansas",
+    "rank": 10,
+    "year": 1993,
+    "division": "college-mens"
+  },
+  {
+    "team": "SUNY Albany",
+    "rank": 11,
+    "year": 1993,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wesleyan",
+    "rank": 12,
+    "year": 1993,
+    "division": "college-mens"
+  },
+  {
+    "team": "East Carolina",
+    "rank": 1,
+    "year": 1994,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 2,
+    "year": 1994,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 3,
+    "year": 1994,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 4,
+    "year": 1994,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 5,
+    "year": 1994,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 6,
+    "year": 1994,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 7,
+    "year": 1994,
+    "division": "college-mens"
+  },
+  {
+    "team": "Las Positas College",
+    "rank": 8,
+    "year": 1994,
+    "division": "college-mens"
+  },
+  {
+    "team": "Kansas",
+    "rank": 9,
+    "year": 1994,
+    "division": "college-mens"
+  },
+  {
+    "team": "Penn",
+    "rank": 10,
+    "year": 1994,
+    "division": "college-mens"
+  },
+  {
+    "team": "SUNY Binghamton",
+    "rank": 11,
+    "year": 1994,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 12,
+    "year": 1994,
+    "division": "college-mens"
+  },
+  {
+    "team": "East Carolina",
+    "rank": 1,
+    "year": 1995,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Cruz",
+    "rank": 2,
+    "year": 1995,
+    "division": "college-mens"
+  },
+  {
+    "team": "UNC Wilmington",
+    "rank": 3,
+    "year": 1995,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 4,
+    "year": 1995,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 5,
+    "year": 1995,
+    "division": "college-mens"
+  },
+  {
+    "team": "Yale",
+    "rank": 6,
+    "year": 1995,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 7,
+    "year": 1995,
+    "division": "college-mens"
+  },
+  {
+    "team": "LSU",
+    "rank": 8,
+    "year": 1995,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oberlin",
+    "rank": 9,
+    "year": 1995,
+    "division": "college-mens"
+  },
+  {
+    "team": "Williams",
+    "rank": 10,
+    "year": 1995,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 11,
+    "year": 1995,
+    "division": "college-mens"
+  },
+  {
+    "team": "Indiana",
+    "rank": 12,
+    "year": 1995,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 1,
+    "year": 1996,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 2,
+    "year": 1996,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 3,
+    "year": 1996,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 4,
+    "year": 1996,
+    "division": "college-mens"
+  },
+  {
+    "team": "UNC Wilmington",
+    "rank": 5,
+    "year": 1996,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 6,
+    "year": 1996,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 7,
+    "year": 1996,
+    "division": "college-mens"
+  },
+  {
+    "team": "NC State",
+    "rank": 8,
+    "year": 1996,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wesleyan",
+    "rank": 9,
+    "year": 1996,
+    "division": "college-mens"
+  },
+  {
+    "team": "Williams",
+    "rank": 10,
+    "year": 1996,
+    "division": "college-mens"
+  },
+  {
+    "team": "Indiana",
+    "rank": 11,
+    "year": 1996,
+    "division": "college-mens"
+  },
+  {
+    "team": "Florida State",
+    "rank": 12,
+    "year": 1996,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 1,
+    "year": 1997,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 2,
+    "year": 1997,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 3,
+    "year": 1997,
+    "division": "college-mens"
+  },
+  {
+    "team": "East Carolina",
+    "rank": 4,
+    "year": 1997,
+    "division": "college-mens"
+  },
+  {
+    "team": "UNC Wilmington",
+    "rank": 5,
+    "year": 1997,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 6,
+    "year": 1997,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 7,
+    "year": 1997,
+    "division": "college-mens"
+  },
+  {
+    "team": "Rice",
+    "rank": 8,
+    "year": 1997,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oberlin",
+    "rank": 9,
+    "year": 1997,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wesleyan",
+    "rank": 10,
+    "year": 1997,
+    "division": "college-mens"
+  },
+  {
+    "team": "LSU",
+    "rank": 11,
+    "year": 1997,
+    "division": "college-mens"
+  },
+  {
+    "team": "Yale",
+    "rank": 12,
+    "year": 1997,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 1,
+    "year": 1998,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 2,
+    "year": 1998,
+    "division": "college-mens"
+  },
+  {
+    "team": "Brown",
+    "rank": 3,
+    "year": 1998,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 4,
+    "year": 1998,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 5,
+    "year": 1998,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 6,
+    "year": 1998,
+    "division": "college-mens"
+  },
+  {
+    "team": "Harvard",
+    "rank": 7,
+    "year": 1998,
+    "division": "college-mens"
+  },
+  {
+    "team": "LSU",
+    "rank": 8,
+    "year": 1998,
+    "division": "college-mens"
+  },
+  {
+    "team": "East Carolina",
+    "rank": 9,
+    "year": 1998,
+    "division": "college-mens"
+  },
+  {
+    "team": "Iowa",
+    "rank": 10,
+    "year": 1998,
+    "division": "college-mens"
+  },
+  {
+    "team": "Rice",
+    "rank": 11,
+    "year": 1998,
+    "division": "college-mens"
+  },
+  {
+    "team": "Yale",
+    "rank": 12,
+    "year": 1998,
+    "division": "college-mens"
+  },
+  {
+    "team": "NC State",
+    "rank": 1,
+    "year": 1999,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 2,
+    "year": 1999,
+    "division": "college-mens"
+  },
+  {
+    "team": "Brown",
+    "rank": 3,
+    "year": 1999,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 4,
+    "year": 1999,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Cruz",
+    "rank": 5,
+    "year": 1999,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 6,
+    "year": 1999,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 7,
+    "year": 1999,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 8,
+    "year": 1999,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 9,
+    "year": 1999,
+    "division": "college-mens"
+  },
+  {
+    "team": "Iowa",
+    "rank": 10,
+    "year": 1999,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 11,
+    "year": 1999,
+    "division": "college-mens"
+  },
+  {
+    "team": "Yale",
+    "rank": 12,
+    "year": 1999,
+    "division": "college-mens"
+  },
+  {
+    "team": "Kansas",
+    "rank": 13,
+    "year": 1999,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oberlin",
+    "rank": 14,
+    "year": 1999,
+    "division": "college-mens"
+  },
+  {
+    "team": "Rice",
+    "rank": 15,
+    "year": 1999,
+    "division": "college-mens"
+  },
+  {
+    "team": "Salisbury",
+    "rank": 16,
+    "year": 1999,
+    "division": "college-mens"
+  },
+  {
+    "team": "Brown",
+    "rank": 1,
+    "year": 2000,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 2,
+    "year": 2000,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 3,
+    "year": 2000,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 4,
+    "year": 2000,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 5,
+    "year": 2000,
+    "division": "college-mens"
+  },
+  {
+    "team": "NC State",
+    "rank": 6,
+    "year": 2000,
+    "division": "college-mens"
+  },
+  {
+    "team": "Salisbury",
+    "rank": 7,
+    "year": 2000,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 8,
+    "year": 2000,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 9,
+    "year": 2000,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 10,
+    "year": 2000,
+    "division": "college-mens"
+  },
+  {
+    "team": "Rice",
+    "rank": 11,
+    "year": 2000,
+    "division": "college-mens"
+  },
+  {
+    "team": "Winona State",
+    "rank": 12,
+    "year": 2000,
+    "division": "college-mens"
+  },
+  {
+    "team": "Notre Dame",
+    "rank": 13,
+    "year": 2000,
+    "division": "college-mens"
+  },
+  {
+    "team": "Princeton",
+    "rank": 14,
+    "year": 2000,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Cruz",
+    "rank": 15,
+    "year": 2000,
+    "division": "college-mens"
+  },
+  {
+    "team": "Tufts",
+    "rank": 16,
+    "year": 2000,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 1,
+    "year": 2001,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 2,
+    "year": 2001,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 3,
+    "year": 2001,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 4,
+    "year": 2001,
+    "division": "college-mens"
+  },
+  {
+    "team": "Brown",
+    "rank": 5,
+    "year": 2001,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 6,
+    "year": 2001,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 7,
+    "year": 2001,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 8,
+    "year": 2001,
+    "division": "college-mens"
+  },
+  {
+    "team": "Harvard",
+    "rank": 9,
+    "year": 2001,
+    "division": "college-mens"
+  },
+  {
+    "team": "Penn",
+    "rank": 10,
+    "year": 2001,
+    "division": "college-mens"
+  },
+  {
+    "team": "Ohio State",
+    "rank": 11,
+    "year": 2001,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas A&M",
+    "rank": 12,
+    "year": 2001,
+    "division": "college-mens"
+  },
+  {
+    "team": "Duke",
+    "rank": 13,
+    "year": 2001,
+    "division": "college-mens"
+  },
+  {
+    "team": "UNC Wilmington",
+    "rank": 14,
+    "year": 2001,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 15,
+    "year": 2001,
+    "division": "college-mens"
+  },
+  {
+    "team": "Tufts",
+    "rank": 16,
+    "year": 2001,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 1,
+    "year": 2002,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 2,
+    "year": 2002,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 3,
+    "year": 2002,
+    "division": "college-mens"
+  },
+  {
+    "team": "William & Mary",
+    "rank": 4,
+    "year": 2002,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 5,
+    "year": 2002,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 6,
+    "year": 2002,
+    "division": "college-mens"
+  },
+  {
+    "team": "UNC Wilmington",
+    "rank": 7,
+    "year": 2002,
+    "division": "college-mens"
+  },
+  {
+    "team": "Tufts",
+    "rank": 8,
+    "year": 2002,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 9,
+    "year": 2002,
+    "division": "college-mens"
+  },
+  {
+    "team": "Illinois",
+    "rank": 10,
+    "year": 2002,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Cruz",
+    "rank": 11,
+    "year": 2002,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 12,
+    "year": 2002,
+    "division": "college-mens"
+  },
+  {
+    "team": "Iowa",
+    "rank": 13,
+    "year": 2002,
+    "division": "college-mens"
+  },
+  {
+    "team": "Swarthmore",
+    "rank": 14,
+    "year": 2002,
+    "division": "college-mens"
+  },
+  {
+    "team": "George Washington",
+    "rank": 15,
+    "year": 2002,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 16,
+    "year": 2002,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 1,
+    "year": 2003,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 2,
+    "year": 2003,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 3,
+    "year": 2003,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 4,
+    "year": 2003,
+    "division": "college-mens"
+  },
+  {
+    "team": "Brown",
+    "rank": 5,
+    "year": 2003,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 6,
+    "year": 2003,
+    "division": "college-mens"
+  },
+  {
+    "team": "William & Mary",
+    "rank": 7,
+    "year": 2003,
+    "division": "college-mens"
+  },
+  {
+    "team": "Illinois",
+    "rank": 8,
+    "year": 2003,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 9,
+    "year": 2003,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 10,
+    "year": 2003,
+    "division": "college-mens"
+  },
+  {
+    "team": "NC State",
+    "rank": 11,
+    "year": 2003,
+    "division": "college-mens"
+  },
+  {
+    "team": "Penn State",
+    "rank": 12,
+    "year": 2003,
+    "division": "college-mens"
+  },
+  {
+    "team": "Ohio State",
+    "rank": 13,
+    "year": 2003,
+    "division": "college-mens"
+  },
+  {
+    "team": "Penn",
+    "rank": 14,
+    "year": 2003,
+    "division": "college-mens"
+  },
+  {
+    "team": "Dartmouth",
+    "rank": 15,
+    "year": 2003,
+    "division": "college-mens"
+  },
+  {
+    "team": "Williams",
+    "rank": 16,
+    "year": 2003,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 1,
+    "year": 2004,
+    "division": "college-mens"
+  },
+  {
+    "team": "California",
+    "rank": 2,
+    "year": 2004,
+    "division": "college-mens"
+  },
+  {
+    "team": "Brown",
+    "rank": 3,
+    "year": 2004,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 4,
+    "year": 2004,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC San Diego",
+    "rank": 5,
+    "year": 2004,
+    "division": "college-mens"
+  },
+  {
+    "team": "Iowa",
+    "rank": 6,
+    "year": 2004,
+    "division": "college-mens"
+  },
+  {
+    "team": "NC State",
+    "rank": 7,
+    "year": 2004,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 8,
+    "year": 2004,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 9,
+    "year": 2004,
+    "division": "college-mens"
+  },
+  {
+    "team": "Tufts",
+    "rank": 10,
+    "year": 2004,
+    "division": "college-mens"
+  },
+  {
+    "team": "George Washington",
+    "rank": 11,
+    "year": 2004,
+    "division": "college-mens"
+  },
+  {
+    "team": "William & Mary",
+    "rank": 12,
+    "year": 2004,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan State",
+    "rank": 13,
+    "year": 2004,
+    "division": "college-mens"
+  },
+  {
+    "team": "Illinois",
+    "rank": 14,
+    "year": 2004,
+    "division": "college-mens"
+  },
+  {
+    "team": "Delaware",
+    "rank": 15,
+    "year": 2004,
+    "division": "college-mens"
+  },
+  {
+    "team": "Kansas",
+    "rank": 16,
+    "year": 2004,
+    "division": "college-mens"
+  },
+  {
+    "team": "Brown",
+    "rank": 1,
+    "year": 2005,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 2,
+    "year": 2005,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC San Diego",
+    "rank": 3,
+    "year": 2005,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 4,
+    "year": 2005,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 5,
+    "year": 2005,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 6,
+    "year": 2005,
+    "division": "college-mens"
+  },
+  {
+    "team": "Washington",
+    "rank": 7,
+    "year": 2005,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 8,
+    "year": 2005,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 9,
+    "year": 2005,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan State",
+    "rank": 10,
+    "year": 2005,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 11,
+    "year": 2005,
+    "division": "college-mens"
+  },
+  {
+    "team": "Harvard",
+    "rank": 12,
+    "year": 2005,
+    "division": "college-mens"
+  },
+  {
+    "team": "British Columbia",
+    "rank": 13,
+    "year": 2005,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 14,
+    "year": 2005,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 15,
+    "year": 2005,
+    "division": "college-mens"
+  },
+  {
+    "team": "Queen's",
+    "rank": 16,
+    "year": 2005,
+    "division": "college-mens"
+  },
+  {
+    "team": "Florida",
+    "rank": 1,
+    "year": 2006,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 2,
+    "year": 2006,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 3,
+    "year": 2006,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 4,
+    "year": 2006,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC San Diego",
+    "rank": 5,
+    "year": 2006,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 6,
+    "year": 2006,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 7,
+    "year": 2006,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 8,
+    "year": 2006,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 9,
+    "year": 2006,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan State",
+    "rank": 10,
+    "year": 2006,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 11,
+    "year": 2006,
+    "division": "college-mens"
+  },
+  {
+    "team": "Kansas",
+    "rank": 12,
+    "year": 2006,
+    "division": "college-mens"
+  },
+  {
+    "team": "Harvard",
+    "rank": 13,
+    "year": 2006,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 14,
+    "year": 2006,
+    "division": "college-mens"
+  },
+  {
+    "team": "Brown",
+    "rank": 15,
+    "year": 2006,
+    "division": "college-mens"
+  },
+  {
+    "team": "Delaware",
+    "rank": 16,
+    "year": 2006,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 1,
+    "year": 2007,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 2,
+    "year": 2007,
+    "division": "college-mens"
+  },
+  {
+    "team": "Florida",
+    "rank": 3,
+    "year": 2007,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 4,
+    "year": 2007,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 5,
+    "year": 2007,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 6,
+    "year": 2007,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 7,
+    "year": 2007,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 8,
+    "year": 2007,
+    "division": "college-mens"
+  },
+  {
+    "team": "Ohio State",
+    "rank": 9,
+    "year": 2007,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 10,
+    "year": 2007,
+    "division": "college-mens"
+  },
+  {
+    "team": "Brown",
+    "rank": 11,
+    "year": 2007,
+    "division": "college-mens"
+  },
+  {
+    "team": "Indiana",
+    "rank": 12,
+    "year": 2007,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 13,
+    "year": 2007,
+    "division": "college-mens"
+  },
+  {
+    "team": "Williams",
+    "rank": 14,
+    "year": 2007,
+    "division": "college-mens"
+  },
+  {
+    "team": "Delaware",
+    "rank": 15,
+    "year": 2007,
+    "division": "college-mens"
+  },
+  {
+    "team": "Kansas",
+    "rank": 16,
+    "year": 2007,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 1,
+    "year": 2008,
+    "division": "college-mens"
+  },
+  {
+    "team": "Florida",
+    "rank": 2,
+    "year": 2008,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 3,
+    "year": 2008,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 4,
+    "year": 2008,
+    "division": "college-mens"
+  },
+  {
+    "team": "Arizona",
+    "rank": 5,
+    "year": 2008,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 6,
+    "year": 2008,
+    "division": "college-mens"
+  },
+  {
+    "team": "Harvard",
+    "rank": 7,
+    "year": 2008,
+    "division": "college-mens"
+  },
+  {
+    "team": "Illinois",
+    "rank": 8,
+    "year": 2008,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Cruz",
+    "rank": 9,
+    "year": 2008,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 10,
+    "year": 2008,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 11,
+    "year": 2008,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 12,
+    "year": 2008,
+    "division": "college-mens"
+  },
+  {
+    "team": "Dartmouth",
+    "rank": 13,
+    "year": 2008,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 14,
+    "year": 2008,
+    "division": "college-mens"
+  },
+  {
+    "team": "Delaware",
+    "rank": 15,
+    "year": 2008,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Texas",
+    "rank": 16,
+    "year": 2008,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 1,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 2,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 3,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 4,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 5,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 6,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "Virginia",
+    "rank": 7,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 8,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 9,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "Williams",
+    "rank": 10,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "Luther",
+    "rank": 11,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "Tufts",
+    "rank": 12,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC San Diego",
+    "rank": 13,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "Minnesota",
+    "rank": 14,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 15,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "NC State",
+    "rank": 16,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "Illinois",
+    "rank": 17,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "Kansas",
+    "rank": 18,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "California",
+    "rank": 19,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 20,
+    "year": 2009,
+    "division": "college-mens"
+  },
+  {
+    "team": "Florida",
+    "rank": 1,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 2,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 3,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 4,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "California",
+    "rank": 5,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 6,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "Minnesota",
+    "rank": 7,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "UNC Wilmington",
+    "rank": 8,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 9,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "Iowa",
+    "rank": 10,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "Middlebury",
+    "rank": 11,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 12,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 13,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 14,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 15,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "Harvard",
+    "rank": 16,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC San Diego",
+    "rank": 17,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "Illinois",
+    "rank": 18,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "Kansas",
+    "rank": 19,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas State",
+    "rank": 20,
+    "year": 2010,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 1,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 2,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 3,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Iowa",
+    "rank": 4,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Harvard",
+    "rank": 5,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 6,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 7,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 8,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "British Columbia",
+    "rank": 9,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Tufts",
+    "rank": 10,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Washington",
+    "rank": 11,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Luther",
+    "rank": 12,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 13,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Virginia",
+    "rank": 14,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 15,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Whitman",
+    "rank": 16,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Illinois",
+    "rank": 17,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Cruz",
+    "rank": 18,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado College",
+    "rank": 19,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Florida",
+    "rank": 20,
+    "year": 2011,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 1,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 2,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 3,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 4,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Central Florida",
+    "rank": 5,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Luther",
+    "rank": 6,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Minnesota",
+    "rank": 7,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Tufts",
+    "rank": 8,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 9,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 10,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "California",
+    "rank": 11,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia Tech",
+    "rank": 12,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 13,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Washington",
+    "rank": 14,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 15,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Minnesota-Duluth",
+    "rank": 16,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan State",
+    "rank": 17,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Ohio",
+    "rank": 18,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Davis",
+    "rank": 19,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 20,
+    "year": 2012,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 1,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Central Florida",
+    "rank": 2,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 3,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 4,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Davis",
+    "rank": 5,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Dartmouth",
+    "rank": 6,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 7,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "UNC Wilmington",
+    "rank": 8,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 9,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Harvard",
+    "rank": 10,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 11,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 12,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Arizona",
+    "rank": 13,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 14,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Luther",
+    "rank": 15,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Washington",
+    "rank": 16,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Florida State",
+    "rank": 17,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 18,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Illinois",
+    "rank": 19,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Ohio",
+    "rank": 20,
+    "year": 2013,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 1,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 2,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "UNC Wilmington",
+    "rank": 3,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 4,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 5,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 6,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 7,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 8,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 9,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "Central Florida",
+    "rank": 10,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "Harvard",
+    "rank": 11,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "Tufts",
+    "rank": 12,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC San Diego",
+    "rank": 13,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "Florida",
+    "rank": 14,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "Florida State",
+    "rank": 15,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "Massachusetts",
+    "rank": 16,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "Dartmouth",
+    "rank": 17,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "Eastern Michigan",
+    "rank": 18,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "Rutgers",
+    "rank": 19,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas A&M",
+    "rank": 20,
+    "year": 2014,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 1,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 2,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Central Florida",
+    "rank": 3,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Florida State",
+    "rank": 4,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 5,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Massachusetts",
+    "rank": 6,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 7,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 8,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 9,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Minnesota",
+    "rank": 10,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "UNC Wilmington",
+    "rank": 11,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas A&M",
+    "rank": 12,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Auburn",
+    "rank": 13,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Illinois",
+    "rank": 14,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Western Washington",
+    "rank": 15,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 16,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "rank": 17,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cincinnati",
+    "rank": 18,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 19,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Maryland",
+    "rank": 20,
+    "year": 2015,
+    "division": "college-mens"
+  },
+  {
+    "team": "Minnesota",
+    "rank": 1,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Harvard",
+    "rank": 2,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 3,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 4,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Auburn",
+    "rank": 5,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 6,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 7,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 8,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Massachusetts",
+    "rank": 9,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 10,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 11,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas A&M",
+    "rank": 12,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 13,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Connecticut",
+    "rank": 14,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "UNC Wilmington",
+    "rank": 15,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Utah",
+    "rank": 16,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cal Poly SLO",
+    "rank": 17,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Case Western Reserve",
+    "rank": 18,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Florida State",
+    "rank": 19,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Washington",
+    "rank": 20,
+    "year": 2016,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 1,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "UNC Wilmington",
+    "rank": 2,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "Massachusetts",
+    "rank": 3,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 4,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "Minnesota",
+    "rank": 5,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 6,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "Washington",
+    "rank": 7,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 8,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "Auburn",
+    "rank": 9,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cal Poly SLO",
+    "rank": 10,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 11,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 12,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "British Columbia",
+    "rank": 13,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "Connecticut",
+    "rank": 14,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 15,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas A&M",
+    "rank": 16,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 17,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado State",
+    "rank": 18,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon State",
+    "rank": 19,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "Virginia Tech",
+    "rank": 20,
+    "year": 2017,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 1,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 2,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 3,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 4,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Brown",
+    "rank": 5,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 6,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Washington",
+    "rank": 7,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 8,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Massachusetts",
+    "rank": 9,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Minnesota",
+    "rank": 10,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Northwestern",
+    "rank": 11,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 12,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Auburn",
+    "rank": 13,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Connecticut",
+    "rank": 14,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Florida State",
+    "rank": 15,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "William & Mary",
+    "rank": 16,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgetown",
+    "rank": 17,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Maryland",
+    "rank": 18,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Stanford",
+    "rank": 19,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Victoria",
+    "rank": 20,
+    "year": 2018,
+    "division": "college-mens"
+  },
+  {
+    "team": "Brown",
+    "rank": 1,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 2,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cal Poly SLO",
+    "rank": 3,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 4,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 5,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "Ohio State",
+    "rank": 6,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 7,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 8,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 9,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "Washington",
+    "rank": 10,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 11,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 12,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "Minnesota",
+    "rank": 13,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "Tufts",
+    "rank": 14,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "Northeastern",
+    "rank": 15,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "Iowa State",
+    "rank": 16,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "NC State",
+    "rank": 17,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "California",
+    "rank": 18,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "Victoria",
+    "rank": 19,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "Rutgers",
+    "rank": 20,
+    "year": 2019,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 1,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 2,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "Brown",
+    "rank": 3,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 4,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "Washington",
+    "rank": 5,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 6,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cal Poly SLO",
+    "rank": 7,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 8,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "Ohio State",
+    "rank": 9,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "UNC Wilmington",
+    "rank": 10,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "NC State",
+    "rank": 11,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "Tulane",
+    "rank": 12,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "Northeastern",
+    "rank": 13,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 14,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 15,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "Utah State",
+    "rank": 16,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "Illinois",
+    "rank": 17,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 18,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC San Diego",
+    "rank": 19,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 20,
+    "year": 2021,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 1,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "Brown",
+    "rank": 2,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 3,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 4,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "Minnesota",
+    "rank": 5,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "California",
+    "rank": 6,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 7,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cal Poly SLO",
+    "rank": 8,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "Vermont",
+    "rank": 9,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "Washington",
+    "rank": 10,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 11,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "Auburn",
+    "rank": 12,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "Utah State",
+    "rank": 13,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "Wisconsin",
+    "rank": 14,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 15,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "NC State",
+    "rank": 16,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "William & Mary",
+    "rank": 17,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "WashU",
+    "rank": 18,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "Connecticut",
+    "rank": 19,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "Ohio State",
+    "rank": 20,
+    "year": 2022,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 1,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Massachusetts",
+    "rank": 2,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cal Poly SLO",
+    "rank": 3,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Vermont",
+    "rank": 4,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Brown",
+    "rank": 5,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 6,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 7,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 8,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "California",
+    "rank": 9,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 10,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 11,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 12,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "UC Santa Cruz",
+    "rank": 13,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Minnesota",
+    "rank": 14,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 15,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Washington",
+    "rank": 16,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Tufts",
+    "rank": 17,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Utah State",
+    "rank": 18,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cornell",
+    "rank": 19,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "NC State",
+    "rank": 20,
+    "year": 2023,
+    "division": "college-mens"
+  },
+  {
+    "team": "Brown",
+    "rank": 1,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "Cal Poly SLO",
+    "rank": 2,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "Colorado",
+    "rank": 3,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "North Carolina",
+    "rank": 4,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "Georgia",
+    "rank": 5,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "Minnesota",
+    "rank": 6,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "NC State",
+    "rank": 7,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon",
+    "rank": 8,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "Massachusetts",
+    "rank": 9,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "Pittsburgh",
+    "rank": 10,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "Texas",
+    "rank": 11,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "Michigan",
+    "rank": 12,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "Oregon State",
+    "rank": 13,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "California",
+    "rank": 14,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "Vermont",
+    "rank": 15,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "WashU",
+    "rank": 16,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "Penn State",
+    "rank": 17,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "Carleton",
+    "rank": 18,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "Alabama-Huntsville",
+    "rank": 19,
+    "year": 2024,
+    "division": "college-mens"
+  },
+  {
+    "team": "Ottawa",
+    "rank": 20,
+    "year": 2024,
+    "division": "college-mens"
+  }
+]

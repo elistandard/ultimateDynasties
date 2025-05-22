@@ -1,0 +1,1672 @@
+[
+  {
+    "team": "Stanford",
+    "division": "college-mens",
+    "years": [
+      1984,
+      1985,
+      1986,
+      1988,
+      1989,
+      1994,
+      1995,
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2002,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2011,
+      2017,
+      2018
+    ],
+    "averageRank": 5.318181818181818,
+    "championships": 2,
+    "top4Finishes": 14,
+    "top8Finishes": 19
+  },
+  {
+    "team": "Glassboro",
+    "division": "college-mens",
+    "years": [
+      1984
+    ],
+    "averageRank": 2,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Massachusetts",
+    "division": "college-mens",
+    "years": [
+      1984,
+      1985,
+      1986,
+      1988,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2023,
+      2024
+    ],
+    "averageRank": 6.454545454545454,
+    "championships": 1,
+    "top4Finishes": 5,
+    "top8Finishes": 6
+  },
+  {
+    "team": "Penn",
+    "division": "college-mens",
+    "years": [
+      1984,
+      1985,
+      1989,
+      1991,
+      1994,
+      2001,
+      2003
+    ],
+    "averageRank": 7.714285714285714,
+    "championships": 1,
+    "top4Finishes": 2,
+    "top8Finishes": 3
+  },
+  {
+    "team": "Chabot Community College",
+    "division": "college-mens",
+    "years": [
+      1984,
+      1987
+    ],
+    "averageRank": 3,
+    "championships": 1,
+    "top4Finishes": 1,
+    "top8Finishes": 2
+  },
+  {
+    "team": "Kansas",
+    "division": "college-mens",
+    "years": [
+      1984,
+      1985,
+      1986,
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      1993,
+      1994,
+      1999,
+      2004,
+      2006,
+      2007,
+      2009,
+      2010
+    ],
+    "averageRank": 11.375,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 4
+  },
+  {
+    "team": "Ohio",
+    "division": "college-mens",
+    "years": [
+      1984,
+      2012,
+      2013
+    ],
+    "averageRank": 15,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Syracuse",
+    "division": "college-mens",
+    "years": [
+      1984
+    ],
+    "averageRank": 8,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Texas",
+    "division": "college-mens",
+    "years": [
+      1984,
+      1985,
+      1986,
+      1987,
+      1988,
+      1989,
+      1990,
+      1992,
+      1993,
+      1994,
+      2002,
+      2003,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 8.857142857142858,
+    "championships": 0,
+    "top4Finishes": 3,
+    "top8Finishes": 14
+  },
+  {
+    "team": "Tufts",
+    "division": "college-mens",
+    "years": [
+      1984,
+      1989,
+      2000,
+      2001,
+      2002,
+      2004,
+      2009,
+      2011,
+      2012,
+      2014,
+      2019,
+      2023
+    ],
+    "averageRank": 12.083333333333334,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 2
+  },
+  {
+    "team": "Cornell",
+    "division": "college-mens",
+    "years": [
+      1985,
+      1986,
+      1987,
+      1990,
+      1991,
+      1992,
+      1994,
+      1995,
+      1996,
+      1997,
+      1999,
+      2001,
+      2002,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2015,
+      2021,
+      2023
+    ],
+    "averageRank": 8.761904761904763,
+    "championships": 0,
+    "top4Finishes": 8,
+    "top8Finishes": 12
+  },
+  {
+    "team": "SW Missouri State",
+    "division": "college-mens",
+    "years": [
+      1985,
+      1986,
+      1987
+    ],
+    "averageRank": 5,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 3
+  },
+  {
+    "team": "Cal Poly SLO",
+    "division": "college-mens",
+    "years": [
+      1985,
+      1987,
+      2016,
+      2017,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 6.666666666666667,
+    "championships": 0,
+    "top4Finishes": 4,
+    "top8Finishes": 7
+  },
+  {
+    "team": "MIT",
+    "division": "college-mens",
+    "years": [
+      1985,
+      1986
+    ],
+    "averageRank": 8.5,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Oregon",
+    "division": "college-mens",
+    "years": [
+      1985,
+      1986,
+      1992,
+      2001,
+      2003,
+      2006,
+      2007,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2023,
+      2024
+    ],
+    "averageRank": 6.315789473684211,
+    "championships": 1,
+    "top4Finishes": 8,
+    "top8Finishes": 14
+  },
+  {
+    "team": "Central Florida",
+    "division": "college-mens",
+    "years": [
+      1985,
+      2012,
+      2013,
+      2014,
+      2015
+    ],
+    "averageRank": 6.2,
+    "championships": 0,
+    "top4Finishes": 2,
+    "top8Finishes": 3
+  },
+  {
+    "team": "Princeton",
+    "division": "college-mens",
+    "years": [
+      1985,
+      1986,
+      1987,
+      1990,
+      2000
+    ],
+    "averageRank": 11.4,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "UC Santa Barbara",
+    "division": "college-mens",
+    "years": [
+      1986,
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      1993,
+      1994,
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2006,
+      2009,
+      2010,
+      2015
+    ],
+    "averageRank": 4.421052631578948,
+    "championships": 6,
+    "top4Finishes": 14,
+    "top8Finishes": 15
+  },
+  {
+    "team": "Carnegie Mellon",
+    "division": "college-mens",
+    "years": [
+      1986,
+      1987,
+      1988,
+      1989
+    ],
+    "averageRank": 7,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 2
+  },
+  {
+    "team": "Georgia",
+    "division": "college-mens",
+    "years": [
+      1986,
+      1990,
+      1991,
+      1993,
+      1994,
+      1995,
+      1996,
+      2003,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2013,
+      2015,
+      2016,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 8.652173913043478,
+    "championships": 0,
+    "top4Finishes": 2,
+    "top8Finishes": 13
+  },
+  {
+    "team": "Georgia Tech",
+    "division": "college-mens",
+    "years": [
+      1987,
+      1988,
+      1991,
+      1992,
+      2012
+    ],
+    "averageRank": 8.4,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 3
+  },
+  {
+    "team": "SUNY Purchase",
+    "division": "college-mens",
+    "years": [
+      1987,
+      1989,
+      1990
+    ],
+    "averageRank": 7.333333333333333,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 2
+  },
+  {
+    "team": "Michigan",
+    "division": "college-mens",
+    "years": [
+      1987,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2005,
+      2006,
+      2008,
+      2009,
+      2010,
+      2012,
+      2014,
+      2016,
+      2017,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 9.65,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 7
+  },
+  {
+    "team": "East Carolina",
+    "division": "college-mens",
+    "years": [
+      1987,
+      1988,
+      1989,
+      1991,
+      1992,
+      1993,
+      1994,
+      1995,
+      1997,
+      1998
+    ],
+    "averageRank": 6.3,
+    "championships": 2,
+    "top4Finishes": 3,
+    "top8Finishes": 7
+  },
+  {
+    "team": "Vermont",
+    "division": "college-mens",
+    "years": [
+      1987,
+      1990,
+      1992,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 9.5,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 2
+  },
+  {
+    "team": "Columbia",
+    "division": "college-mens",
+    "years": [
+      1988,
+      1989
+    ],
+    "averageRank": 4.5,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 2
+  },
+  {
+    "team": "Saint Louis",
+    "division": "college-mens",
+    "years": [
+      1988
+    ],
+    "averageRank": 9,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Wesleyan",
+    "division": "college-mens",
+    "years": [
+      1988,
+      1992,
+      1993,
+      1996,
+      1997
+    ],
+    "averageRank": 10.4,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Winona State",
+    "division": "college-mens",
+    "years": [
+      1988,
+      2000
+    ],
+    "averageRank": 12,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Florida",
+    "division": "college-mens",
+    "years": [
+      1989,
+      2006,
+      2007,
+      2008,
+      2010,
+      2011,
+      2014
+    ],
+    "averageRank": 6.857142857142857,
+    "championships": 2,
+    "top4Finishes": 4,
+    "top8Finishes": 5
+  },
+  {
+    "team": "Indiana",
+    "division": "college-mens",
+    "years": [
+      1989,
+      1995,
+      1996,
+      2007
+    ],
+    "averageRank": 10.75,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "UNC Wilmington",
+    "division": "college-mens",
+    "years": [
+      1990,
+      1991,
+      1992,
+      1993,
+      1995,
+      1996,
+      1997,
+      2001,
+      2002,
+      2010,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2021
+    ],
+    "averageRank": 6.1875,
+    "championships": 1,
+    "top4Finishes": 7,
+    "top8Finishes": 12
+  },
+  {
+    "team": "UC Santa Cruz",
+    "division": "college-mens",
+    "years": [
+      1990,
+      1991,
+      1993,
+      1995,
+      1999,
+      2000,
+      2002,
+      2008,
+      2011,
+      2023
+    ],
+    "averageRank": 8.3,
+    "championships": 1,
+    "top4Finishes": 3,
+    "top8Finishes": 5
+  },
+  {
+    "team": "Wisconsin",
+    "division": "college-mens",
+    "years": [
+      1990,
+      1991,
+      1992,
+      1993,
+      1994,
+      1996,
+      1997,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022
+    ],
+    "averageRank": 7.344827586206897,
+    "championships": 3,
+    "top4Finishes": 8,
+    "top8Finishes": 21
+  },
+  {
+    "team": "Carleton",
+    "division": "college-mens",
+    "years": [
+      1990,
+      1991,
+      1992,
+      1993,
+      1994,
+      1995,
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2016,
+      2017,
+      2018,
+      2021,
+      2023,
+      2024
+    ],
+    "averageRank": 5.666666666666667,
+    "championships": 4,
+    "top4Finishes": 17,
+    "top8Finishes": 23
+  },
+  {
+    "team": "Boston College",
+    "division": "college-mens",
+    "years": [
+      1991,
+      1993
+    ],
+    "averageRank": 8,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "California",
+    "division": "college-mens",
+    "years": [
+      1992,
+      2004,
+      2009,
+      2010,
+      2012,
+      2019,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 9.777777777777779,
+    "championships": 0,
+    "top4Finishes": 2,
+    "top8Finishes": 4
+  },
+  {
+    "team": "Oberlin",
+    "division": "college-mens",
+    "years": [
+      1992,
+      1995,
+      1997,
+      1999
+    ],
+    "averageRank": 10,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "SUNY Albany",
+    "division": "college-mens",
+    "years": [
+      1993
+    ],
+    "averageRank": 11,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Las Positas College",
+    "division": "college-mens",
+    "years": [
+      1994
+    ],
+    "averageRank": 8,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "SUNY Binghamton",
+    "division": "college-mens",
+    "years": [
+      1994
+    ],
+    "averageRank": 11,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Yale",
+    "division": "college-mens",
+    "years": [
+      1995,
+      1997,
+      1998,
+      1999
+    ],
+    "averageRank": 10.5,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "LSU",
+    "division": "college-mens",
+    "years": [
+      1995,
+      1997,
+      1998
+    ],
+    "averageRank": 9,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 2
+  },
+  {
+    "team": "Williams",
+    "division": "college-mens",
+    "years": [
+      1995,
+      1996,
+      2003,
+      2007,
+      2009
+    ],
+    "averageRank": 12,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "NC State",
+    "division": "college-mens",
+    "years": [
+      1996,
+      1999,
+      2000,
+      2003,
+      2004,
+      2009,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 10.909090909090908,
+    "championships": 1,
+    "top4Finishes": 1,
+    "top8Finishes": 5
+  },
+  {
+    "team": "Florida State",
+    "division": "college-mens",
+    "years": [
+      1996,
+      2013,
+      2014,
+      2015,
+      2016,
+      2018
+    ],
+    "averageRank": 13.666666666666666,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Rice",
+    "division": "college-mens",
+    "years": [
+      1997,
+      1998,
+      1999,
+      2000
+    ],
+    "averageRank": 11.25,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Brown",
+    "division": "college-mens",
+    "years": [
+      1998,
+      1999,
+      2000,
+      2001,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 4.266666666666667,
+    "championships": 4,
+    "top4Finishes": 9,
+    "top8Finishes": 13
+  },
+  {
+    "team": "North Carolina",
+    "division": "college-mens",
+    "years": [
+      1998,
+      1999,
+      2000,
+      2001,
+      2005,
+      2007,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 5.5,
+    "championships": 5,
+    "top4Finishes": 11,
+    "top8Finishes": 14
+  },
+  {
+    "team": "Colorado",
+    "division": "college-mens",
+    "years": [
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 5.64,
+    "championships": 2,
+    "top4Finishes": 13,
+    "top8Finishes": 19
+  },
+  {
+    "team": "Harvard",
+    "division": "college-mens",
+    "years": [
+      1998,
+      2001,
+      2005,
+      2006,
+      2008,
+      2010,
+      2011,
+      2013,
+      2014,
+      2016
+    ],
+    "averageRank": 9.2,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 4
+  },
+  {
+    "team": "Iowa",
+    "division": "college-mens",
+    "years": [
+      1998,
+      1999,
+      2002,
+      2004,
+      2010,
+      2011
+    ],
+    "averageRank": 8.833333333333334,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 2
+  },
+  {
+    "team": "Salisbury",
+    "division": "college-mens",
+    "years": [
+      1999,
+      2000
+    ],
+    "averageRank": 11.5,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Notre Dame",
+    "division": "college-mens",
+    "years": [
+      2000
+    ],
+    "averageRank": 13,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Ohio State",
+    "division": "college-mens",
+    "years": [
+      2001,
+      2003,
+      2007,
+      2019,
+      2021,
+      2022
+    ],
+    "averageRank": 11.333333333333334,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Texas A&M",
+    "division": "college-mens",
+    "years": [
+      2001,
+      2014,
+      2015,
+      2016,
+      2017
+    ],
+    "averageRank": 14.4,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Duke",
+    "division": "college-mens",
+    "years": [
+      2001
+    ],
+    "averageRank": 13,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "William & Mary",
+    "division": "college-mens",
+    "years": [
+      2002,
+      2003,
+      2004,
+      2018,
+      2022
+    ],
+    "averageRank": 11.2,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 2
+  },
+  {
+    "team": "Illinois",
+    "division": "college-mens",
+    "years": [
+      2002,
+      2003,
+      2004,
+      2008,
+      2009,
+      2010,
+      2011,
+      2013,
+      2015,
+      2021
+    ],
+    "averageRank": 14.2,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 2
+  },
+  {
+    "team": "Swarthmore",
+    "division": "college-mens",
+    "years": [
+      2002
+    ],
+    "averageRank": 14,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "George Washington",
+    "division": "college-mens",
+    "years": [
+      2002,
+      2004
+    ],
+    "averageRank": 13,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Penn State",
+    "division": "college-mens",
+    "years": [
+      2003,
+      2024
+    ],
+    "averageRank": 14.5,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Dartmouth",
+    "division": "college-mens",
+    "years": [
+      2003,
+      2008,
+      2013,
+      2014
+    ],
+    "averageRank": 12.75,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "UC San Diego",
+    "division": "college-mens",
+    "years": [
+      2004,
+      2005,
+      2006,
+      2009,
+      2010,
+      2014,
+      2021
+    ],
+    "averageRank": 10.714285714285714,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 3
+  },
+  {
+    "team": "Michigan State",
+    "division": "college-mens",
+    "years": [
+      2004,
+      2005,
+      2006,
+      2012
+    ],
+    "averageRank": 12.5,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Delaware",
+    "division": "college-mens",
+    "years": [
+      2004,
+      2006,
+      2007,
+      2008
+    ],
+    "averageRank": 15.25,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Washington",
+    "division": "college-mens",
+    "years": [
+      2005,
+      2011,
+      2012,
+      2013,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023
+    ],
+    "averageRank": 11.181818181818182,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 4
+  },
+  {
+    "team": "British Columbia",
+    "division": "college-mens",
+    "years": [
+      2005,
+      2011,
+      2017
+    ],
+    "averageRank": 11.666666666666666,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Pittsburgh",
+    "division": "college-mens",
+    "years": [
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 7,
+    "championships": 2,
+    "top4Finishes": 6,
+    "top8Finishes": 13
+  },
+  {
+    "team": "Queen's",
+    "division": "college-mens",
+    "years": [
+      2005
+    ],
+    "averageRank": 16,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Arizona",
+    "division": "college-mens",
+    "years": [
+      2008,
+      2013
+    ],
+    "averageRank": 9,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "North Texas",
+    "division": "college-mens",
+    "years": [
+      2008
+    ],
+    "averageRank": 16,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Virginia",
+    "division": "college-mens",
+    "years": [
+      2009,
+      2011
+    ],
+    "averageRank": 10.5,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Luther",
+    "division": "college-mens",
+    "years": [
+      2009,
+      2011,
+      2012,
+      2013
+    ],
+    "averageRank": 11,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Minnesota",
+    "division": "college-mens",
+    "years": [
+      2009,
+      2010,
+      2012,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 8.363636363636363,
+    "championships": 1,
+    "top4Finishes": 1,
+    "top8Finishes": 6
+  },
+  {
+    "team": "Middlebury",
+    "division": "college-mens",
+    "years": [
+      2010
+    ],
+    "averageRank": 11,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Texas State",
+    "division": "college-mens",
+    "years": [
+      2010
+    ],
+    "averageRank": 20,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Whitman",
+    "division": "college-mens",
+    "years": [
+      2011
+    ],
+    "averageRank": 16,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Colorado College",
+    "division": "college-mens",
+    "years": [
+      2011
+    ],
+    "averageRank": 19,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Minnesota-Duluth",
+    "division": "college-mens",
+    "years": [
+      2012
+    ],
+    "averageRank": 16,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "UC Davis",
+    "division": "college-mens",
+    "years": [
+      2012,
+      2013
+    ],
+    "averageRank": 12,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Eastern Michigan",
+    "division": "college-mens",
+    "years": [
+      2014
+    ],
+    "averageRank": 18,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Rutgers",
+    "division": "college-mens",
+    "years": [
+      2014,
+      2019
+    ],
+    "averageRank": 19.5,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Auburn",
+    "division": "college-mens",
+    "years": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2022
+    ],
+    "averageRank": 10.4,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Western Washington",
+    "division": "college-mens",
+    "years": [
+      2015
+    ],
+    "averageRank": 15,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Cincinnati",
+    "division": "college-mens",
+    "years": [
+      2015
+    ],
+    "averageRank": 18,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Maryland",
+    "division": "college-mens",
+    "years": [
+      2015,
+      2018
+    ],
+    "averageRank": 19,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Connecticut",
+    "division": "college-mens",
+    "years": [
+      2016,
+      2017,
+      2018,
+      2022
+    ],
+    "averageRank": 15.25,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Utah",
+    "division": "college-mens",
+    "years": [
+      2016
+    ],
+    "averageRank": 16,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Case Western Reserve",
+    "division": "college-mens",
+    "years": [
+      2016
+    ],
+    "averageRank": 18,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Colorado State",
+    "division": "college-mens",
+    "years": [
+      2017
+    ],
+    "averageRank": 18,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Oregon State",
+    "division": "college-mens",
+    "years": [
+      2017,
+      2024
+    ],
+    "averageRank": 16,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Virginia Tech",
+    "division": "college-mens",
+    "years": [
+      2017
+    ],
+    "averageRank": 20,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Northwestern",
+    "division": "college-mens",
+    "years": [
+      2018
+    ],
+    "averageRank": 11,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Georgetown",
+    "division": "college-mens",
+    "years": [
+      2018
+    ],
+    "averageRank": 17,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Victoria",
+    "division": "college-mens",
+    "years": [
+      2018,
+      2019
+    ],
+    "averageRank": 19.5,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Northeastern",
+    "division": "college-mens",
+    "years": [
+      2019,
+      2021
+    ],
+    "averageRank": 14,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Iowa State",
+    "division": "college-mens",
+    "years": [
+      2019
+    ],
+    "averageRank": 16,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Tulane",
+    "division": "college-mens",
+    "years": [
+      2021
+    ],
+    "averageRank": 12,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Utah State",
+    "division": "college-mens",
+    "years": [
+      2021,
+      2022,
+      2023
+    ],
+    "averageRank": 15.666666666666666,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "WashU",
+    "division": "college-mens",
+    "years": [
+      2022,
+      2024
+    ],
+    "averageRank": 17,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Alabama-Huntsville",
+    "division": "college-mens",
+    "years": [
+      2024
+    ],
+    "averageRank": 19,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Ottawa",
+    "division": "college-mens",
+    "years": [
+      2024
+    ],
+    "averageRank": 20,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  }
+]

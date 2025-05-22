@@ -1,0 +1,1504 @@
+[
+  {
+    "team": "Kansas",
+    "division": "college-womens",
+    "years": [
+      1987,
+      1988,
+      1990,
+      1991,
+      1992,
+      1993,
+      1994,
+      1999,
+      2014,
+      2015
+    ],
+    "averageRank": 9.4,
+    "championships": 1,
+    "top4Finishes": 1,
+    "top8Finishes": 5
+  },
+  {
+    "team": "UC Davis",
+    "division": "college-womens",
+    "years": [
+      1987,
+      1988,
+      1989,
+      1990,
+      2000,
+      2004,
+      2006,
+      2021,
+      2022
+    ],
+    "averageRank": 4.111111111111111,
+    "championships": 2,
+    "top4Finishes": 5,
+    "top8Finishes": 8
+  },
+  {
+    "team": "Humboldt State",
+    "division": "college-womens",
+    "years": [
+      1987,
+      1988,
+      1993,
+      2012
+    ],
+    "averageRank": 6.75,
+    "championships": 0,
+    "top4Finishes": 3,
+    "top8Finishes": 3
+  },
+  {
+    "team": "Massachusetts",
+    "division": "college-womens",
+    "years": [
+      1987,
+      1988
+    ],
+    "averageRank": 5,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 2
+  },
+  {
+    "team": "Cornell",
+    "division": "college-womens",
+    "years": [
+      1987,
+      1988,
+      1989,
+      1990,
+      1991,
+      1992,
+      1993,
+      1994,
+      1996,
+      1998,
+      2005,
+      2014,
+      2018,
+      2019
+    ],
+    "averageRank": 8.428571428571429,
+    "championships": 0,
+    "top4Finishes": 2,
+    "top8Finishes": 10
+  },
+  {
+    "team": "Earlham",
+    "division": "college-womens",
+    "years": [
+      1987
+    ],
+    "averageRank": 6,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Vermont",
+    "division": "college-womens",
+    "years": [
+      1987,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 7.2,
+    "championships": 0,
+    "top4Finishes": 2,
+    "top8Finishes": 4
+  },
+  {
+    "team": "UC Santa Barbara",
+    "division": "college-womens",
+    "years": [
+      1988,
+      1989,
+      1990,
+      1991,
+      1994,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2013,
+      2014,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 5.055555555555555,
+    "championships": 5,
+    "top4Finishes": 12,
+    "top8Finishes": 13
+  },
+  {
+    "team": "Oregon",
+    "division": "college-womens",
+    "years": [
+      1988,
+      1989,
+      1992,
+      1998,
+      2000,
+      2002,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2023,
+      2024
+    ],
+    "averageRank": 5.5,
+    "championships": 3,
+    "top4Finishes": 11,
+    "top8Finishes": 16
+  },
+  {
+    "team": "Carleton",
+    "division": "college-womens",
+    "years": [
+      1988,
+      1989,
+      1990,
+      1991,
+      1992,
+      1993,
+      1994,
+      1995,
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2013,
+      2014,
+      2015,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 5.818181818181818,
+    "championships": 1,
+    "top4Finishes": 14,
+    "top8Finishes": 26
+  },
+  {
+    "team": "Wisconsin",
+    "division": "college-womens",
+    "years": [
+      1988,
+      1998,
+      2001,
+      2003,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2012,
+      2013,
+      2016,
+      2019
+    ],
+    "averageRank": 9.615384615384615,
+    "championships": 0,
+    "top4Finishes": 2,
+    "top8Finishes": 7
+  },
+  {
+    "team": "Florida",
+    "division": "college-womens",
+    "years": [
+      1988,
+      2006,
+      2007,
+      2011,
+      2012,
+      2017,
+      2018
+    ],
+    "averageRank": 13.285714285714286,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Michigan",
+    "division": "college-womens",
+    "years": [
+      1989,
+      1990,
+      2003,
+      2006,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2014,
+      2016,
+      2017,
+      2018,
+      2021,
+      2024
+    ],
+    "averageRank": 8.266666666666667,
+    "championships": 0,
+    "top4Finishes": 4,
+    "top8Finishes": 6
+  },
+  {
+    "team": "UNC Wilmington",
+    "division": "college-womens",
+    "years": [
+      1989,
+      1991,
+      1992,
+      1993,
+      1994,
+      1995,
+      1996,
+      1997,
+      1998,
+      2000,
+      2001,
+      2009,
+      2010,
+      2011
+    ],
+    "averageRank": 4.785714285714286,
+    "championships": 2,
+    "top4Finishes": 7,
+    "top8Finishes": 13
+  },
+  {
+    "team": "Penn",
+    "division": "college-womens",
+    "years": [
+      1989,
+      1990,
+      1992,
+      1993,
+      1995,
+      1996,
+      2009,
+      2021,
+      2024
+    ],
+    "averageRank": 9.11111111111111,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 5
+  },
+  {
+    "team": "SUNY Binghamton",
+    "division": "college-womens",
+    "years": [
+      1989,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 15.8,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Towson",
+    "division": "college-womens",
+    "years": [
+      1989
+    ],
+    "averageRank": 10,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Carnegie Mellon",
+    "division": "college-womens",
+    "years": [
+      1990,
+      1991,
+      2023
+    ],
+    "averageRank": 11.333333333333334,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Columbia",
+    "division": "college-womens",
+    "years": [
+      1990,
+      1991,
+      1992,
+      1993,
+      1994,
+      1995
+    ],
+    "averageRank": 5.666666666666667,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 6
+  },
+  {
+    "team": "Wesleyan",
+    "division": "college-womens",
+    "years": [
+      1990
+    ],
+    "averageRank": 10,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "California",
+    "division": "college-womens",
+    "years": [
+      1991,
+      1992,
+      1993,
+      1996,
+      2003,
+      2004,
+      2005,
+      2007,
+      2010,
+      2011,
+      2012,
+      2016,
+      2017
+    ],
+    "averageRank": 5.846153846153846,
+    "championships": 1,
+    "top4Finishes": 4,
+    "top8Finishes": 10
+  },
+  {
+    "team": "Virginia",
+    "division": "college-womens",
+    "years": [
+      1991,
+      2002,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2021,
+      2022,
+      2023
+    ],
+    "averageRank": 10.636363636363637,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 6
+  },
+  {
+    "team": "Tufts",
+    "division": "college-womens",
+    "years": [
+      1991,
+      1994,
+      2000,
+      2001,
+      2006,
+      2007,
+      2011,
+      2012,
+      2013,
+      2014,
+      2017,
+      2018,
+      2019,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 10.4375,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 7
+  },
+  {
+    "team": "Brown",
+    "division": "college-womens",
+    "years": [
+      1992,
+      1997,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005
+    ],
+    "averageRank": 5.555555555555555,
+    "championships": 0,
+    "top4Finishes": 2,
+    "top8Finishes": 7
+  },
+  {
+    "team": "Georgia Tech",
+    "division": "college-womens",
+    "years": [
+      1992
+    ],
+    "averageRank": 10,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Indiana",
+    "division": "college-womens",
+    "years": [
+      1993,
+      1994,
+      1995,
+      1996,
+      1998,
+      2002
+    ],
+    "averageRank": 7.5,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 5
+  },
+  {
+    "team": "Williams",
+    "division": "college-womens",
+    "years": [
+      1993,
+      1995
+    ],
+    "averageRank": 10,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "UC Santa Cruz",
+    "division": "college-womens",
+    "years": [
+      1994,
+      1995,
+      2024
+    ],
+    "averageRank": 6.333333333333333,
+    "championships": 2,
+    "top4Finishes": 2,
+    "top8Finishes": 2
+  },
+  {
+    "team": "East Carolina",
+    "division": "college-womens",
+    "years": [
+      1994
+    ],
+    "averageRank": 9,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Stanford",
+    "division": "college-womens",
+    "years": [
+      1995,
+      1996,
+      1997,
+      1998,
+      1999,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 4.68,
+    "championships": 8,
+    "top4Finishes": 18,
+    "top8Finishes": 20
+  },
+  {
+    "team": "Colorado",
+    "division": "college-womens",
+    "years": [
+      1995,
+      1996,
+      2000,
+      2001,
+      2002,
+      2003,
+      2005,
+      2006,
+      2009,
+      2010,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 5.6,
+    "championships": 0,
+    "top4Finishes": 11,
+    "top8Finishes": 15
+  },
+  {
+    "team": "Yale",
+    "division": "college-womens",
+    "years": [
+      1995,
+      1996,
+      1997,
+      1998,
+      1999,
+      2002
+    ],
+    "averageRank": 8.666666666666666,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 5
+  },
+  {
+    "team": "Florida State",
+    "division": "college-womens",
+    "years": [
+      1996,
+      2015,
+      2021,
+      2022
+    ],
+    "averageRank": 11,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "British Columbia",
+    "division": "college-womens",
+    "years": [
+      1997,
+      1999,
+      2001,
+      2006,
+      2007,
+      2008,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 5.294117647058823,
+    "championships": 1,
+    "top4Finishes": 6,
+    "top8Finishes": 15
+  },
+  {
+    "team": "Rutgers",
+    "division": "college-womens",
+    "years": [
+      1997,
+      1998,
+      2004,
+      2005
+    ],
+    "averageRank": 10.75,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 2
+  },
+  {
+    "team": "Oberlin",
+    "division": "college-womens",
+    "years": [
+      1997
+    ],
+    "averageRank": 7,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Georgia",
+    "division": "college-womens",
+    "years": [
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2006,
+      2013,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 10.928571428571429,
+    "championships": 1,
+    "top4Finishes": 3,
+    "top8Finishes": 3
+  },
+  {
+    "team": "Rice",
+    "division": "college-womens",
+    "years": [
+      1997,
+      1998,
+      2000
+    ],
+    "averageRank": 11,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "MIT",
+    "division": "college-womens",
+    "years": [
+      1998,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2008
+    ],
+    "averageRank": 9,
+    "championships": 0,
+    "top4Finishes": 2,
+    "top8Finishes": 3
+  },
+  {
+    "team": "UC San Diego",
+    "division": "college-womens",
+    "years": [
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2007,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2024
+    ],
+    "averageRank": 6.153846153846154,
+    "championships": 2,
+    "top4Finishes": 4,
+    "top8Finishes": 8
+  },
+  {
+    "team": "Swarthmore",
+    "division": "college-womens",
+    "years": [
+      1999,
+      2000,
+      2001,
+      2006
+    ],
+    "averageRank": 10.25,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Illinois",
+    "division": "college-womens",
+    "years": [
+      1999,
+      2000,
+      2001,
+      2004,
+      2009
+    ],
+    "averageRank": 13.4,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Princeton",
+    "division": "college-womens",
+    "years": [
+      1999,
+      2015
+    ],
+    "averageRank": 12,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Minnesota",
+    "division": "college-womens",
+    "years": [
+      1999,
+      2000,
+      2013,
+      2019
+    ],
+    "averageRank": 11,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Smith",
+    "division": "college-womens",
+    "years": [
+      2000
+    ],
+    "averageRank": 10,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Bucknell",
+    "division": "college-womens",
+    "years": [
+      2000,
+      2001,
+      2002
+    ],
+    "averageRank": 10.333333333333334,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Notre Dame",
+    "division": "college-womens",
+    "years": [
+      2000,
+      2003,
+      2015,
+      2017
+    ],
+    "averageRank": 15.25,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Northwestern",
+    "division": "college-womens",
+    "years": [
+      2001,
+      2002,
+      2005,
+      2007,
+      2010,
+      2011,
+      2013,
+      2019
+    ],
+    "averageRank": 12,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Washington",
+    "division": "college-womens",
+    "years": [
+      2001,
+      2005,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 8.1875,
+    "championships": 1,
+    "top4Finishes": 6,
+    "top8Finishes": 9
+  },
+  {
+    "team": "North Carolina",
+    "division": "college-womens",
+    "years": [
+      2002,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 6.6923076923076925,
+    "championships": 4,
+    "top4Finishes": 5,
+    "top8Finishes": 9
+  },
+  {
+    "team": "Penn State",
+    "division": "college-womens",
+    "years": [
+      2002,
+      2003,
+      2004
+    ],
+    "averageRank": 10.333333333333334,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Texas",
+    "division": "college-womens",
+    "years": [
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2008,
+      2010,
+      2012,
+      2013,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021
+    ],
+    "averageRank": 10.6,
+    "championships": 0,
+    "top4Finishes": 2,
+    "top8Finishes": 6
+  },
+  {
+    "team": "Iowa",
+    "division": "college-womens",
+    "years": [
+      2003,
+      2004,
+      2005,
+      2011,
+      2012,
+      2013
+    ],
+    "averageRank": 6.666666666666667,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 4
+  },
+  {
+    "team": "Delaware",
+    "division": "college-womens",
+    "years": [
+      2003,
+      2006,
+      2007,
+      2012,
+      2017
+    ],
+    "averageRank": 13.8,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Duke",
+    "division": "college-womens",
+    "years": [
+      2003
+    ],
+    "averageRank": 12,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Arizona",
+    "division": "college-womens",
+    "years": [
+      2003
+    ],
+    "averageRank": 14,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Dartmouth",
+    "division": "college-womens",
+    "years": [
+      2004,
+      2005,
+      2006,
+      2007,
+      2009,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "averageRank": 7.2,
+    "championships": 2,
+    "top4Finishes": 3,
+    "top8Finishes": 6
+  },
+  {
+    "team": "Claremont",
+    "division": "college-womens",
+    "years": [
+      2004
+    ],
+    "averageRank": 11,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "NC State",
+    "division": "college-womens",
+    "years": [
+      2004,
+      2005,
+      2018
+    ],
+    "averageRank": 11,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Texas A&M",
+    "division": "college-womens",
+    "years": [
+      2005
+    ],
+    "averageRank": 13,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Purdue",
+    "division": "college-womens",
+    "years": [
+      2005,
+      2022
+    ],
+    "averageRank": 16,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "UCLA",
+    "division": "college-womens",
+    "years": [
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2012,
+      2014,
+      2015,
+      2016,
+      2019,
+      2023
+    ],
+    "averageRank": 8.909090909090908,
+    "championships": 0,
+    "top4Finishes": 3,
+    "top8Finishes": 6
+  },
+  {
+    "team": "Emory",
+    "division": "college-womens",
+    "years": [
+      2006,
+      2007
+    ],
+    "averageRank": 13.5,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "NYU",
+    "division": "college-womens",
+    "years": [
+      2007
+    ],
+    "averageRank": 10,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Truman State",
+    "division": "college-womens",
+    "years": [
+      2007
+    ],
+    "averageRank": 14,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Ottawa",
+    "division": "college-womens",
+    "years": [
+      2008,
+      2009,
+      2011,
+      2012,
+      2013,
+      2016
+    ],
+    "averageRank": 13.166666666666666,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 2
+  },
+  {
+    "team": "Northeastern",
+    "division": "college-womens",
+    "years": [
+      2008,
+      2009,
+      2013,
+      2014,
+      2019,
+      2022,
+      2023
+    ],
+    "averageRank": 15.714285714285714,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Maryland",
+    "division": "college-womens",
+    "years": [
+      2008,
+      2010
+    ],
+    "averageRank": 13,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Michigan State",
+    "division": "college-womens",
+    "years": [
+      2008
+    ],
+    "averageRank": 12,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Wake Forest",
+    "division": "college-womens",
+    "years": [
+      2008
+    ],
+    "averageRank": 13,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Saint Louis",
+    "division": "college-womens",
+    "years": [
+      2009
+    ],
+    "averageRank": 14,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Iowa State",
+    "division": "college-womens",
+    "years": [
+      2009,
+      2011,
+      2012,
+      2013
+    ],
+    "averageRank": 11.25,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "WashU",
+    "division": "college-womens",
+    "years": [
+      2009,
+      2010,
+      2011
+    ],
+    "averageRank": 17.333333333333332,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "USC",
+    "division": "college-womens",
+    "years": [
+      2009,
+      2010,
+      2016
+    ],
+    "averageRank": 15.666666666666666,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Pittsburgh",
+    "division": "college-womens",
+    "years": [
+      2010,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2021,
+      2022
+    ],
+    "averageRank": 12.875,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 2
+  },
+  {
+    "team": "Harvard",
+    "division": "college-womens",
+    "years": [
+      2010
+    ],
+    "averageRank": 19,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Middlebury",
+    "division": "college-womens",
+    "years": [
+      2010,
+      2015
+    ],
+    "averageRank": 19,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Colorado College",
+    "division": "college-womens",
+    "years": [
+      2011,
+      2014,
+      2016
+    ],
+    "averageRank": 10,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Ohio State",
+    "division": "college-womens",
+    "years": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ],
+    "averageRank": 9.88888888888889,
+    "championships": 1,
+    "top4Finishes": 3,
+    "top8Finishes": 4
+  },
+  {
+    "team": "Sonoma State",
+    "division": "college-womens",
+    "years": [
+      2012
+    ],
+    "averageRank": 15,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Whitman",
+    "division": "college-womens",
+    "years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2018
+    ],
+    "averageRank": 13.2,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 2
+  },
+  {
+    "team": "Central Florida",
+    "division": "college-womens",
+    "years": [
+      2013,
+      2014,
+      2015,
+      2016
+    ],
+    "averageRank": 12.5,
+    "championships": 0,
+    "top4Finishes": 1,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Victoria",
+    "division": "college-womens",
+    "years": [
+      2014,
+      2015,
+      2023,
+      2024
+    ],
+    "averageRank": 16,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Western Washington",
+    "division": "college-womens",
+    "years": [
+      2014,
+      2016,
+      2018,
+      2019,
+      2021,
+      2024
+    ],
+    "averageRank": 13,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 1
+  },
+  {
+    "team": "Connecticut",
+    "division": "college-womens",
+    "years": [
+      2017
+    ],
+    "averageRank": 15,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "West Chester",
+    "division": "college-womens",
+    "years": [
+      2018
+    ],
+    "averageRank": 15,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Chicago",
+    "division": "college-womens",
+    "years": [
+      2021,
+      2023
+    ],
+    "averageRank": 13.5,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Ohio",
+    "division": "college-womens",
+    "years": [
+      2021
+    ],
+    "averageRank": 16,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Boston University",
+    "division": "college-womens",
+    "years": [
+      2021
+    ],
+    "averageRank": 20,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "William & Mary",
+    "division": "college-womens",
+    "years": [
+      2022
+    ],
+    "averageRank": 15,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Colorado State",
+    "division": "college-womens",
+    "years": [
+      2022,
+      2023,
+      2024
+    ],
+    "averageRank": 14.333333333333334,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "UT Dallas",
+    "division": "college-womens",
+    "years": [
+      2023
+    ],
+    "averageRank": 20,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  },
+  {
+    "team": "Utah",
+    "division": "college-womens",
+    "years": [
+      2024
+    ],
+    "averageRank": 19,
+    "championships": 0,
+    "top4Finishes": 0,
+    "top8Finishes": 0
+  }
+]
