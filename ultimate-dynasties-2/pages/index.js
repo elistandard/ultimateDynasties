@@ -42,6 +42,9 @@ export default function Home() {
         <div id="controls" className="text-sm font-medium text-gray-700 flex gap-4"></div>
         <div id="chart" className="w-full overflow-x-auto"></div>
       </main>
+      <footer className="w-full mt-12 text-center text-sm text-gray-500">
+        Data source: 1984-2024 results: <a href="https://collegechampionships.usaultimate.org/" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">https://collegechampionships.usaultimate.org/</a>
+      </footer>
     </div>
   );
 }
