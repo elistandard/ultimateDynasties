@@ -1,3 +1,33 @@
+// Add this at the top of the file to inject global CSS for selectors and buttons
+function _css(md){return md`<style>
+input[type="radio"] {
+  accent-color: #111;
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+}
+select {
+  font-size: 16px;
+  padding: 7px 12px;
+  border-radius: 6px;
+  border: 2px solid #111;
+  margin-right: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+button {
+  font-size: 16px;
+  padding: 7px 12px;
+  border-radius: 6px;
+  border: 2px solid #111;
+  background-color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #f0f0f0;
+}
+</style>`}
+
 // Utility functions
 function getOrdinalSuffix(n) {
     const s = ["th", "st", "nd", "rd"];
