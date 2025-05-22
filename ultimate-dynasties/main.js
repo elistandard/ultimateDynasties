@@ -223,6 +223,12 @@ function updateCharts(division, selectedTeam) {
 // Update championship chart
 function updateChampionshipChart(division) {
     const container = document.getElementById('championshipChart');
+    
+    // Initialize chart if not already initialized
+    if (!container._scales) {
+        initializeChampionshipChart();
+    }
+    
     const { x, y } = container._scales;
     const { xAxis, yAxis, svg } = container._axes;
 
@@ -259,6 +265,12 @@ function updateChampionshipChart(division) {
 // Update dot chart
 function updateDotChart(division, selectedTeam) {
     const container = document.getElementById('dotChart');
+    
+    // Initialize chart if not already initialized
+    if (!container._scales) {
+        initializeDotChart();
+    }
+    
     const { x, y } = container._scales;
     const { xAxis, yAxis, svg } = container._axes;
 
