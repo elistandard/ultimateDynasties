@@ -1,174 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ultimate Dynasties</title>
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Font (Inter) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-  </style>
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" type="text/css" href="./inspector.css" />
-
-  <!-- Favicon (optional) -->
-  <link rel="icon" href="/public/favicon.ico" />
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
-<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen text-gray-900">
-
-  <!-- Header -->
-  <header class="bg-white/80 backdrop-blur shadow-md rounded-b-3xl">
-    <div class="max-w-7xl mx-auto px-4 py-8 sm:px-8 flex flex-col items-center gap-2">
-      <h1 class="text-4xl font-extrabold tracking-tight text-indigo-700 drop-shadow">Ultimate Dynasties</h1>
-      <p class="text-lg text-gray-500 mt-1">Visualizing the history of dominance in Ultimate Frisbee</p>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <main class="max-w-7xl mx-auto px-4 py-16 sm:px-8 lg:px-12">
-    <div class="bg-white/90 rounded-3xl shadow-xl p-10 border border-gray-200">
-      <!-- Restored Introduction -->
-      <div class="prose prose-lg max-w-none mb-8">
-        <p class="text-xl font-semibold text-gray-700">
-          North Carolina, Cartleton, UCSB, Wisconsin. We've all heard about these dynasties in the college ultimate world. But which teams have been good forever? Who's made nationals the most but never won a championship? Where should my kid apply to college if they want to go to nationals next year??
-        </p>
-        <p class="text-base text-gray-600">
-          1984-2023 results: <a href="https://collegechampionships.usaultimate.org/d1-men/history/" class="text-blue-700 underline" target="_blank">USA Ultimate D1 Men History</a><br>
-          2024 results: <a href="https://play.usaultimate.org/events/2024-USA-Ultimate-D-1-College-Championships/" class="text-blue-700 underline" target="_blank">2024 USA Ultimate D-1 College Championships</a>
-        </p>
-        <p class="text-base text-gray-600">
-          The above websites have comprehensive and easy to read college championship results. We can click on any year one at a time to see where men's and women's college teams placed.<br><br>
-          But this website doesn't allow you to see the success of teams over time. Sure we can memorize how a team placed in a certain year and open up 10 tabs to see how they did before and after, but what if we want to see the rise and fall of teams since 1984 up until the present?
-        </p>
-      </div>
-      <!-- Observable notebook container (for interactive controls and charts) -->
-      <div id="notebook-container"></div>
-      <!-- Analysis Section -->
-      <div class="prose prose-lg max-w-none mt-12">
-        <h2 class="text-2xl font-bold text-gray-800 mb-6">Men's Division Analysis</h2>
-        <ul class="space-y-4 text-gray-600">
-          <li>UCSB won back-to-back-to-back twice, and you can see their slow climb from third in 1986 to second in 1987 to winning for the first time in 1988. But why didn't they make nationals in 1992? Only to lose in finals in 1993?</li>
-          <li>Brown has a clear legacy in the early 2000s, with wins in 2000 and 2005, but a huge break from 2008 to 2017 before gaining dominance again in 2019 and 2024.</li>
-          <li>North Carolina obviously another major legacy, making nationals every year since 2012. But they were late to the game, not making it for the first time until 1998, and missing nationals 7 years in the mid 2000s.</li>
-        </ul>
-        <h3 class="text-xl font-semibold text-gray-700 mt-8 mb-4">Other Notable Teams</h3>
-        <ul class="list-disc list-inside space-y-2 text-gray-600">
-          <li>Texas with a history of mediocrity</li>
-          <li>Oregon only winning once in 1992</li>
-          <li>UMass getting second after missing nationals three years in a row</li>
-          <li>Michigan never placing above third</li>
-          <li>Florida dropping from first to dead last in 2010-2011</li>
-          <li>Wisconsin getting 5th four years in a row</li>
-          <li>East Carolina never making nationals after 1998</li>
-          <li>Notre Dame making it once in 2000</li>
-          <li>Cal Poly's recent success post 2016</li>
-        </ul>
-        <h2 class="text-2xl font-bold text-gray-800 mt-12 mb-6">Women's Division Analysis</h2>
-        <ul class="space-y-4 text-gray-600">
-          <li>Stanford is far and away the best women's team ever with eight championships. They even went back-to-back-to-back twice. They made nationals for the first time in 1995, lost in finals twice, won nationals three years in a row, and then didn't make nationals in 2000, only to go on another crazy seven year streak until they don't make it again in 2008.</li>
-          <li>UCSB has also been strong, but with more concentrated spurts of success in 1988-1991 and 2007-2011. They also haven't missed a nationals since 2017.</li>
-          <li>Carleton has only missed four nationals total in the history of the sport, but only have one national championship in 2000.</li>
-          <li>UNC's four year win streak is unprecedented, as they're the only Men or Women's team to win four years in a row.</li>
-        </ul>
-        <h3 class="text-xl font-semibold text-gray-700 mt-8 mb-4">Other Notable Women's Teams</h3>
-        <ul class="list-disc list-inside space-y-2 text-gray-600">
-          <li>UC Davis winning nationals in 2004 after not making it the three years prior and not making it again until two years after</li>
-          <li>UBC's slow climb to the top since 2006 and inability to make it past semis since their win in 2008</li>
-          <li>Oregon's dominance in the 2010s</li>
-          <li>Dartmouth's back to back victories in 2017 and 2018 followed by a loss to UCSD in 2019</li>
-          <li>Vermont making nationals for the first time since 1984 in 2021</li>
-          <li>Whitman's three year ride from last to 5th to 2nd in 2016</li>
-          <li>UCLA making nationals for the first time ever in 2006, only to lose in finals and then never make it past semis</li>
-        </ul>
-      </div>
-      <!-- Implementation Details Button and Appendix (moved to bottom) -->
-      <div class="mt-12 mb-8">
-        <button type="button" class="px-4 py-2 rounded-full bg-gradient-to-r from-indigo-100 to-blue-200 text-indigo-700 font-semibold shadow hover:from-indigo-200 hover:to-blue-300 hover:text-indigo-900 transition duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-300" onclick="const a=document.getElementById('appendix-content');a.classList.toggle('hidden');">
-          Implementation Details <span class="ml-1">▼</span>
-        </button>
-        <div id="appendix-content" class="hidden text-sm text-gray-400 mt-4 border-t border-gray-200 pt-4">
-          <div id="notebook-details"></div>
-        </div>
-      </div>
-      <!-- Bottom code output in a styled container -->
-      <div class="max-w-7xl mx-auto px-4 py-8 sm:px-8 lg:px-12 mt-8 mb-4">
-        <div class="bg-white/90 rounded-3xl shadow-xl p-8 border border-gray-200 overflow-x-auto">
-          <div id="notebook-internals"></div>
-        </div>
+<body>
+  <div class="container">
+    <!-- Introduction Section -->
+    <div class="intro-section">
+      <h1>Ultimate Dynasties</h1>
+      <p>Explore the greatest college football dynasties of all time.</p>
+      <div class="links">
+        <a href="https://github.com/yourusername/ultimateDynasties" target="_blank">GitHub</a>
+        <a href="https://observablehq.com/@yourusername/ultimate-dynasties" target="_blank">Observable Notebook</a>
       </div>
     </div>
-  </main>
 
-  <!-- Footer -->
-  <footer class="text-center text-sm text-gray-400 py-8 mt-8">
-    <p>© 2025 Ultimate Dynasties — Powered by Observable + Vercel</p>
-  </footer>
+    <!-- Controls Section -->
+    <div class="controls-section">
+      <div class="division-selector">
+        <label>Select Division:</label>
+        <div class="radio-group">
+          <input type="radio" id="fbs" name="division" value="FBS" checked>
+          <label for="fbs">FBS</label>
+          <input type="radio" id="fcs" name="division" value="FCS">
+          <label for="fcs">FCS</label>
+        </div>
+      </div>
 
-  <!-- Add a container at the bottom for internal Observable cells -->
-  <div id="notebook-internals" style="margin-top: 4rem;"></div>
+      <div class="team-selector">
+        <label for="teamSelect">Select team to highlight:</label>
+        <select id="teamSelect"></select>
+      </div>
+    </div>
 
-  <!-- Observable Runtime Script -->
-  <script type="module">
-    import define from "./8e7166a31f4433ec@795.js";
-    import {Runtime, Library, Inspector} from "./runtime.js";
+    <!-- Team Summary Section -->
+    <div class="team-summary">
+      <div class="team-logo"></div>
+      <div class="team-stats"></div>
+    </div>
 
-    const runtime = new Runtime();
-    // Render only the interactive cells in the main container
-    runtime.module(define, name => {
-      // List of interactive cell names to show at the top, in desired order
-      const mainCells = [
-        "viewof divisionToggle2",
-        "viewof championshipChart",
-        "viewof teamSelector",
-        "_13",
-        "viewof chart"
-      ];
-      if (mainCells.includes(name)) {
-        return Inspector.into(document.querySelector('#notebook-container'))(name);
-      }
-      // Render all other cells at the bottom
-      return Inspector.into(document.querySelector('#notebook-internals'))(name);
-    });
-  </script>
+    <!-- Charts Section -->
+    <div class="charts-section">
+      <div id="championshipChart"></div>
+      <div id="dotChart"></div>
+    </div>
 
-  <!-- Add custom styles for Observable cells -->
-  <style>
-    /* Show all Observable cells by default */
-    .observablehq {
-      display: block;
-    }
-    /* Ensure proper spacing and layout */
-    .observablehq--inspect {
-      margin: 1rem 0;
-    }
-    /* Style the controls: change label and border to black, fix width */
-    .observablehq--inspect label {
-      color: #111;
-    }
-    .observablehq--inspect select {
-      border: 2px solid #111;
-      color: #111;
-      width: 260px;
-      max-width: 100%;
-    }
-    .observablehq--inspect input[type="radio"] {
-      accent-color: #111;
-    }
-    /* Ensure SVG charts are visible and properly sized */
-    .observablehq--inspect svg {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
+    <!-- Appendix Section -->
+    <div class="appendix-section">
+      <button id="toggleAppendix">Show/Hide Appendix</button>
+      <div id="appendix" class="hidden">
+        <!-- Appendix content will be populated by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
 

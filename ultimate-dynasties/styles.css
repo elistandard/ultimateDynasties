@@ -1,0 +1,241 @@
+/* Base Styles */
+:root {
+    --primary-color: #111;
+    --secondary-color: #666;
+    --background-color: #f5f5f5;
+    --white: #fff;
+    --border-color: #ddd;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Introduction Section */
+.intro-section {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.intro-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.links {
+    margin-top: 1rem;
+}
+
+.links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.links a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Controls Section */
+.controls-section {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.division-selector {
+    margin-bottom: 1.5rem;
+}
+
+.radio-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    accent-color: var(--primary-color);
+    margin: 0;
+    width: 18px;
+    height: 18px;
+}
+
+.team-selector {
+    margin-top: 1.5rem;
+}
+
+.team-selector label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: var(--white);
+}
+
+/* Team Summary Section */
+.team-summary {
+    display: flex;
+    gap: 2rem;
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.team-logo {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-stats {
+    flex: 1;
+}
+
+/* Charts Section */
+.charts-section {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+#championshipChart, #dotChart {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 2rem;
+}
+
+/* Appendix Section */
+.appendix-section {
+    margin-top: 3rem;
+}
+
+#toggleAppendix {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#toggleAppendix:hover {
+    opacity: 0.9;
+}
+
+#appendix {
+    margin-top: 1rem;
+    padding: 1.5rem;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#appendix.hidden {
+    display: none;
+}
+
+/* Chart Styles */
+.chart-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.bar {
+    transition: fill 0.3s ease;
+}
+
+.bar:hover {
+    opacity: 0.8;
+}
+
+.dot {
+    transition: opacity 0.3s ease;
+}
+
+.dot:hover {
+    opacity: 0.8;
+}
+
+.x-axis text, .y-axis text {
+    font-size: 12px;
+}
+
+.x-axis path, .y-axis path,
+.x-axis line, .y-axis line {
+    stroke: #ccc;
+}
+
+/* Team Stats Styles */
+.team-stats-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.team-stats-content p {
+    margin: 0;
+    padding: 0.5rem;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .team-summary {
+        flex-direction: column;
+    }
+
+    .team-logo {
+        width: 100%;
+        height: 150px;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+} 
