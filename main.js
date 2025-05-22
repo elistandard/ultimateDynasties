@@ -30,87 +30,36 @@ button:hover {
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
-    // Bar chart
-    const width = 600;
-    const height = 400;
-    const margin = { top: 20, right: 30, bottom: 30, left: 40 };
+    const divisionRadios = document.querySelectorAll('input[name="division"]');
+    const teamSelect = document.getElementById('teamSelect');
 
-    // Bar chart SVG
-    const svg = d3.select('#championshipChart')
-        .append('svg')
-        .attr('width', width)
-        .attr('height', height);
+    function getCurrentDivision() {
+        return document.querySelector('input[name="division"]:checked').value;
+    }
 
-    const x = d3.scaleBand()
-        .domain(rawData.map(d => d.Team))
-        .range([margin.left, width - margin.right])
-        .padding(0.1);
+    function getCurrentTeam() {
+        return teamSelect.value;
+    }
 
-    const y = d3.scaleLinear()
-        .domain([0, d3.max(rawData, d => d.Rank)])
-        .range([height - margin.bottom, margin.top]);
+    function onSelectionChange() {
+        const division = getCurrentDivision();
+        const team = getCurrentTeam();
+        renderCharts(division, team);
+    }
 
-    svg.append('g')
-        .attr('transform', `translate(0,${height - margin.bottom})`)
-        .call(d3.axisBottom(x));
+    divisionRadios.forEach(radio => {
+        radio.addEventListener('change', () => {
+            updateTeamDropdown(getCurrentDivision());
+            teamSelect.value = '';
+            renderCharts(getCurrentDivision(), '');
+        });
+    });
 
-    svg.append('g')
-        .attr('transform', `translate(${margin.left},0)`)
-        .call(d3.axisLeft(y));
+    teamSelect.addEventListener('change', onSelectionChange);
 
-    svg.selectAll('rect')
-        .data(rawData)
-        .enter()
-        .append('rect')
-        .attr('x', d => x(d.Team))
-        .attr('y', d => y(d.Rank))
-        .attr('width', x.bandwidth())
-        .attr('height', d => height - margin.bottom - y(d.Rank))
-        .attr('fill', d => colorData.find(c => c.team === d.Team)?.color || '#999');
-
-    svg.append('text')
-        .attr('x', width / 2)
-        .attr('y', margin.top)
-        .attr('text-anchor', 'middle')
-        .text('Team Rankings');
-
-    // Dot chart
-    const dotSvg = d3.select('#dotChart')
-        .append('svg')
-        .attr('width', width)
-        .attr('height', height);
-
-    // For this minimal example, plot each team as a dot at (Year, Rank)
-    const xDot = d3.scaleLinear()
-        .domain(d3.extent(rawData, d => d.Year))
-        .range([margin.left, width - margin.right]);
-
-    const yDot = d3.scaleLinear()
-        .domain([0, d3.max(rawData, d => d.Rank)])
-        .range([height - margin.bottom, margin.top]);
-
-    dotSvg.append('g')
-        .attr('transform', `translate(0,${height - margin.bottom})`)
-        .call(d3.axisBottom(xDot).tickFormat(d3.format('d')));
-
-    dotSvg.append('g')
-        .attr('transform', `translate(${margin.left},0)`)
-        .call(d3.axisLeft(yDot));
-
-    dotSvg.selectAll('circle')
-        .data(rawData)
-        .enter()
-        .append('circle')
-        .attr('cx', d => xDot(d.Year))
-        .attr('cy', d => yDot(d.Rank))
-        .attr('r', 8)
-        .attr('fill', d => colorData.find(c => c.team === d.Team)?.color || '#999');
-
-    dotSvg.append('text')
-        .attr('x', width / 2)
-        .attr('y', margin.top)
-        .attr('text-anchor', 'middle')
-        .text('Team Rankings Over Time');
+    // Initial population
+    updateTeamDropdown(getCurrentDivision());
+    renderCharts(getCurrentDivision(), '');
 });
 
 // Handle division change
@@ -420,4 +369,111 @@ function updateCharts(division, selectedTeam) {
         const currentDivision = document.querySelector('input[name="division"]:checked').value;
         updateDotChart(currentDivision, selectedTeam);
     }
+}
+
+// Utility: get unique teams for a division
+function getTeamsForDivision(division) {
+    return [...new Set(rawData.filter(d => d.Division === division).map(d => d.Team))];
+}
+
+// Utility: filter data by division and team
+function getFilteredData(division, team) {
+    let data = rawData.filter(d => d.Division === division);
+    if (team) data = data.filter(d => d.Team === team);
+    return data;
+}
+
+function updateTeamDropdown(division) {
+    const teamSelect = document.getElementById('teamSelect');
+    const teams = getTeamsForDivision(division);
+    teamSelect.innerHTML = '<option value="">All Teams</option>' +
+        teams.map(team => `<option value="${team}">${team}</option>`).join('');
+}
+
+function renderCharts(division, team) {
+    // Remove old svgs
+    d3.select('#championshipChart').selectAll('svg').remove();
+    d3.select('#dotChart').selectAll('svg').remove();
+
+    const width = 600;
+    const height = 400;
+    const margin = { top: 20, right: 30, bottom: 30, left: 40 };
+    const data = getFilteredData(division, team);
+    if (data.length === 0) return;
+
+    // Bar chart
+    const svg = d3.select('#championshipChart')
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height);
+
+    const x = d3.scaleBand()
+        .domain(data.map(d => d.Team))
+        .range([margin.left, width - margin.right])
+        .padding(0.1);
+
+    const y = d3.scaleLinear()
+        .domain([0, d3.max(data, d => d.Rank)])
+        .range([height - margin.bottom, margin.top]);
+
+    svg.append('g')
+        .attr('transform', `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(x));
+
+    svg.append('g')
+        .attr('transform', `translate(${margin.left},0)`)
+        .call(d3.axisLeft(y));
+
+    svg.selectAll('rect')
+        .data(data)
+        .enter()
+        .append('rect')
+        .attr('x', d => x(d.Team))
+        .attr('y', d => y(d.Rank))
+        .attr('width', x.bandwidth())
+        .attr('height', d => height - margin.bottom - y(d.Rank))
+        .attr('fill', d => colorData.find(c => c.team === d.Team)?.color || '#999');
+
+    svg.append('text')
+        .attr('x', width / 2)
+        .attr('y', margin.top)
+        .attr('text-anchor', 'middle')
+        .text('Team Rankings');
+
+    // Dot chart
+    const dotSvg = d3.select('#dotChart')
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height);
+
+    const xDot = d3.scaleLinear()
+        .domain(d3.extent(data, d => d.Year))
+        .range([margin.left, width - margin.right]);
+
+    const yDot = d3.scaleLinear()
+        .domain([0, d3.max(data, d => d.Rank)])
+        .range([height - margin.bottom, margin.top]);
+
+    dotSvg.append('g')
+        .attr('transform', `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(xDot).tickFormat(d3.format('d')));
+
+    dotSvg.append('g')
+        .attr('transform', `translate(${margin.left},0)`)
+        .call(d3.axisLeft(yDot));
+
+    dotSvg.selectAll('circle')
+        .data(data)
+        .enter()
+        .append('circle')
+        .attr('cx', d => xDot(d.Year))
+        .attr('cy', d => yDot(d.Rank))
+        .attr('r', 8)
+        .attr('fill', d => colorData.find(c => c.team === d.Team)?.color || '#999');
+
+    dotSvg.append('text')
+        .attr('x', width / 2)
+        .attr('y', margin.top)
+        .attr('text-anchor', 'middle')
+        .text('Team Rankings Over Time');
 } 

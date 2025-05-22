@@ -9,6 +9,9 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
+        #controls {
+            margin-bottom: 20px;
+        }
         #championshipChart, #dotChart {
             width: 600px;
             height: 400px;
@@ -19,6 +22,15 @@
 </head>
 <body>
     <h1>Ultimate Dynasties</h1>
+    <div id="controls">
+        <label>Select Division:</label>
+        <label><input type="radio" name="division" value="D-I" checked> D-I</label>
+        <label><input type="radio" name="division" value="D-II"> D-II</label>
+        <label>Select Team:</label>
+        <select id="teamSelect">
+            <option value="">All Teams</option>
+        </select>
+    </div>
     <div id="championshipChart"></div>
     <div id="dotChart"></div>
 
