@@ -120,6 +120,13 @@ export async function renderChampionshipChart() {
 // New chart rankings over time
 
 export async function renderRankingsChart() {
+  // Load team color data
+  const colorData = await d3.csv("/college-mens-logo-colors.csv", d => ({
+    team: d.team,
+    color: d.color
+  }));
+  const teamColorMap = new Map(colorData.map(d => [d.team, d.color]));
+
   const response = await fetch("/college-rankings-combined.csv");
   const text = await response.text();
   const raw_data = d3.csvParse(text, d => ({
@@ -189,133 +196,236 @@ export async function renderRankingsChart() {
   }
 
   updateTeamList();
+
+  const tooltip = d3.select("body").append("div")
+  .attr("class", "tooltip")
+  .style("position", "absolute")
+  .style("background", "white")
+  .style("border", "1px solid #ccc")
+  .style("padding", "8px 10px")
+  .style("border-radius", "6px")
+  .style("box-shadow", "0 2px 6px rgba(0,0,0,0.15)")
+  .style("pointer-events", "none")
+  .style("opacity", 0)
+  .style("color", "#000")
+  .style("font-family", "sans-serif")
+  .style("font-size", "12px");
+
+  function ordinalSuffix(n) {
+    n = parseInt(n);
+    if (n > 3 && n < 21) return "th";
+    switch (n % 10) {
+      case 1: return "st";
+      case 2: return "nd";
+      case 3: return "rd";
+      default: return "th";
+    }
+  }  
+  
+  function formatRank(rank) {
+    const r = String(rank).trim();
+    if (r === "?") return "Rank unknown";
+    if (r.startsWith("T")) {
+      const n = r.slice(1);
+      return `Tied for ${n}${ordinalSuffix(n)}`;
+    }
+    if (/^\d+$/.test(r)) {
+      return `${r}${ordinalSuffix(r)}`;
+    }
+    return r;
+  }  
+
   drawChart();
 
   function drawChart() {
     chartContainer.html("");
-
+  
     const data = raw_data.filter(d => d.Division === selectedDivision);
     const grouped = d3.group(data, d => d.Team);
-
+  
     const width = 1000;
     const height = 500;
-    const margin = { top: 30, right: 30, bottom: 50, left: 50 };
-
+    const margin = { top: 50, right: 30, bottom: 50, left: 50 };
+  
     const xScale = d3.scaleLinear()
       .domain(d3.extent(data, d => d.Year))
       .range([margin.left, width - margin.right]);
-
+  
     const yMax = d3.max(data, d => d.Rank);
     const yScale = d3.scaleLinear()
       .domain([yMax + 1, 1])
       .range([height - margin.bottom, margin.top]);
-
+  
     const svg = chartContainer.append("svg")
       .attr("viewBox", [0, 0, width, height])
-      .style("font-family", "sans-serif");
-
+      .style("font-family", "sans-serif")
+      .style("background", "#111"); // dark background
+  
     // Axes
-    svg.append("g")
+    // Get all years in the data
+    const allYears = Array.from(new Set(data.map(d => d.Year))).sort((a, b) => a - b);
+    // Offset the first year tick by shifting it right
+    const xAxis = d3.axisBottom(xScale)
+      .tickValues(allYears)
+      .tickFormat(d => `'${String(d).slice(-2)}`);
+
+    const xAxisG = svg.append("g")
       .attr("transform", `translate(0, ${height - margin.bottom})`)
-      .call(d3.axisBottom(xScale).tickFormat(d => `'${String(d).slice(-2)}`));
-
+      .call(xAxis)
+      .call(g => g.selectAll("text").style("fill", "#ccc"));
+  
+    const yAxisOffset = -20; // negative value shifts y-axis left
     svg.append("g")
-      .attr("transform", `translate(${margin.left}, 0)`)
-      .call(d3.axisLeft(yScale));
-
-    // Lines for all teams
+      .attr("transform", `translate(${margin.left + yAxisOffset}, 0)`)
+      .call(d3.axisLeft(yScale)
+        .tickValues(d3.range(1, 21))
+        .tickFormat(d3.format("d")))
+      .call(g => g.selectAll("text").style("fill", "#ccc"));
+  
+    const linePath = (d1, d2) => {
+      const path = d3.path();
+      const x1 = xScale(d1.Year), y1 = yScale(d1.Rank);
+      const x2 = xScale(d2.Year), y2 = yScale(d2.Rank);
+      path.moveTo(x1, y1);
+      path.bezierCurveTo(
+        x1 + (x2 - x1) * 0.5, y1,
+        x2 - (x2 - x1) * 0.5, y2,
+        x2, y2
+      );
+      return path.toString();
+    };
+  
+    // Draw ALL lines (segments between consecutive years)
     grouped.forEach((teamData, teamName) => {
-      const sorted = teamData.sort((a, b) => a.Year - b.Year);
-
-      const line = d3.line()
-        .x(d => xScale(d.Year))
-        .y(d => yScale(d.Rank));
-
-      svg.append("path")
-        .datum(sorted)
-        .attr("fill", "none")
-        .attr("stroke", teamName === selectedTeam ? color(teamName) : "#ccc")
-        .attr("stroke-width", teamName === selectedTeam ? 2.5 : 1)
-        .attr("d", line);
+      const sorted = [...teamData].sort((a, b) => a.Year - b.Year);
+      let colorValue = teamColorMap.get(teamName) || "#ccc";
+      // If the color is dark, use white for the line
+      if (isColorDark(d3.color(colorValue).formatHex())) {
+        colorValue = "#fff";
+      }
+      for (let i = 0; i < sorted.length - 1; i++) {
+        const current = sorted[i];
+        const next = sorted[i + 1];
+  
+        const isConsecutive = (next.Year - current.Year === 1) ||
+                              (current.Year === 2019 && next.Year === 2021);
+        if (isConsecutive) {
+          svg.append("path")
+            .attr("d", linePath(current, next))
+            .attr("fill", "none")
+            .attr("stroke", colorValue)
+            .attr("stroke-width", teamName === selectedTeam ? 2.5 : 1)
+            .attr("stroke-opacity", teamName === selectedTeam ? 1 : 0.1);
+        }
+      }
     });
+  
+    // Draw a vertical line at 2020 to indicate no season
+    const noSeasonLabelY = height - margin.bottom + 38;
+    svg.append("line")
+      .attr("x1", xScale(2020))
+      .attr("x2", xScale(2020))
+      .attr("y1", margin.top)
+      .attr("y2", noSeasonLabelY - 10)
+      .attr("stroke", "#ffcccb")
+      .attr("stroke-width", 2)
+      .attr("stroke-dasharray", "4,2")
+      .attr("opacity", 0.8);
 
-    // Title
+    // Add a label further below the x-axis for 2020
     svg.append("text")
-    .attr("x", width / 2)
-    .attr("y", margin.top - 10)
-    .attr("text-anchor", "middle")
-    .style("font-weight", "bold")
-    .text(`Team Rankings Over Time (${selectedDivision})`);
+      .attr("x", xScale(2020))
+      .attr("y", noSeasonLabelY)
+      .attr("text-anchor", "middle")
+      .attr("fill", "#ffcccb")
+      .style("font-size", "12px")
+      .style("font-weight", "normal")
+      .text("No 2020 Season (COVID-19)");
+  
+    // Circles
+    svg.selectAll("g.circles")
+      .data(data)
+      .join("g")
+      .attr("transform", d => `translate(${xScale(d.Year)}, ${yScale(d.Rank)})`)
+      .each(function(d) {
+        const g = d3.select(this);
+  
+        // Outer circle
+        g.append("circle")
+          .attr("r", d.Team === selectedTeam ? 11 : 3)
+          .attr("fill", getTeamColor(d.Team))
+          .attr("stroke", "#fff")
+          .attr("stroke-width", 1);
 
-    // Tooltip
-    const tooltip = d3.select("body").append("div")
-    .attr("class", "tooltip")
-    .style("position", "absolute")
-    .style("background", "white")
-    .style("border", "1px solid #ccc")
-    .style("padding", "8px 10px")
-    .style("border-radius", "6px")
-    .style("box-shadow", "0 2px 6px rgba(0,0,0,0.15)")
-    .style("pointer-events", "none")
-    .style("opacity", 0);
+        // If rank is #1, add a star above the circle ONLY for the selected team
+        if (d.Team === selectedTeam && d.Rank === 1) {
+          g.append("text")
+            .attr("text-anchor", "middle")
+            .attr("dy", "-1.2em")
+            .attr("fill", getTeamColor(d.Team))
+            .style("font-size", "13px")
+            .text("⭐");
+        }
 
-    // Format rank nicely
-    function formatRank(rank) {
-    const r = String(rank).trim();
-    if (r === "?") return "Rank unknown";
-    if (r.startsWith("T")) {
-        const n = r.slice(1);
-        return `Tied for ${n}${ordinalSuffix(n)}`;
-    }
-    if (/^\d+$/.test(r)) {
-        return `${r}${ordinalSuffix(r)}`;
-    }
-    return r;
-    }
-
-    function ordinalSuffix(n) {
-    n = parseInt(n);
-    if (n > 3 && n < 21) return "th";
-    switch (n % 10) {
-        case 1: return "st";
-        case 2: return "nd";
-        case 3: return "rd";
-        default: return "th";
-    }
-    }
-
-    // Circles on points
-    svg.selectAll("circle")
-    .data(data)
-    .join("circle")
-    .attr("cx", d => xScale(d.Year))
-    .attr("cy", d => yScale(d.Rank))
-    .attr("r", 4)
-    .attr("fill", d => d.Team === selectedTeam ? color(d.Team) : "#ccc")
-    .attr("stroke", "#fff")
-    .attr("stroke-width", 1)
-    .style("cursor", "pointer")
-    .on("mouseover", (event, d) => {
+        // Rank text inside active circle
+        if (d.Team === selectedTeam) {
+          const teamColor = getTeamColor(d.Team);
+          const textColor = isColorDark(d3.color(teamColor).formatHex()) ? "#fff" : "#000";
+          g.append("text")
+            .text(String(d.T_Rank || d.Rank))
+            .attr("text-anchor", "middle")
+            .attr("dy", "0.35em")
+            .attr("fill", textColor)
+            .style("font-size", "10px")
+            .style("font-weight", "bold");
+        }
+      })
+      .style("cursor", "pointer")
+      .on("mouseover", (event, d) => {
         tooltip
-        .html(`<strong>${d.Team}</strong><br>${d.Year}<br>${formatRank(d.T_Rank || d.Rank)}`)
-        .style("left", `${event.pageX + 10}px`)
-        .style("top", `${event.pageY - 30}px`)
-        .style("opacity", 1);
-    })
-    .on("mousemove", event => {
+          .html(`<strong>${d.Team}</strong><br>${d.Year}<br>${formatRank(d.T_Rank || d.Rank)}`)
+          .style("left", `${event.pageX + 10}px`)
+          .style("top", `${event.pageY - 30}px`)
+          .style("opacity", 1);
+      })
+      .on("mousemove", event => {
         tooltip
-        .style("left", `${event.pageX + 10}px`)
-        .style("top", `${event.pageY - 30}px`);
-    })
-    .on("mouseout", () => {
+          .style("left", `${event.pageX + 10}px`)
+          .style("top", `${event.pageY - 30}px`);
+      })
+      .on("mouseout", () => {
         tooltip.style("opacity", 0);
-    })
-    .on("click", (event, d) => {
+      })
+      .on("click", (event, d) => {
         selectedTeam = d.Team;
         select.property("value", selectedTeam);
-        drawChart(); // re-render chart with new highlight
-    });
-    
+        drawChart();
+      });
+  
+    // Title
+    svg.append("text")
+      .attr("x", width / 2)
+      .attr("y", margin.top - 10)
+      .attr("text-anchor", "middle")
+      .style("font-weight", "bold")
+      .style("fill", "#fff");
+  }  
+  
+  function getTeamColor(team) {
+    return teamColorMap.get(team) || "#ccc";
   }
+}
+
+// Helper function to determine if a color is dark
+function isColorDark(hexColor) {
+  hexColor = hexColor.replace('#', '');
+  if (hexColor.length === 3) {
+    hexColor = hexColor.split('').map(x => x + x).join('');
+  }
+  const r = parseInt(hexColor.substr(0,2),16);
+  const g = parseInt(hexColor.substr(2,2),16);
+  const b = parseInt(hexColor.substr(4,2),16);
+  const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+  return brightness < 128;
 }
 

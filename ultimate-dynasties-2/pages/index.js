@@ -28,15 +28,16 @@ export default function Home() {
       <main className="flex flex-col gap-8 max-w-5xl mx-auto items-start">
         <h1 className="text-3xl font-bold">Ultimate Dynasties</h1>
 
-        {/* ⭐ STAR CHART */}
-        <div id="controls" className="text-sm font-medium text-gray-700 flex gap-4"></div>
-        <div id="chart" className="w-full overflow-x-auto"></div>
-
         {/* 📈 RANKINGS CHART SECTION */}
         <h2 className="text-xl font-bold mt-16">Rankings Over Time</h2>
         <div id="division-toggle-2" className="mb-4 text-sm font-medium text-gray-700 flex gap-4"></div>
         <div id="team-selector" className="mb-4"></div>
         <div id="rankings-chart" className="w-full overflow-x-auto"></div>
+
+        {/* ⭐ STAR CHART */}
+        <h2 className="text-xl font-bold mt-16">Winners</h2>
+        <div id="controls" className="text-sm font-medium text-gray-700 flex gap-4"></div>
+        <div id="chart" className="w-full overflow-x-auto"></div>
       </main>
     </div>
   );
