@@ -126,6 +126,11 @@ function updateTeamSummary(team) {
 // Initialize championship chart
 function initializeChampionshipChart() {
     const container = document.getElementById('championshipChart');
+    if (!container) return; // Guard against missing container
+
+    // Clear any existing SVG
+    d3.select(container).selectAll('svg').remove();
+
     const width = container.clientWidth;
     const height = 400;
     const margin = { top: 20, right: 30, bottom: 30, left: 40 };
@@ -166,9 +171,62 @@ function initializeChampionshipChart() {
     container._svg = svg;
 }
 
+// Update championship chart
+function updateChampionshipChart(division) {
+    const container = document.getElementById('championshipChart');
+    if (!container) return; // Guard against missing container
+    
+    // Initialize chart if not already initialized
+    if (!container._scales || !container._svg) {
+        initializeChampionshipChart();
+    }
+    
+    const { x, y } = container._scales;
+    const { xAxis, yAxis, svg } = container._axes;
+
+    // Clear existing bars
+    svg.selectAll('.bar').remove();
+
+    // Get data
+    const data = getDivisionStats(division)
+        .filter(d => d.championships > 0)
+        .slice(0, 10);
+
+    if (!data || data.length === 0) return; // Guard against empty data
+
+    // Update scales
+    x.domain(data.map(d => d.team));
+    y.domain([0, d3.max(data, d => d.championships)]);
+
+    // Update axes
+    xAxis.call(d3.axisBottom(x));
+    yAxis.call(d3.axisLeft(y));
+
+    // Update bars
+    const bars = svg.selectAll('.bar')
+        .data(data);
+
+    bars.enter()
+        .append('rect')
+        .attr('class', 'bar')
+        .merge(bars)
+        .attr('x', d => x(d.team))
+        .attr('y', d => y(d.championships))
+        .attr('width', x.bandwidth())
+        .attr('height', d => y(0) - y(d.championships))
+        .attr('fill', d => colorData.find(c => c.team === d.team)?.color || '#999');
+
+    bars.exit().remove();
+}
+
 // Initialize dot chart
 function initializeDotChart() {
     const container = document.getElementById('dotChart');
+    if (!container) return; // Guard against missing container
+
+    // Clear any existing SVG
+    d3.select(container).selectAll('svg').remove();
+
     const width = container.clientWidth;
     const height = 400;
     const margin = { top: 20, right: 30, bottom: 30, left: 40 };
@@ -209,75 +267,28 @@ function initializeDotChart() {
     container._svg = svg;
 }
 
-// Update charts based on division and selected team
-function updateCharts(division, selectedTeam) {
-    if (division) {
-        updateChampionshipChart(division);
-        updateDotChart(division, selectedTeam);
-    } else if (selectedTeam) {
-        const currentDivision = document.querySelector('input[name="division"]:checked').value;
-        updateDotChart(currentDivision, selectedTeam);
-    }
-}
-
-// Update championship chart
-function updateChampionshipChart(division) {
-    const container = document.getElementById('championshipChart');
-    
-    // Initialize chart if not already initialized
-    if (!container._scales) {
-        initializeChampionshipChart();
-    }
-    
-    const { x, y } = container._scales;
-    const { xAxis, yAxis, svg } = container._axes;
-
-    // Get data
-    const data = getDivisionStats(division)
-        .filter(d => d.championships > 0)
-        .slice(0, 10);
-
-    // Update scales
-    x.domain(data.map(d => d.team));
-    y.domain([0, d3.max(data, d => d.championships)]);
-
-    // Update axes
-    xAxis.call(d3.axisBottom(x));
-    yAxis.call(d3.axisLeft(y));
-
-    // Update bars
-    const bars = svg.selectAll('.bar')
-        .data(data);
-
-    bars.enter()
-        .append('rect')
-        .attr('class', 'bar')
-        .merge(bars)
-        .attr('x', d => x(d.team))
-        .attr('y', d => y(d.championships))
-        .attr('width', x.bandwidth())
-        .attr('height', d => y(0) - y(d.championships))
-        .attr('fill', d => colorData.find(c => c.team === d.team)?.color || '#999');
-
-    bars.exit().remove();
-}
-
 // Update dot chart
 function updateDotChart(division, selectedTeam) {
     const container = document.getElementById('dotChart');
+    if (!container) return; // Guard against missing container
     
     // Initialize chart if not already initialized
-    if (!container._scales) {
+    if (!container._scales || !container._svg) {
         initializeDotChart();
     }
     
     const { x, y } = container._scales;
     const { xAxis, yAxis, svg } = container._axes;
 
+    // Clear existing dots
+    svg.selectAll('.dot').remove();
+
     // Get data
     const data = getDivisionStats(division)
         .filter(d => d.appearances >= 5)
         .slice(0, 10);
+
+    if (!data || data.length === 0) return; // Guard against empty data
 
     // Update scales
     x.domain([d3.min(data, d => d.years[0]), d3.max(data, d => d.years[d.years.length - 1])]);
@@ -305,4 +316,15 @@ function updateDotChart(division, selectedTeam) {
         .attr('opacity', d => selectedTeam && d.team !== selectedTeam ? 0.3 : 1);
 
     dots.exit().remove();
+}
+
+// Update charts based on division and selected team
+function updateCharts(division, selectedTeam) {
+    if (division) {
+        updateChampionshipChart(division);
+        updateDotChart(division, selectedTeam);
+    } else if (selectedTeam) {
+        const currentDivision = document.querySelector('input[name="division"]:checked').value;
+        updateDotChart(currentDivision, selectedTeam);
+    }
 } 
