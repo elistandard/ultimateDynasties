@@ -1,0 +1,834 @@
+Year,Division,Team,TRank,Rank
+1984,College Men's,Stanford,1,1
+1984,College Men's,Glassboro,2,2
+1984,College Men's,Massachusetts,3,3
+1984,College Men's,Penn,4,4
+1984,College Men's,Chabot Community College,5,5
+1984,College Men's,Kansas,6,6
+1984,College Men's,Ohio,7,7
+1984,College Men's,Syracuse,8,8
+1984,College Men's,Texas,9,9
+1984,College Men's,Tufts,10,10
+1985,College Men's,Penn,1,1
+1985,College Men's,Massachusetts,2,2
+1985,College Men's,Cornell,3,3
+1985,College Men's,SW Missouri State,4,4
+1985,College Men's,Stanford,5,5
+1985,College Men's,Texas,6,6
+1985,College Men's,Cal Poly SLO,7,7
+1985,College Men's,Kansas,8,8
+1985,College Men's,MIT,9,9
+1985,College Men's,Oregon,10,10
+1985,College Men's,Central Florida,11,11
+1985,College Men's,Princeton,12,12
+1986,College Men's,Massachusetts,1,1
+1986,College Men's,Stanford,2,2
+1986,College Men's,UC Santa Barbara,3,3
+1986,College Men's,Cornell,4,4
+1986,College Men's,Oregon,5,5
+1986,College Men's,SW Missouri State,6,6
+1986,College Men's,Kansas,7,7
+1986,College Men's,MIT,8,8
+1986,College Men's,Carnegie Mellon,9,9
+1986,College Men's,Princeton,10,10
+1986,College Men's,Georgia,11,11
+1986,College Men's,Texas,12,12
+1987,College Men's,Chabot Community College,1,1
+1987,College Men's,UC Santa Barbara,2,2
+1987,College Men's,Cal Poly SLO,3,T3
+1987,College Men's,Cornell,4,T3
+1987,College Men's,SW Missouri State,5,T5
+1987,College Men's,Texas,6,T5
+1987,College Men's,Georgia Tech,7,T7
+1987,College Men's,SUNY Purchase,8,T7
+1987,College Men's,Carnegie Mellon,9,T9
+1987,College Men's,Princeton,10,T9
+1987,College Men's,Kansas,11,T11
+1987,College Men's,Michigan,12,T11
+1987,College Men's,East Carolina,13,T13
+1987,College Men's,Vermont,14,T13
+1987,College Women's,Kansas,1,1
+1987,College Women's,UC Davis,2,2
+1987,College Women's,Humboldt State,3,3
+1987,College Women's,Massachusetts,4,4
+1987,College Women's,Cornell,5,5
+1987,College Women's,Earlham,6,6
+1987,College Women's,Vermont,7,7
+1988,College Men's,UC Santa Barbara,1,1
+1988,College Men's,Texas,2,2
+1988,College Men's,Stanford,3,3
+1988,College Men's,Columbia,4,4
+1988,College Men's,Georgia Tech,5,T5
+1988,College Men's,Kansas,6,T5
+1988,College Men's,Carnegie Mellon,7,T7
+1988,College Men's,East Carolina,8,T7
+1988,College Men's,Saint Louis,9,T9
+1988,College Men's,Wesleyan,10,T9
+1988,College Men's,Massachusetts,11,T11
+1988,College Men's,Winona State,12,T11
+1988,College Women's,UC Santa Barbara,1,1
+1988,College Women's,UC Davis,2,2
+1988,College Women's,Humboldt State,3,T3
+1988,College Women's,Oregon,4,T3
+1988,College Women's,Carleton,5,T5
+1988,College Women's,Massachusetts,6,T5
+1988,College Women's,Cornell,7,T7
+1988,College Women's,Wisconsin,8,T7
+1988,College Women's,Florida,9,T9
+1988,College Women's,Kansas,10,T9
+1989,College Men's,UC Santa Barbara,1,1
+1989,College Men's,Stanford,2,2
+1989,College Men's,Carnegie Mellon,3,T3
+1989,College Men's,Texas,4,T3
+1989,College Men's,Columbia,5,?
+1989,College Men's,East Carolina,6,?
+1989,College Men's,Florida,7,?
+1989,College Men's,Indiana,8,?
+1989,College Men's,Kansas,9,?
+1989,College Men's,Penn,10,?
+1989,College Men's,SUNY Purchase,11,?
+1989,College Men's,Tufts,12,?
+1989,College Women's,UC Davis,1,1
+1989,College Women's,Michigan,2,2
+1989,College Women's,UC Santa Barbara,3,T3
+1989,College Women's,Carleton,4,T3
+1989,College Women's,Cornell,5,?
+1989,College Women's,UNC Wilmington,6,?
+1989,College Women's,Oregon,7,?
+1989,College Women's,Penn,8,?
+1989,College Women's,SUNY Binghamton,9,?
+1989,College Women's,Towson,10,?
+1990,College Men's,UC Santa Barbara,1,1
+1990,College Men's,UNC Wilmington,2,2
+1990,College Men's,SUNY Purchase,3,3
+1990,College Men's,Cornell,4,4
+1990,College Men's,Vermont,5,5
+1990,College Men's,UC Santa Cruz,6,6
+1990,College Men's,Wisconsin,7,7
+1990,College Men's,Carleton,8,8
+1990,College Men's,Georgia,9,T9
+1990,College Men's,Kansas,10,T9
+1990,College Men's,Princeton,11,T9
+1990,College Men's,Texas,12,T9
+1990,College Women's,UC Santa Barbara,1,1
+1990,College Women's,Michigan,2,2
+1990,College Women's,Cornell,3,3
+1990,College Women's,Carleton,4,4
+1990,College Women's,UC Davis,5,5
+1990,College Women's,Carnegie Mellon,6,6
+1990,College Women's,Columbia,7,T7
+1990,College Women's,Kansas,8,T7
+1990,College Women's,Penn,9,T9
+1990,College Women's,Wesleyan,10,T9
+1991,College Men's,UC Santa Cruz,1,1
+1991,College Men's,UNC Wilmington,2,2
+1991,College Men's,UC Santa Barbara,3,3
+1991,College Men's,Cornell,4,4
+1991,College Men's,Penn,5,5
+1991,College Men's,Carleton,6,6
+1991,College Men's,Boston College,7,T7
+1991,College Men's,Georgia,8,T7
+1991,College Men's,Wisconsin,9,T7
+1991,College Men's,East Carolina,10,10
+1991,College Men's,Georgia Tech,11,T11
+1991,College Men's,Kansas,12,T11
+1991,College Women's,UC Santa Barbara,1,1
+1991,College Women's,California,2,2
+1991,College Women's,Carleton,3,T3
+1991,College Women's,Cornell,4,T3
+1991,College Women's,UNC Wilmington,5,T5
+1991,College Women's,Virginia,6,T5
+1991,College Women's,Columbia,7,T7
+1991,College Women's,Kansas,8,T7
+1991,College Women's,Carnegie Mellon,9,T9
+1991,College Women's,Tufts,10,T9
+1992,College Men's,Oregon,1,1
+1992,College Men's,Cornell,2,2
+1992,College Men's,UNC Wilmington,3,3
+1992,College Men's,California,4,4
+1992,College Men's,Carleton,5,?
+1992,College Men's,East Carolina,6,?
+1992,College Men's,Georgia Tech,7,?
+1992,College Men's,Oberlin,8,?
+1992,College Men's,Texas,9,?
+1992,College Men's,Vermont,10,?
+1992,College Men's,Wesleyan,11,?
+1992,College Men's,Wisconsin,12,?
+1992,College Women's,UNC Wilmington,1,1
+1992,College Women's,Oregon,2,2
+1992,College Women's,California,3,T3
+1992,College Women's,Columbia,4,T3
+1992,College Women's,Carleton,5,T5
+1992,College Women's,Cornell,6,T5
+1992,College Women's,Penn,7,T5
+1992,College Women's,Kansas,8,T5
+1992,College Women's,Brown,9,T9
+1992,College Women's,Georgia Tech,10,T9
+1993,College Men's,UNC Wilmington,1,1
+1993,College Men's,UC Santa Barbara,2,2
+1993,College Men's,UC Santa Cruz,3,T3
+1993,College Men's,Carleton,4,T3
+1993,College Men's,East Carolina,5,T5
+1993,College Men's,Texas,6,T5
+1993,College Men's,Georgia,7,T7
+1993,College Men's,Wisconsin,8,T7
+1993,College Men's,Boston College,9,T9
+1993,College Men's,Kansas,10,T9
+1993,College Men's,SUNY Albany,11,T11
+1993,College Men's,Wesleyan,12,T11
+1993,College Women's,California,1,1
+1993,College Women's,UNC Wilmington,2,2
+1993,College Women's,Carleton,3,T3
+1993,College Women's,Humboldt State,4,T3
+1993,College Women's,Columbia,5,T5
+1993,College Women's,Cornell,6,T5
+1993,College Women's,Indiana,7,T5
+1993,College Women's,Penn,8,T5
+1993,College Women's,Kansas,9,T9
+1993,College Women's,Williams,10,T9
+1994,College Men's,East Carolina,1,1
+1994,College Men's,Stanford,2,2
+1994,College Men's,UC Santa Barbara,3,T3
+1994,College Men's,Carleton,4,T3
+1994,College Men's,Georgia,5,T5
+1994,College Men's,Wisconsin,6,T5
+1994,College Men's,Cornell,7,T7
+1994,College Men's,Las Positas College,8,T7
+1994,College Men's,Kansas,9,T9
+1994,College Men's,Penn,10,T9
+1994,College Men's,SUNY Binghamton,11,T11
+1994,College Men's,Texas,12,T11
+1994,College Women's,UC Santa Cruz,1,1
+1994,College Women's,UC Santa Barbara,2,2
+1994,College Women's,Indiana,3,T3
+1994,College Women's,UNC Wilmington,4,T3
+1994,College Women's,Carleton,5,T5
+1994,College Women's,Columbia,6,T5
+1994,College Women's,Cornell,7,T5
+1994,College Women's,Kansas,8,T5
+1994,College Women's,East Carolina,9,T9
+1994,College Women's,Tufts,10,T9
+1995,College Men's,East Carolina,1,1
+1995,College Men's,UC Santa Cruz,2,2
+1995,College Men's,UNC Wilmington,3,T3
+1995,College Men's,Stanford,4,T3
+1995,College Men's,Cornell,5,T5
+1995,College Men's,Yale,6,T5
+1995,College Men's,Carleton,7,T7
+1995,College Men's,LSU,8,T7
+1995,College Men's,Oberlin,9,T9
+1995,College Men's,Williams,10,T9
+1995,College Men's,Georgia,11,T11
+1995,College Men's,Indiana,12,T11
+1995,College Women's,UC Santa Cruz,1,1
+1995,College Women's,Stanford,2,2
+1995,College Women's,Colorado,3,T3
+1995,College Women's,UNC Wilmington,4,T3
+1995,College Women's,Columbia,5,T5
+1995,College Women's,Penn,6,T5
+1995,College Women's,Indiana,7,T7
+1995,College Women's,Yale,8,T7
+1995,College Women's,Carleton,9,T9
+1995,College Women's,Williams,10,T9
+1996,College Men's,UC Santa Barbara,1,1
+1996,College Men's,Carleton,2,2
+1996,College Men's,Cornell,3,T3
+1996,College Men's,Wisconsin,4,T3
+1996,College Men's,UNC Wilmington,5,T5
+1996,College Men's,Stanford,6,T5
+1996,College Men's,Georgia,7,T7
+1996,College Men's,NC State,8,T7
+1996,College Men's,Wesleyan,9,T9
+1996,College Men's,Williams,10,T9
+1996,College Men's,Indiana,11,T11
+1996,College Men's,Florida State,12,T11
+1996,College Women's,UNC Wilmington,1,1
+1996,College Women's,Stanford,2,2
+1996,College Women's,California,3,T3
+1996,College Women's,Carleton,4,T3
+1996,College Women's,Colorado,5,T5
+1996,College Women's,Cornell,6,T5
+1996,College Women's,Indiana,7,T5
+1996,College Women's,Yale,8,T5
+1996,College Women's,Florida State,9,T9
+1996,College Women's,Penn,10,T9
+1997,College Men's,UC Santa Barbara,1,1
+1997,College Men's,Stanford,2,2
+1997,College Men's,Carleton,3,T3
+1997,College Men's,East Carolina,4,T3
+1997,College Men's,UNC Wilmington,5,T5
+1997,College Men's,Wisconsin,6,T5
+1997,College Men's,Cornell,7,T7
+1997,College Men's,Rice,8,T7
+1997,College Men's,Oberlin,9,T9
+1997,College Men's,Wesleyan,10,T9
+1997,College Men's,LSU,11,T11
+1997,College Men's,Yale,12,T11
+1997,College Women's,Stanford,1,1
+1997,College Women's,British Columbia,2,2
+1997,College Women's,Carleton,3,T3
+1997,College Women's,Rutgers,4,T3
+1997,College Women's,Brown,5,T5
+1997,College Women's,UNC Wilmington,6,T5
+1997,College Women's,Oberlin,7,T5
+1997,College Women's,Yale,8,T5
+1997,College Women's,Georgia,9,T9
+1997,College Women's,Rice,10,T9
+1998,College Men's,UC Santa Barbara,1,1
+1998,College Men's,Stanford,2,2
+1998,College Men's,Brown,3,T3
+1998,College Men's,North Carolina,4,T3
+1998,College Men's,Carleton,5,T5
+1998,College Men's,Colorado,6,T5
+1998,College Men's,Harvard,7,T7
+1998,College Men's,LSU,8,T7
+1998,College Men's,East Carolina,9,T9
+1998,College Men's,Iowa,10,T9
+1998,College Men's,Rice,11,T11
+1998,College Men's,Yale,12,T11
+1998,College Women's,Stanford,1,1
+1998,College Women's,Carleton,2,2
+1998,College Women's,Oregon,3,T3
+1998,College Women's,Yale,4,T3
+1998,College Women's,Cornell,5,T5
+1998,College Women's,UNC Wilmington,6,T5
+1998,College Women's,Indiana,7,T7
+1998,College Women's,Rutgers,8,T7
+1998,College Women's,Georgia,9,T9
+1998,College Women's,MIT,10,T9
+1998,College Women's,Rice,11,T11
+1998,College Women's,Wisconsin,12,T11
+1999,College Men's,UC Santa Barbara,1,1
+1999,College Men's,Stanford,2,2
+1999,College Men's,Carleton,3,T3
+1999,College Men's,Colorado,4,T3
+1999,College Men's,Brown,5,T5
+1999,College Men's,North Carolina,6,T5
+1999,College Men's,East Carolina,7,T7
+1999,College Men's,Harvard,8,T7
+1999,College Men's,Colorado State,9,T9
+1999,College Men's,Georgia,10,T9
+1999,College Men's,Iowa,11,T11
+1999,College Men's,LSU,12,T11
+1999,College Women's,Stanford,1,1
+1999,College Women's,Carleton,2,2
+1999,College Women's,Oregon,3,T3
+1999,College Women's,Yale,4,T3
+1999,College Women's,Colorado,5,T5
+1999,College Women's,UNC Wilmington,6,T5
+1999,College Women's,Indiana,7,T7
+1999,College Women's,Rutgers,8,T7
+1999,College Women's,Georgia,9,T9
+1999,College Women's,MIT,10,T9
+1999,College Women's,Rice,11,T11
+1999,College Women's,Wisconsin,12,T11
+2000,College Men's,UC Santa Barbara,1,1
+2000,College Men's,Stanford,2,2
+2000,College Men's,Carleton,3,T3
+2000,College Men's,Colorado,4,T3
+2000,College Men's,Brown,5,T5
+2000,College Men's,North Carolina,6,T5
+2000,College Men's,East Carolina,7,T7
+2000,College Men's,Harvard,8,T7
+2000,College Men's,Colorado State,9,T9
+2000,College Men's,Georgia,10,T9
+2000,College Men's,Iowa,11,T11
+2000,College Men's,LSU,12,T11
+2000,College Women's,Stanford,1,1
+2000,College Women's,Carleton,2,2
+2000,College Women's,Oregon,3,T3
+2000,College Women's,Yale,4,T3
+2000,College Women's,Colorado,5,T5
+2000,College Women's,UNC Wilmington,6,T5
+2000,College Women's,Indiana,7,T7
+2000,College Women's,Rutgers,8,T7
+2000,College Women's,Georgia,9,T9
+2000,College Women's,MIT,10,T9
+2000,College Women's,Rice,11,T11
+2000,College Women's,Wisconsin,12,T11
+2001,College Men's,UC Santa Barbara,1,1
+2001,College Men's,Stanford,2,2
+2001,College Men's,Carleton,3,T3
+2001,College Men's,Colorado,4,T3
+2001,College Men's,Brown,5,T5
+2001,College Men's,North Carolina,6,T5
+2001,College Men's,East Carolina,7,T7
+2001,College Men's,Harvard,8,T7
+2001,College Men's,Colorado State,9,T9
+2001,College Men's,Georgia,10,T9
+2001,College Men's,Iowa,11,T11
+2001,College Men's,LSU,12,T11
+2001,College Women's,Stanford,1,1
+2001,College Women's,Carleton,2,2
+2001,College Women's,Oregon,3,T3
+2001,College Women's,Yale,4,T3
+2001,College Women's,Colorado,5,T5
+2001,College Women's,UNC Wilmington,6,T5
+2001,College Women's,Indiana,7,T7
+2001,College Women's,Rutgers,8,T7
+2001,College Women's,Georgia,9,T9
+2001,College Women's,MIT,10,T9
+2001,College Women's,Rice,11,T11
+2001,College Women's,Wisconsin,12,T11
+2002,College Men's,UC Santa Barbara,1,1
+2002,College Men's,Stanford,2,2
+2002,College Men's,Carleton,3,T3
+2002,College Men's,Colorado,4,T3
+2002,College Men's,Brown,5,T5
+2002,College Men's,North Carolina,6,T5
+2002,College Men's,East Carolina,7,T7
+2002,College Men's,Harvard,8,T7
+2002,College Men's,Colorado State,9,T9
+2002,College Men's,Georgia,10,T9
+2002,College Men's,Iowa,11,T11
+2002,College Men's,LSU,12,T11
+2002,College Women's,Stanford,1,1
+2002,College Women's,Carleton,2,2
+2002,College Women's,Oregon,3,T3
+2002,College Women's,Yale,4,T3
+2002,College Women's,Colorado,5,T5
+2002,College Women's,UNC Wilmington,6,T5
+2002,College Women's,Indiana,7,T7
+2002,College Women's,Rutgers,8,T7
+2002,College Women's,Georgia,9,T9
+2002,College Women's,MIT,10,T9
+2002,College Women's,Rice,11,T11
+2002,College Women's,Wisconsin,12,T11
+2003,College Men's,UC Santa Barbara,1,1
+2003,College Men's,Stanford,2,2
+2003,College Men's,Carleton,3,T3
+2003,College Men's,Colorado,4,T3
+2003,College Men's,Brown,5,T5
+2003,College Men's,North Carolina,6,T5
+2003,College Men's,East Carolina,7,T7
+2003,College Men's,Harvard,8,T7
+2003,College Men's,Colorado State,9,T9
+2003,College Men's,Georgia,10,T9
+2003,College Men's,Iowa,11,T11
+2003,College Men's,LSU,12,T11
+2003,College Women's,Stanford,1,1
+2003,College Women's,Carleton,2,2
+2003,College Women's,Oregon,3,T3
+2003,College Women's,Yale,4,T3
+2003,College Women's,Colorado,5,T5
+2003,College Women's,UNC Wilmington,6,T5
+2003,College Women's,Indiana,7,T7
+2003,College Women's,Rutgers,8,T7
+2003,College Women's,Georgia,9,T9
+2003,College Women's,MIT,10,T9
+2003,College Women's,Rice,11,T11
+2003,College Women's,Wisconsin,12,T11
+2004,College Men's,UC Santa Barbara,1,1
+2004,College Men's,Stanford,2,2
+2004,College Men's,Carleton,3,T3
+2004,College Men's,Colorado,4,T3
+2004,College Men's,Brown,5,T5
+2004,College Men's,North Carolina,6,T5
+2004,College Men's,East Carolina,7,T7
+2004,College Men's,Harvard,8,T7
+2004,College Men's,Colorado State,9,T9
+2004,College Men's,Georgia,10,T9
+2004,College Men's,Iowa,11,T11
+2004,College Men's,LSU,12,T11
+2004,College Women's,Stanford,1,1
+2004,College Women's,Carleton,2,2
+2004,College Women's,Oregon,3,T3
+2004,College Women's,Yale,4,T3
+2004,College Women's,Colorado,5,T5
+2004,College Women's,UNC Wilmington,6,T5
+2004,College Women's,Indiana,7,T7
+2004,College Women's,Rutgers,8,T7
+2004,College Women's,Georgia,9,T9
+2004,College Women's,MIT,10,T9
+2004,College Women's,Rice,11,T11
+2004,College Women's,Wisconsin,12,T11
+2005,College Men's,Stanford,1,1
+2005,College Men's,Carleton,2,2
+2005,College Men's,UC Santa Barbara,3,3
+2005,College Men's,UC San Diego,4,4
+2005,College Men's,UC Santa Cruz,5,5
+2005,College Men's,UC Davis,6,6
+2005,College Men's,UC Berkeley,7,7
+2005,College Men's,UCLA,8,8
+2005,College Men's,UC Irvine,9,9
+2005,College Men's,UC Riverside,10,10
+2005,College Women's,Stanford,1,1
+2005,College Women's,Carleton,2,2
+2005,College Women's,UC Santa Barbara,3,3
+2005,College Women's,UC San Diego,4,4
+2005,College Women's,UC Santa Cruz,5,5
+2005,College Women's,UC Davis,6,6
+2005,College Women's,UC Berkeley,7,7
+2005,College Women's,UCLA,8,8
+2005,College Women's,UC Irvine,9,9
+2005,College Women's,UC Riverside,10,10
+2006,College Men's,Stanford,1,1
+2006,College Men's,Carleton,2,2
+2006,College Men's,UC Santa Barbara,3,3
+2006,College Men's,UC San Diego,4,4
+2006,College Men's,UC Santa Cruz,5,5
+2006,College Men's,UC Davis,6,6
+2006,College Men's,UC Berkeley,7,7
+2006,College Men's,UCLA,8,8
+2006,College Men's,UC Irvine,9,9
+2006,College Men's,UC Riverside,10,10
+2007,College Men's,Stanford,1,1
+2007,College Men's,Carleton,2,2
+2007,College Men's,UC Santa Barbara,3,3
+2007,College Men's,UC San Diego,4,4
+2007,College Men's,UC Santa Cruz,5,5
+2007,College Men's,UC Davis,6,6
+2007,College Men's,UC Berkeley,7,7
+2007,College Men's,UCLA,8,8
+2007,College Men's,UC Irvine,9,9
+2007,College Men's,UC Riverside,10,10
+2008,College Men's,Stanford,1,1
+2008,College Men's,Carleton,2,2
+2008,College Men's,UC Santa Barbara,3,3
+2008,College Men's,UC San Diego,4,4
+2008,College Men's,UC Santa Cruz,5,5
+2008,College Men's,UC Davis,6,6
+2008,College Men's,UC Berkeley,7,7
+2008,College Men's,UCLA,8,8
+2008,College Men's,UC Irvine,9,9
+2008,College Men's,UC Riverside,10,10
+2009,College Men's,Stanford,1,1
+2009,College Men's,Carleton,2,2
+2009,College Men's,UC Santa Barbara,3,3
+2009,College Men's,UC San Diego,4,4
+2009,College Men's,UC Santa Cruz,5,5
+2009,College Men's,UC Davis,6,6
+2009,College Men's,UC Berkeley,7,7
+2009,College Men's,UCLA,8,8
+2009,College Men's,UC Irvine,9,9
+2009,College Men's,UC Riverside,10,10
+2010,College Men's,Stanford,1,1
+2010,College Men's,Carleton,2,2
+2010,College Men's,UC Santa Barbara,3,3
+2010,College Men's,UC San Diego,4,4
+2010,College Men's,UC Santa Cruz,5,5
+2010,College Men's,UC Davis,6,6
+2010,College Men's,UC Berkeley,7,7
+2010,College Men's,UCLA,8,8
+2010,College Men's,UC Irvine,9,9
+2010,College Men's,UC Riverside,10,10
+2011,College Men's,Stanford,1,1
+2011,College Men's,Carleton,2,2
+2011,College Men's,UC Santa Barbara,3,3
+2011,College Men's,UC San Diego,4,4
+2011,College Men's,UC Santa Cruz,5,5
+2011,College Men's,UC Davis,6,6
+2011,College Men's,UC Berkeley,7,7
+2011,College Men's,UCLA,8,8
+2011,College Men's,UC Irvine,9,9
+2011,College Men's,UC Riverside,10,10
+2012,College Men's,Stanford,1,1
+2012,College Men's,Carleton,2,2
+2012,College Men's,UC Santa Barbara,3,3
+2012,College Men's,UC San Diego,4,4
+2012,College Men's,UC Santa Cruz,5,5
+2012,College Men's,UC Davis,6,6
+2012,College Men's,UC Berkeley,7,7
+2012,College Men's,UCLA,8,8
+2012,College Men's,UC Irvine,9,9
+2012,College Men's,UC Riverside,10,10
+2013,College Men's,Stanford,1,1
+2013,College Men's,Carleton,2,2
+2013,College Men's,UC Santa Barbara,3,3
+2013,College Men's,UC San Diego,4,4
+2013,College Men's,UC Santa Cruz,5,5
+2013,College Men's,UC Davis,6,6
+2013,College Men's,UC Berkeley,7,7
+2013,College Men's,UCLA,8,8
+2013,College Men's,UC Irvine,9,9
+2013,College Men's,UC Riverside,10,10
+2014,College Men's,Stanford,1,1
+2014,College Men's,Carleton,2,2
+2014,College Men's,UC Santa Barbara,3,3
+2014,College Men's,UC San Diego,4,4
+2014,College Men's,UC Santa Cruz,5,5
+2014,College Men's,UC Davis,6,6
+2014,College Men's,UC Berkeley,7,7
+2014,College Men's,UCLA,8,8
+2014,College Men's,UC Irvine,9,9
+2014,College Men's,UC Riverside,10,10
+2015,College Men's,Stanford,1,1
+2015,College Men's,Carleton,2,2
+2015,College Men's,UC Santa Barbara,3,3
+2015,College Men's,UC San Diego,4,4
+2015,College Men's,UC Santa Cruz,5,5
+2015,College Men's,UC Davis,6,6
+2015,College Men's,UC Berkeley,7,7
+2015,College Men's,UCLA,8,8
+2015,College Men's,UC Irvine,9,9
+2015,College Men's,UC Riverside,10,10
+2016,College Men's,Stanford,1,1
+2016,College Men's,Carleton,2,2
+2016,College Men's,UC Santa Barbara,3,3
+2016,College Men's,UC San Diego,4,4
+2016,College Men's,UC Santa Cruz,5,5
+2016,College Men's,UC Davis,6,6
+2016,College Men's,UC Berkeley,7,7
+2016,College Men's,UCLA,8,8
+2016,College Men's,UC Irvine,9,9
+2016,College Men's,UC Riverside,10,10
+2017,College Men's,Stanford,1,1
+2017,College Men's,Carleton,2,2
+2017,College Men's,UC Santa Barbara,3,3
+2017,College Men's,UC San Diego,4,4
+2017,College Men's,UC Santa Cruz,5,5
+2017,College Men's,UC Davis,6,6
+2017,College Men's,UC Berkeley,7,7
+2017,College Men's,UCLA,8,8
+2017,College Men's,UC Irvine,9,9
+2017,College Men's,UC Riverside,10,10
+2018,College Men's,Stanford,1,1
+2018,College Men's,Carleton,2,2
+2018,College Men's,UC Santa Barbara,3,3
+2018,College Men's,UC San Diego,4,4
+2018,College Men's,UC Santa Cruz,5,5
+2018,College Men's,UC Davis,6,6
+2018,College Men's,UC Berkeley,7,7
+2018,College Men's,UCLA,8,8
+2018,College Men's,UC Irvine,9,9
+2018,College Men's,UC Riverside,10,10
+2019,College Men's,Stanford,1,1
+2019,College Men's,Carleton,2,2
+2019,College Men's,UC Santa Barbara,3,3
+2019,College Men's,UC San Diego,4,4
+2019,College Men's,UC Santa Cruz,5,5
+2019,College Men's,UC Davis,6,6
+2019,College Men's,UC Berkeley,7,7
+2019,College Men's,UCLA,8,8
+2019,College Men's,UC Irvine,9,9
+2019,College Men's,UC Riverside,10,10
+2021,College Men's,Stanford,1,1
+2021,College Men's,Carleton,2,2
+2021,College Men's,UC Santa Barbara,3,3
+2021,College Men's,UC San Diego,4,4
+2021,College Men's,UC Santa Cruz,5,5
+2021,College Men's,UC Davis,6,6
+2021,College Men's,UC Berkeley,7,7
+2021,College Men's,UCLA,8,8
+2021,College Men's,UC Irvine,9,9
+2021,College Men's,UC Riverside,10,10
+2022,College Men's,Stanford,1,1
+2022,College Men's,Carleton,2,2
+2022,College Men's,UC Santa Barbara,3,3
+2022,College Men's,UC San Diego,4,4
+2022,College Men's,UC Santa Cruz,5,5
+2022,College Men's,UC Davis,6,6
+2022,College Men's,UC Berkeley,7,7
+2022,College Men's,UCLA,8,8
+2022,College Men's,UC Irvine,9,9
+2022,College Men's,UC Riverside,10,10
+2023,College Men's,Stanford,1,1
+2023,College Men's,Carleton,2,2
+2023,College Men's,UC Santa Barbara,3,3
+2023,College Men's,UC San Diego,4,4
+2023,College Men's,UC Santa Cruz,5,5
+2023,College Men's,UC Davis,6,6
+2023,College Men's,UC Berkeley,7,7
+2023,College Men's,UCLA,8,8
+2023,College Men's,UC Irvine,9,9
+2023,College Men's,UC Riverside,10,10
+2005,College Women's,Stanford,1,1
+2005,College Women's,Carleton,2,2
+2005,College Women's,UC Santa Barbara,3,3
+2005,College Women's,UC San Diego,4,4
+2005,College Women's,UC Santa Cruz,5,5
+2005,College Women's,UC Davis,6,6
+2005,College Women's,UC Berkeley,7,7
+2005,College Women's,UCLA,8,8
+2005,College Women's,UC Irvine,9,9
+2005,College Women's,UC Riverside,10,10
+2006,College Women's,Stanford,1,1
+2006,College Women's,Carleton,2,2
+2006,College Women's,UC Santa Barbara,3,3
+2006,College Women's,UC San Diego,4,4
+2006,College Women's,UC Santa Cruz,5,5
+2006,College Women's,UC Davis,6,6
+2006,College Women's,UC Berkeley,7,7
+2006,College Women's,UCLA,8,8
+2006,College Women's,UC Irvine,9,9
+2006,College Women's,UC Riverside,10,10
+2007,College Women's,Stanford,1,1
+2007,College Women's,Carleton,2,2
+2007,College Women's,UC Santa Barbara,3,3
+2007,College Women's,UC San Diego,4,4
+2007,College Women's,UC Santa Cruz,5,5
+2007,College Women's,UC Davis,6,6
+2007,College Women's,UC Berkeley,7,7
+2007,College Women's,UCLA,8,8
+2007,College Women's,UC Irvine,9,9
+2007,College Women's,UC Riverside,10,10
+2008,College Women's,Stanford,1,1
+2008,College Women's,Carleton,2,2
+2008,College Women's,UC Santa Barbara,3,3
+2008,College Women's,UC San Diego,4,4
+2008,College Women's,UC Santa Cruz,5,5
+2008,College Women's,UC Davis,6,6
+2008,College Women's,UC Berkeley,7,7
+2008,College Women's,UCLA,8,8
+2008,College Women's,UC Irvine,9,9
+2008,College Women's,UC Riverside,10,10
+2009,College Women's,Stanford,1,1
+2009,College Women's,Carleton,2,2
+2009,College Women's,UC Santa Barbara,3,3
+2009,College Women's,UC San Diego,4,4
+2009,College Women's,UC Santa Cruz,5,5
+2009,College Women's,UC Davis,6,6
+2009,College Women's,UC Berkeley,7,7
+2009,College Women's,UCLA,8,8
+2009,College Women's,UC Irvine,9,9
+2009,College Women's,UC Riverside,10,10
+2010,College Women's,Stanford,1,1
+2010,College Women's,Carleton,2,2
+2010,College Women's,UC Santa Barbara,3,3
+2010,College Women's,UC San Diego,4,4
+2010,College Women's,UC Santa Cruz,5,5
+2010,College Women's,UC Davis,6,6
+2010,College Women's,UC Berkeley,7,7
+2010,College Women's,UCLA,8,8
+2010,College Women's,UC Irvine,9,9
+2010,College Women's,UC Riverside,10,10
+2011,College Women's,Stanford,1,1
+2011,College Women's,Carleton,2,2
+2011,College Women's,UC Santa Barbara,3,3
+2011,College Women's,UC San Diego,4,4
+2011,College Women's,UC Santa Cruz,5,5
+2011,College Women's,UC Davis,6,6
+2011,College Women's,UC Berkeley,7,7
+2011,College Women's,UCLA,8,8
+2011,College Women's,UC Irvine,9,9
+2011,College Women's,UC Riverside,10,10
+2012,College Women's,Stanford,1,1
+2012,College Women's,Carleton,2,2
+2012,College Women's,UC Santa Barbara,3,3
+2012,College Women's,UC San Diego,4,4
+2012,College Women's,UC Santa Cruz,5,5
+2012,College Women's,UC Davis,6,6
+2012,College Women's,UC Berkeley,7,7
+2012,College Women's,UCLA,8,8
+2012,College Women's,UC Irvine,9,9
+2012,College Women's,UC Riverside,10,10
+2013,College Women's,Stanford,1,1
+2013,College Women's,Carleton,2,2
+2013,College Women's,UC Santa Barbara,3,3
+2013,College Women's,UC San Diego,4,4
+2013,College Women's,UC Santa Cruz,5,5
+2013,College Women's,UC Davis,6,6
+2013,College Women's,UC Berkeley,7,7
+2013,College Women's,UCLA,8,8
+2013,College Women's,UC Irvine,9,9
+2013,College Women's,UC Riverside,10,10
+2014,College Women's,Stanford,1,1
+2014,College Women's,Carleton,2,2
+2014,College Women's,UC Santa Barbara,3,3
+2014,College Women's,UC San Diego,4,4
+2014,College Women's,UC Santa Cruz,5,5
+2014,College Women's,UC Davis,6,6
+2014,College Women's,UC Berkeley,7,7
+2014,College Women's,UCLA,8,8
+2014,College Women's,UC Irvine,9,9
+2014,College Women's,UC Riverside,10,10
+2015,College Women's,Stanford,1,1
+2015,College Women's,Carleton,2,2
+2015,College Women's,UC Santa Barbara,3,3
+2015,College Women's,UC San Diego,4,4
+2015,College Women's,UC Santa Cruz,5,5
+2015,College Women's,UC Davis,6,6
+2015,College Women's,UC Berkeley,7,7
+2015,College Women's,UCLA,8,8
+2015,College Women's,UC Irvine,9,9
+2015,College Women's,UC Riverside,10,10
+2016,College Women's,Stanford,1,1
+2016,College Women's,Carleton,2,2
+2016,College Women's,UC Santa Barbara,3,3
+2016,College Women's,UC San Diego,4,4
+2016,College Women's,UC Santa Cruz,5,5
+2016,College Women's,UC Davis,6,6
+2016,College Women's,UC Berkeley,7,7
+2016,College Women's,UCLA,8,8
+2016,College Women's,UC Irvine,9,9
+2016,College Women's,UC Riverside,10,10
+2017,College Women's,Stanford,1,1
+2017,College Women's,Carleton,2,2
+2017,College Women's,UC Santa Barbara,3,3
+2017,College Women's,UC San Diego,4,4
+2017,College Women's,UC Santa Cruz,5,5
+2017,College Women's,UC Davis,6,6
+2017,College Women's,UC Berkeley,7,7
+2017,College Women's,UCLA,8,8
+2017,College Women's,UC Irvine,9,9
+2017,College Women's,UC Riverside,10,10
+2018,College Women's,Stanford,1,1
+2018,College Women's,Carleton,2,2
+2018,College Women's,UC Santa Barbara,3,3
+2018,College Women's,UC San Diego,4,4
+2018,College Women's,UC Santa Cruz,5,5
+2018,College Women's,UC Davis,6,6
+2018,College Women's,UC Berkeley,7,7
+2018,College Women's,UCLA,8,8
+2018,College Women's,UC Irvine,9,9
+2018,College Women's,UC Riverside,10,10
+2019,College Women's,Stanford,1,1
+2019,College Women's,Carleton,2,2
+2019,College Women's,UC Santa Barbara,3,3
+2019,College Women's,UC San Diego,4,4
+2019,College Women's,UC Santa Cruz,5,5
+2019,College Women's,UC Davis,6,6
+2019,College Women's,UC Berkeley,7,7
+2019,College Women's,UCLA,8,8
+2019,College Women's,UC Irvine,9,9
+2019,College Women's,UC Riverside,10,10
+2021,College Women's,Stanford,1,1
+2021,College Women's,Carleton,2,2
+2021,College Women's,UC Santa Barbara,3,3
+2021,College Women's,UC San Diego,4,4
+2021,College Women's,UC Santa Cruz,5,5
+2021,College Women's,UC Davis,6,6
+2021,College Women's,UC Berkeley,7,7
+2021,College Women's,UCLA,8,8
+2021,College Women's,UC Irvine,9,9
+2021,College Women's,UC Riverside,10,10
+2022,College Women's,Stanford,1,1
+2022,College Women's,Carleton,2,2
+2022,College Women's,UC Santa Barbara,3,3
+2022,College Women's,UC San Diego,4,4
+2022,College Women's,UC Santa Cruz,5,5
+2022,College Women's,UC Davis,6,6
+2022,College Women's,UC Berkeley,7,7
+2022,College Women's,UCLA,8,8
+2022,College Women's,UC Irvine,9,9
+2022,College Women's,UC Riverside,10,10
+2023,College Women's,Stanford,1,1
+2023,College Women's,Carleton,2,2
+2023,College Women's,UC Santa Barbara,3,3
+2023,College Women's,UC San Diego,4,4
+2023,College Women's,UC Santa Cruz,5,5
+2023,College Women's,UC Davis,6,6
+2023,College Women's,UC Berkeley,7,7
+2023,College Women's,UCLA,8,8
+2023,College Women's,UC Irvine,9,9
+2023,College Women's,UC Riverside,10,10
+2024,College Men's,Stanford,1,1
+2024,College Men's,Carleton,2,2
+2024,College Men's,UC Santa Barbara,3,3
+2024,College Men's,UC San Diego,4,4
+2024,College Men's,UC Santa Cruz,5,5
+2024,College Men's,UC Davis,6,6
+2024,College Men's,UC Berkeley,7,7
+2024,College Men's,UCLA,8,8
+2024,College Men's,UC Irvine,9,9
+2024,College Men's,UC Riverside,10,10
+2024,College Women's,Stanford,1,1
+2024,College Women's,Carleton,2,2
+2024,College Women's,UC Santa Barbara,3,3
+2024,College Women's,UC San Diego,4,4
+2024,College Women's,UC Santa Cruz,5,5
+2024,College Women's,UC Davis,6,6
+2024,College Women's,UC Berkeley,7,7
+2024,College Women's,UCLA,8,8
+2024,College Women's,UC Irvine,9,9
+2024,College Women's,UC Riverside,10,10 
