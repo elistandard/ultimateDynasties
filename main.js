@@ -30,18 +30,17 @@ button:hover {
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
-    // Create a simple bar chart
+    // Bar chart
     const width = 600;
     const height = 400;
     const margin = { top: 20, right: 30, bottom: 30, left: 40 };
 
-    // Create SVG
+    // Bar chart SVG
     const svg = d3.select('#championshipChart')
         .append('svg')
         .attr('width', width)
         .attr('height', height);
 
-    // Create scales
     const x = d3.scaleBand()
         .domain(rawData.map(d => d.Team))
         .range([margin.left, width - margin.right])
@@ -51,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .domain([0, d3.max(rawData, d => d.Rank)])
         .range([height - margin.bottom, margin.top]);
 
-    // Create axes
     svg.append('g')
         .attr('transform', `translate(0,${height - margin.bottom})`)
         .call(d3.axisBottom(x));
@@ -60,7 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .attr('transform', `translate(${margin.left},0)`)
         .call(d3.axisLeft(y));
 
-    // Add bars
     svg.selectAll('rect')
         .data(rawData)
         .enter()
@@ -71,12 +68,49 @@ document.addEventListener('DOMContentLoaded', () => {
         .attr('height', d => height - margin.bottom - y(d.Rank))
         .attr('fill', d => colorData.find(c => c.team === d.Team)?.color || '#999');
 
-    // Add title
     svg.append('text')
         .attr('x', width / 2)
         .attr('y', margin.top)
         .attr('text-anchor', 'middle')
         .text('Team Rankings');
+
+    // Dot chart
+    const dotSvg = d3.select('#dotChart')
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height);
+
+    // For this minimal example, plot each team as a dot at (Year, Rank)
+    const xDot = d3.scaleLinear()
+        .domain(d3.extent(rawData, d => d.Year))
+        .range([margin.left, width - margin.right]);
+
+    const yDot = d3.scaleLinear()
+        .domain([0, d3.max(rawData, d => d.Rank)])
+        .range([height - margin.bottom, margin.top]);
+
+    dotSvg.append('g')
+        .attr('transform', `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(xDot).tickFormat(d3.format('d')));
+
+    dotSvg.append('g')
+        .attr('transform', `translate(${margin.left},0)`)
+        .call(d3.axisLeft(yDot));
+
+    dotSvg.selectAll('circle')
+        .data(rawData)
+        .enter()
+        .append('circle')
+        .attr('cx', d => xDot(d.Year))
+        .attr('cy', d => yDot(d.Rank))
+        .attr('r', 8)
+        .attr('fill', d => colorData.find(c => c.team === d.Team)?.color || '#999');
+
+    dotSvg.append('text')
+        .attr('x', width / 2)
+        .attr('y', margin.top)
+        .attr('text-anchor', 'middle')
+        .text('Team Rankings Over Time');
 });
 
 // Handle division change
