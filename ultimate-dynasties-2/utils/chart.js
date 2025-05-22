@@ -227,6 +227,18 @@ export async function renderRankingsChart() {
   .style("font-family", "sans-serif")
   .style("font-size", "12px");
 
+  // Hide tooltip on any touch/click outside a chart circle (mobile friendly)
+  document.body.addEventListener('touchstart', function(e) {
+    if (!e.target.closest('g.circles')) {
+      tooltip.style('opacity', 0);
+    }
+  });
+  document.body.addEventListener('click', function(e) {
+    if (!e.target.closest('g.circles')) {
+      tooltip.style('opacity', 0);
+    }
+  });
+
   function ordinalSuffix(n) {
     n = parseInt(n);
     if (n > 3 && n < 21) return "th";
