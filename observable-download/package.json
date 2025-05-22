@@ -1,0 +1,14 @@
+{
+  "name": "@elistandard/ultimate-dynasties",
+  "main": "8e7166a31f4433ec@802.js",
+  "version": "802.0.0",
+  "homepage": "https://observablehq.com/@elistandard/ultimate-dynasties",
+  "author": {
+    "name": "Eli Standard",
+    "url": "https://observablehq.com/@elistandard"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4 - 5"
+  }
+}
