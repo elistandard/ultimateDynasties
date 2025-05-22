@@ -61,11 +61,3 @@ function getYearlyRankings(division, year) {
         .filter(d => d.Year === year)
         .sort((a, b) => a.Rank - b.Rank);
 }
-
-// Export the data structures and helper functions
-export {
-    rawData,
-    getTeamStats,
-    getDivisionStats,
-    getYearlyRankings
-};

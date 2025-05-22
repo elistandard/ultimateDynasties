@@ -53,22 +53,11 @@ function handleTeamChange(event) {
 
 // Populate team selector
 function populateTeamSelector(select) {
-    // Clear existing options
-    select.innerHTML = '';
+    const division = document.querySelector('input[name="division"]:checked').value;
+    const teams = getDivisionStats(division).map(d => d.team);
     
-    // Add default option
-    const defaultOption = document.createElement('option');
-    defaultOption.value = '';
-    defaultOption.textContent = 'Select a team';
-    select.appendChild(defaultOption);
-
-    // Add team options
-    Object.keys(logoMapping).sort().forEach(team => {
-        const option = document.createElement('option');
-        option.value = team;
-        option.textContent = team;
-        select.appendChild(option);
-    });
+    select.innerHTML = '<option value="">Select a team</option>' +
+        teams.map(team => `<option value="${team}">${team}</option>`).join('');
 }
 
 // Update team summary section
@@ -274,11 +263,4 @@ function updateDotChart(division, selectedTeam) {
         .attr('opacity', d => selectedTeam && d.team !== selectedTeam ? 0.3 : 1);
 
     dots.exit().remove();
-}
-
-// Export functions that need to be accessed by other modules
-export {
-    handleDivisionChange,
-    handleTeamChange,
-    updateCharts
-}; 
+} 
