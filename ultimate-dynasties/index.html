@@ -4,9 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ultimate Dynasties</title>
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .controls {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #f8f8f8;
+      border-radius: 6px;
+    }
+    .team-summary {
+      margin: 20px 0;
+      padding: 15px;
+      background-color: #f8f8f8;
+      border-radius: 6px;
+    }
+    .team-logo {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+    .team-stats {
+      margin-top: 10px;
+    }
+    .chart-container {
+      margin: 20px 0;
+      padding: 15px;
+      background-color: white;
+      border-radius: 6px;
+    }
+    #championshipChart, #dotChart {
+      width: 100%;
+      height: 400px;
+    }
+    input[type="radio"] {
+      accent-color: #111;
+      margin-right: 8px;
+      width: 18px;
+      height: 18px;
+    }
+    select {
+      font-size: 16px;
+      padding: 7px 12px;
+      border-radius: 6px;
+      border: 2px solid #111;
+      margin-right: 10px;
+      background-color: white;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -21,20 +81,17 @@
     </div>
 
     <!-- Controls Section -->
-    <div class="controls-section">
-      <div class="division-selector">
+    <div class="controls">
+      <div>
         <label>Select Division:</label>
-        <div class="radio-group">
-          <input type="radio" id="mens" name="division" value="College Men's" checked>
-          <label for="mens">Men's</label>
-          <input type="radio" id="womens" name="division" value="College Women's">
-          <label for="womens">Women's</label>
-        </div>
+        <input type="radio" name="division" value="College Men's" checked> College Men's
+        <input type="radio" name="division" value="College Women's"> College Women's
       </div>
-
-      <div class="team-selector">
-        <label for="teamSelect">Select team to highlight:</label>
-        <select id="teamSelect"></select>
+      <div style="margin-top: 10px;">
+        <label for="teamSelect">Select Team:</label>
+        <select id="teamSelect">
+          <option value="">Select a team</option>
+        </select>
       </div>
     </div>
 
@@ -45,8 +102,11 @@
     </div>
 
     <!-- Charts Section -->
-    <div class="charts-section">
+    <div class="chart-container">
       <div id="championshipChart"></div>
+    </div>
+
+    <div class="chart-container">
       <div id="dotChart"></div>
     </div>
 
@@ -61,7 +121,7 @@
 
   <!-- Scripts -->
   <script src="data.js"></script>
-  <script src="main.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
 

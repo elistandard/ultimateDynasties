@@ -28,16 +28,8 @@ button:hover {
 }
 </style>`}
 
-// Utility functions
-function getOrdinalSuffix(n) {
-    const s = ["th", "st", "nd", "rd"];
-    const v = n % 100;
-    return n + (s[(v - 20) % 10] || s[v] || s[0]);
-}
-
-function formatTRank(rank) {
-    return rank ? getOrdinalSuffix(rank) : "N/A";
-}
+import { logoMapping, colorData, getOrdinalSuffix, formatTRank } from './data.js';
+import rawData from './rawData.js';
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
@@ -72,6 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
 function handleDivisionChange(event) {
     const division = event.target.value;
     updateCharts(division);
+    
+    // Update team selector for new division
+    const teamSelect = document.getElementById('teamSelect');
+    populateTeamSelector(teamSelect);
 }
 
 // Handle team change
@@ -84,7 +80,10 @@ function handleTeamChange(event) {
 // Populate team selector
 function populateTeamSelector(select) {
     const division = document.querySelector('input[name="division"]:checked').value;
-    const teams = getDivisionStats(division).map(d => d.team);
+    const teams = [...new Set(rawData
+        .filter(d => d.Division === division)
+        .map(d => d.Team))]
+        .sort();
     
     select.innerHTML = '<option value="">Select a team</option>' +
         teams.map(team => `<option value="${team}">${team}</option>`).join('');
@@ -102,23 +101,35 @@ function updateTeamSummary(team) {
     }
 
     // Update logo
-    const logoUrl = logoMapping[team];
+    const logoUrl = logoMapping.find(d => d.team === team)?.url;
     logoContainer.innerHTML = `<img src="${logoUrl}" alt="${team} logo" style="max-width: 100%; max-height: 100%;">`;
 
     // Get team stats
     const division = document.querySelector('input[name="division"]:checked').value;
-    const stats = getTeamStats(team, division);
+    const teamData = rawData
+        .filter(d => d.Team === team && d.Division === division)
+        .sort((a, b) => a.Year - b.Year);
+
+    if (teamData.length === 0) {
+        statsContainer.innerHTML = '<p>No data available for selected team</p>';
+        return;
+    }
+
+    // Calculate stats
+    const mostRecent = teamData[teamData.length - 1];
+    const championships = teamData.filter(d => d.Rank === 1).length;
+    const championshipYears = teamData
+        .filter(d => d.Rank === 1)
+        .map(d => d.Year)
+        .join(', ');
 
     // Update stats
     statsContainer.innerHTML = `
         <h2>${team}</h2>
         <div class="team-stats-content">
-            <p>Championships: ${stats.championships}</p>
-            <p>Top 3 Finishes: ${stats.top3}</p>
-            <p>Top 5 Finishes: ${stats.top5}</p>
-            <p>Top 10 Finishes: ${stats.top10}</p>
-            <p>Total Appearances: ${stats.appearances}</p>
-            <p>Years Active: ${stats.years.join(', ')}</p>
+            <p>Most recent finish: ${formatTRank(mostRecent.T_Rank)} (${mostRecent.Year})</p>
+            <p>Championships: ${championships}${championships > 0 ? ` (${championshipYears})` : ''}</p>
+            <p>Years Active: ${teamData.map(d => d.Year).join(', ')}</p>
         </div>
     `;
 }
@@ -126,7 +137,7 @@ function updateTeamSummary(team) {
 // Initialize championship chart
 function initializeChampionshipChart() {
     const container = document.getElementById('championshipChart');
-    if (!container) return; // Guard against missing container
+    if (!container) return;
 
     // Clear any existing SVG
     d3.select(container).selectAll('svg').remove();
@@ -174,7 +185,7 @@ function initializeChampionshipChart() {
 // Update championship chart
 function updateChampionshipChart(division) {
     const container = document.getElementById('championshipChart');
-    if (!container) return; // Guard against missing container
+    if (!container) return;
     
     // Initialize chart if not already initialized
     if (!container._scales || !container._svg) {
@@ -188,11 +199,25 @@ function updateChampionshipChart(division) {
     svg.selectAll('.bar').remove();
 
     // Get data
-    const data = getDivisionStats(division)
-        .filter(d => d.championships > 0)
-        .slice(0, 10);
+    const championshipData = d3.rollup(
+        rawData.filter(d => d.Division === division),
+        v => ({
+            count: v.filter(d => d.Rank === 1).length,
+            years: v.filter(d => d.Rank === 1).map(d => d.Year).sort()
+        }),
+        d => d.Team
+    );
 
-    if (!data || data.length === 0) return; // Guard against empty data
+    const data = Array.from(championshipData, ([team, data]) => ({
+        team,
+        championships: data.count,
+        years: data.years
+    }))
+    .filter(d => d.championships > 0)
+    .sort((a, b) => b.championships - a.championships)
+    .slice(0, 10);
+
+    if (!data || data.length === 0) return;
 
     // Update scales
     x.domain(data.map(d => d.team));
@@ -222,7 +247,7 @@ function updateChampionshipChart(division) {
 // Initialize dot chart
 function initializeDotChart() {
     const container = document.getElementById('dotChart');
-    if (!container) return; // Guard against missing container
+    if (!container) return;
 
     // Clear any existing SVG
     d3.select(container).selectAll('svg').remove();
@@ -270,7 +295,7 @@ function initializeDotChart() {
 // Update dot chart
 function updateDotChart(division, selectedTeam) {
     const container = document.getElementById('dotChart');
-    if (!container) return; // Guard against missing container
+    if (!container) return;
     
     // Initialize chart if not already initialized
     if (!container._scales || !container._svg) {
@@ -284,14 +309,31 @@ function updateDotChart(division, selectedTeam) {
     svg.selectAll('.dot').remove();
 
     // Get data
-    const data = getDivisionStats(division)
-        .filter(d => d.appearances >= 5)
-        .slice(0, 10);
+    const teamData = d3.rollup(
+        rawData.filter(d => d.Division === division),
+        v => ({
+            years: v.map(d => d.Year),
+            rankings: v.map(d => ({ year: d.Year, rank: d.Rank }))
+        }),
+        d => d.Team
+    );
 
-    if (!data || data.length === 0) return; // Guard against empty data
+    const data = Array.from(teamData, ([team, data]) => ({
+        team,
+        years: data.years,
+        rankings: data.rankings
+    }))
+    .filter(d => d.years.length >= 5)
+    .sort((a, b) => b.years.length - a.years.length)
+    .slice(0, 10);
+
+    if (!data || data.length === 0) return;
 
     // Update scales
-    x.domain([d3.min(data, d => d.years[0]), d3.max(data, d => d.years[d.years.length - 1])]);
+    x.domain([
+        d3.min(data, d => d3.min(d.years)),
+        d3.max(data, d => d3.max(d.years))
+    ]);
     y.domain(data.map(d => d.team));
 
     // Update axes
@@ -300,7 +342,11 @@ function updateDotChart(division, selectedTeam) {
 
     // Update dots
     const dots = svg.selectAll('.dot')
-        .data(data.flatMap(d => d.rankings.map(r => ({ ...r, team: d.team }))));
+        .data(data.flatMap(d => d.rankings.map(r => ({
+            team: d.team,
+            year: r.year,
+            rank: r.rank
+        }))));
 
     dots.enter()
         .append('circle')

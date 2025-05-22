@@ -11,42 +11,18 @@ const records = csv.parse(csvContent, {
 });
 
 // Process the data
-const rawData = {};
+const rawData = records.map(record => ({
+    Team: record.Team,
+    Year: parseInt(record.Year),
+    Rank: parseInt(record.Rank),
+    T_Rank: record.T_Rank,
+    Division: record.Division
+}));
 
-records.forEach(record => {
-    const teamName = record.Team;
-    const year = parseInt(record.Year);
-    const rank = parseInt(record.Rank);
-    const conference = record.Conference;
-    const division = record.Division;
-
-    if (!rawData[teamName]) {
-        rawData[teamName] = {
-            name: teamName,
-            years: [],
-            rankings: [],
-            conference: conference,
-            division: division
-        };
-    }
-
-    rawData[teamName].years.push(year);
-    rawData[teamName].rankings.push(rank);
-});
-
-// Sort years and rankings for each team
-Object.values(rawData).forEach(team => {
-    const sortedIndices = team.years.map((_, i) => i)
-        .sort((a, b) => team.years[a] - team.years[b]);
-    
-    team.years = sortedIndices.map(i => team.years[i]);
-    team.rankings = sortedIndices.map(i => team.rankings[i]);
-});
-
-// Generate the data.js file content
+// Generate the rawData.js file content
 const fileContent = `const rawData = ${JSON.stringify(rawData, null, 2)};\n\nexport default rawData;`;
 
-// Write to data.js
-fs.writeFileSync('data.js', fileContent);
+// Write to rawData.js
+fs.writeFileSync('ultimate-dynasties/rawData.js', fileContent);
 
-console.log('Data generation complete! Check data.js for the results.'); 
+console.log('Data generation complete! Check rawData.js for the results.'); 
