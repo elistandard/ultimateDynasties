@@ -29,9 +29,12 @@ export default function Home() {
         <h1 className="text-3xl font-bold">Ultimate Dynasties</h1>
 
         {/* 📈 RANKINGS CHART SECTION */}
-        <h2 className="text-xl font-bold mt-16">Rankings Over Time</h2>
-        <div id="division-toggle-2" className="mb-4 text-sm font-medium text-gray-700 flex gap-4"></div>
-        <div id="team-selector" className="mb-4"></div>
+        <h2 className="text-xl font-bold mt-1">Select a division</h2>
+        <div id="division-toggle-2" className="mb-1 text-sm font-medium text-gray-700 flex gap-4"></div>
+        <h2 className="text-xl font-bold mt-1">Select a team</h2>
+        <div id="team-selector" className="mb-1"></div>
+        <div id="team-summary" className="mb-1"></div>
+        <h2 className="text-xl font-bold mt-1">Nationals Rankings Over Time</h2>
         <div id="rankings-chart" className="w-full overflow-x-auto"></div>
 
         {/* ⭐ STAR CHART */}

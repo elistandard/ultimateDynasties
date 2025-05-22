@@ -15,21 +15,29 @@ export async function renderChampionshipChart() {
   const divisions = ["College Men's", "College Women's"];
   let selectedDivision = divisions[0];
 
-  const form = container.append("form").style("margin-bottom", "1rem");
-
-  form.selectAll("label")
+  container.html("");
+  const champButtonGroup = container.append("div").style("display", "flex").style("gap", "1rem");
+  champButtonGroup.selectAll("button")
     .data(divisions)
-    .join("label")
-    .style("margin-right", "1rem")
+    .join("button")
     .text(d => d)
-    .append("input")
-    .attr("type", "radio")
-    .attr("name", "division")
-    .attr("value", d => d)
-    .property("checked", d => d === selectedDivision)
-    .on("change", function () {
-      selectedDivision = this.value;
+    .attr("type", "button")
+    .style("padding", "0.5rem 1.2rem")
+    .style("border-radius", "999px")
+    .style("border", d => d === selectedDivision ? "2px solid #ffcccb" : "2px solid #444")
+    .style("background", d => d === selectedDivision ? "#ffcccb" : "#222")
+    .style("color", d => d === selectedDivision ? "#222" : "#fff")
+    .style("font-weight", "bold")
+    .style("font-size", "1rem")
+    .style("cursor", "pointer")
+    .on("click", function(event, d) {
+      selectedDivision = d;
       updateChart();
+      // Update button styles
+      champButtonGroup.selectAll("button")
+        .style("border", d2 => d2 === selectedDivision ? "2px solid #ffcccb" : "2px solid #444")
+        .style("background", d2 => d2 === selectedDivision ? "#ffcccb" : "#222")
+        .style("color", d2 => d2 === selectedDivision ? "#222" : "#fff");
     });
 
   updateChart();
@@ -146,23 +154,30 @@ export async function renderRankingsChart() {
   const controls = d3.select("#division-toggle-2").html("");
   const teamSelectBox = d3.select("#team-selector").html("");
 
-  // Division toggle
-  const form = controls.append("form").style("margin-bottom", "1rem");
-
-  form.selectAll("label")
+  controls.html("");
+  const buttonGroup = controls.append("div").style("display", "flex").style("gap", "1rem");
+  buttonGroup.selectAll("button")
     .data(divisions)
-    .join("label")
-    .style("margin-right", "1rem")
+    .join("button")
     .text(d => d)
-    .append("input")
-    .attr("type", "radio")
-    .attr("name", "division2")
-    .attr("value", d => d)
-    .property("checked", d => d === selectedDivision)
-    .on("change", function () {
-      selectedDivision = this.value;
+    .attr("type", "button")
+    .style("padding", "0.5rem 1.2rem")
+    .style("border-radius", "999px")
+    .style("border", d => d === selectedDivision ? "2px solid #ffcccb" : "2px solid #444")
+    .style("background", d => d === selectedDivision ? "#ffcccb" : "#222")
+    .style("color", d => d === selectedDivision ? "#222" : "#fff")
+    .style("font-weight", "bold")
+    .style("font-size", "1rem")
+    .style("cursor", "pointer")
+    .on("click", function(event, d) {
+      selectedDivision = d;
       updateTeamList();
       drawChart();
+      // Update button styles
+      buttonGroup.selectAll("button")
+        .style("border", d2 => d2 === selectedDivision ? "2px solid #ffcccb" : "2px solid #444")
+        .style("background", d2 => d2 === selectedDivision ? "#ffcccb" : "#222")
+        .style("color", d2 => d2 === selectedDivision ? "#222" : "#fff");
     });
 
   // Team selector dropdown
@@ -171,6 +186,7 @@ export async function renderRankingsChart() {
     .attr("class", "border px-2 py-1 rounded")
     .on("change", function () {
       selectedTeam = this.value;
+      renderTeamSummary();
       drawChart();
     });
 
@@ -409,10 +425,105 @@ export async function renderRankingsChart() {
       .attr("text-anchor", "middle")
       .style("font-weight", "bold")
       .style("fill", "#fff");
+
+    // Render team summary
+    renderTeamSummary();
   }  
   
   function getTeamColor(team) {
     return teamColorMap.get(team) || "#ccc";
+  }
+
+  // Render team summary with logo and stats
+  function renderTeamSummary() {
+    const teamData = raw_data.filter(d => d.Team === selectedTeam && d.Division === selectedDivision).sort((a, b) => a.Year - b.Year);
+    if (teamData.length === 0) {
+      d3.select("#team-summary").html("No data available for selected team");
+      return;
+    }
+
+    // Most recent finish
+    const mostRecent = teamData[teamData.length - 1];
+    const suffix = (rank) => {
+      if (rank === 1) return "st";
+      if (rank === 2) return "nd";
+      if (rank === 3) return "rd";
+      return "th";
+    };
+    const tiedText = String(mostRecent.T_Rank).startsWith('T') ? 'Tied for ' : '';
+    const rankNumber = parseInt(String(mostRecent.T_Rank).replace('T', ''));
+    const mostRecentText = `${tiedText}${rankNumber}${suffix(rankNumber)} (${mostRecent.Year})`;
+
+    // Best finish
+    const getBestRank = (rank) => {
+      if (rank === "?" || rank === undefined || rank === null) return Infinity;
+      const rankStr = String(rank);
+      return rankStr.startsWith('T') ? parseInt(rankStr.slice(1)) : parseInt(rankStr);
+    };
+    const validRanks = teamData.map(d => getBestRank(d.T_Rank)).filter(rank => rank !== Infinity);
+    const bestRank = Math.min(...validRanks);
+    const bestFinishYears = Array.from(new Set(teamData.filter(d => getBestRank(d.T_Rank) === bestRank).map(d => d.Year))).join(", ");
+    const tiedBestText = teamData.some(d => getBestRank(d.T_Rank) === bestRank && String(d.T_Rank).startsWith('T')) ? 'Tied for ' : '';
+    const bestFinishText = `${tiedBestText}${bestRank}${suffix(bestRank)} (${bestFinishYears})`;
+
+    // Championships
+    const championshipRecords = teamData.filter(d => d.Rank === 1);
+    const championshipYearsArr = Array.from(new Set(championshipRecords.map(d => d.Year)));
+    const championships = championshipYearsArr.length;
+    const championshipYears = championshipYearsArr.join(", ");
+    const championshipText = `${championships}${championships > 0 ? ` (${championshipYears})` : ""}`;
+
+    // Longest streak
+    let longestStreak = 1, currentStreak = 1, longestStreakStart = teamData[0].Year, longestStreakEnd = teamData[0].Year, tempStreakStart = teamData[0].Year;
+    for (let i = 1; i < teamData.length; i++) {
+      const prevYear = teamData[i - 1].Year;
+      const currYear = teamData[i].Year;
+      const isConsecutive = (currYear === prevYear + 1) || (prevYear === 2019 && currYear === 2021);
+      if (isConsecutive) {
+        currentStreak++;
+      } else {
+        currentStreak = 1;
+        tempStreakStart = currYear;
+      }
+      if (currentStreak > longestStreak) {
+        longestStreak = currentStreak;
+        longestStreakStart = tempStreakStart;
+        longestStreakEnd = currYear;
+      }
+    }
+    let streakDisplay = longestStreak > 1 ? `${longestStreak} years (${longestStreakStart}-${longestStreakEnd})` : "No multi-year nationals streaks";
+
+    // Logo: try .jpg, .png, .jpeg
+    const safeTeam = selectedTeam.replace(/[^a-zA-Z0-9& ]/g, '').replace(/ /g, '%20');
+    const logoBase = `/college-mens-logos/${safeTeam}`;
+    let logoUrl = '';
+    for (const ext of ['.jpg', '.png', '.jpeg']) {
+      const testUrl = `${logoBase}${ext}`;
+      const img = new Image();
+      img.src = testUrl;
+      if (img.complete) {
+        logoUrl = testUrl;
+        break;
+      }
+    }
+
+    const html = `
+      <div style="display: flex; align-items: center; margin-bottom: 12px;">
+        <img 
+          src="${logoBase}.jpg"
+          style="height: 50px; width: 50px; object-fit: contain; margin-right: 10px;"
+          onerror="this.onerror=null;this.src='${logoBase}.png';this.onerror=function(){this.src='${logoBase}.jpeg';this.onerror=function(){this.style.display='none';};};"
+        />
+        <div style="font-weight: bold; font-size: 20px;">${selectedTeam}</div>
+      </div>
+      <div style="font-size: 13px;">
+        Most recent nationals finish: <span style="font-weight:bold;">${mostRecentText}</span><br>
+        Highest nationals finish: <span style="font-weight:bold;">${bestFinishText}</span><br>
+        Longest nationals streak: <span style="font-weight:bold;">${streakDisplay}</span><br>
+        National championships won: <span style="font-weight:bold;">${championshipText}</span>
+      </div>
+    `;
+    d3.select("#team-summary").html(html);
   }
 }
 
