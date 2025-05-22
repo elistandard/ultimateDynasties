@@ -1,5 +1,3 @@
-import { baseUrl, logoMapping, colorData, rawData, getTeamStats, getDivisionStats, getYearlyRankings } from './data.js';
-
 // Utility functions
 function getOrdinalSuffix(n) {
     const s = ["th", "st", "nd", "rd"];
