@@ -383,7 +383,8 @@ export async function renderRankingsChart() {
           .attr("r", d.Team === selectedTeam ? 11 : 3)
           .attr("fill", getTeamColor(d.Team))
           .attr("stroke", "#fff")
-          .attr("stroke-width", 1);
+          .attr("stroke-width", 1)
+          .attr("opacity", d.Team === selectedTeam ? 1 : 0.7);
 
         // If rank is #1, add a star above the circle ONLY for the selected team
         if (d.Team === selectedTeam && d.Rank === 1) {
